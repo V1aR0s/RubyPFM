@@ -6,19 +6,22 @@ class SessionsController < ApplicationController
   def create
     user_params = params.require(:session)
     
+    #метод, &. выполняеться если предидущее не равно nil 
+    user = User.find_by(email: user_params[:email])&.authenticate(user_params[:password])
+    p = BCrypt::Password.new(user.password_digest)
 
-    user = User.find_by(email: user_params[:email])
-
-    if user.present?
+    
+    #debugger
+    if user.present? 
       session[:user_id] = user.id
 
       redirect_to root_path, notice: "вы вошли на сайт"
     
     else
-      flash.now[:alert] = "Неправильная почта или пароль"
+        flash.now[:alert] = "Неправильная почта или пароль"
 
-      render :new
-    end
+        render :new
+     end
   end
 
 

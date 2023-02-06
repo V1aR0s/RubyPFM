@@ -14,7 +14,8 @@
   </head>
 
   <body>
-  <nav class="navbar navbar-light bg-light" style="display:flex; align-items:senter; justify-content: space-between;">
+  <div class = "wrapper">    
+    <nav class="navbar navbar-light bg-light" style="display:flex; align-items:senter; justify-content: space-between;">
       <div class="container-fluid">
         <%= link_to "PFM", root_path, class: "navbar-brand" %>
         <div class="d-flex">
@@ -29,9 +30,6 @@
         </div>
       </div>
     </nav>
-
-  <div>    
-    
 
 
     <% if flash["notice"].present? %>
