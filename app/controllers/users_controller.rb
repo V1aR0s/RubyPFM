@@ -9,6 +9,6 @@ class UsersController < ApplicationController
     User.create(user_params)
 
 
-    redirect_to root_path, notice: "Вы успешона зарегестрировались!"
+    redirect_to root_path, notice: "Вы успешона зарегестрировались"
   end
 end

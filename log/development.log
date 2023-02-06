@@ -1471,3 +1471,89 @@ Completed 200 OK in 18ms (Views: 13.9ms | ActiveRecord: 0.0ms | Allocations: 369
 
 
   [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+Started GET "/users/new" for 127.0.0.1 at 2023-02-06 13:45:04 +0200
+Processing by UsersController#new as */*
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 1.4ms | Allocations: 908)
+  Rendered layout layouts/application.html.erb (Duration: 16.6ms | Allocations: 3194)
+Completed 200 OK in 21ms (Views: 17.6ms | ActiveRecord: 0.0ms | Allocations: 3520)
+
+
+Started GET "/" for 127.0.0.1 at 2023-02-06 13:45:06 +0200
+Processing by MainController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/index.html.erb within layouts/application
+  Rendered main/index.html.erb within layouts/application (Duration: 0.0ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 12.0ms | Allocations: 2480)
+Completed 200 OK in 16ms (Views: 13.0ms | ActiveRecord: 0.0ms | Allocations: 2755)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2023-02-06 13:53:54 +0200
+Processing by UsersController#new as HTML
+Completed 500 Internal Server Error in 9ms (Allocations: 3277)
+
+
+  
+NameError (undefined local variable or method `debbuger' for #<UsersController:0x0000000001b878>
+
+    debbuger
+    ^^^^^^^^
+Did you mean?  debugger):
+  
+app/controllers/users_controller.rb:3:in `new'
+Started GET "/users/new" for 127.0.0.1 at 2023-02-06 13:54:11 +0200
+Processing by UsersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 1.3ms | Allocations: 985)
+  Rendered layout layouts/application.html.erb (Duration: 38.3ms | Allocations: 15124)
+Completed 200 OK in 126206ms (Views: 40.2ms | ActiveRecord: 0.3ms | Allocations: 242024)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2023-02-06 13:56:22 +0200
+Processing by UsersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 1.5ms | Allocations: 983)
+  Rendered layout layouts/application.html.erb (Duration: 49.5ms | Allocations: 15152)
+Completed 200 OK in 65ms (Views: 50.9ms | ActiveRecord: 3.2ms | Allocations: 18607)
+
+
+Started GET "/session/new" for 127.0.0.1 at 2023-02-06 14:14:32 +0200
+  
+ActionController::RoutingError (uninitialized constant SessionController
+
+      Object.const_get(camel_cased_word)
+            ^^^^^^^^^^
+Did you mean?  SessionsController
+
+            raise MissingController.new(error.message, error.name)
+            ^^^^^):
+  
+Started GET "/session/new" for 127.0.0.1 at 2023-02-06 14:15:08 +0200
+  
+ActionController::RoutingError (uninitialized constant SessionController
+
+      Object.const_get(camel_cased_word)
+            ^^^^^^^^^^
+Did you mean?  SessionsController
+
+            raise MissingController.new(error.message, error.name)
+            ^^^^^):
+  
+Started GET "/sessions/new" for 127.0.0.1 at 2023-02-06 14:15:18 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/sessions/new"):
+  
+Started GET "/session/new" for 127.0.0.1 at 2023-02-06 14:15:54 +0200
+  
+ActionController::RoutingError (uninitialized constant SessionController
+
+      Object.const_get(camel_cased_word)
+            ^^^^^^^^^^
+Did you mean?  SessionsController
+
+            raise MissingController.new(error.message, error.name)
+            ^^^^^):
+  
