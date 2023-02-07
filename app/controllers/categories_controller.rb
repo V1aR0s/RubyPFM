@@ -22,7 +22,9 @@ class CategoriesController < ApplicationController
 
   # POST /categories or /categories.json
   def create
+
     @category = Category.new(category_params)
+    @category.user_id = session[:user_id]
 
     respond_to do |format|
       if @category.save

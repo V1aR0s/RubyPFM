@@ -1,6 +1,7 @@
 class OperationsController < ApplicationController
   before_action :set_operation, only: %i[ show edit update destroy ]
-
+  before_action :authenticate_user!
+  
   # GET /operations or /operations.json
   def index
     @operations = Operation.all
@@ -22,7 +23,7 @@ class OperationsController < ApplicationController
   # POST /operations or /operations.json
   def create
     @operation = Operation.new(operation_params)
-
+    @operation.user_id = session[:user_id]
     respond_to do |format|
       if @operation.save
         format.html { redirect_to operation_url(@operation), notice: "Operation was successfully created." }
