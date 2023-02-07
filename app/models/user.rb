@@ -1,5 +1,6 @@
 class User < ApplicationRecord
   has_secure_password
+  has_many :category
 
   before_save :capitalize_name_and_suranme
 
