@@ -4850,3 +4850,214 @@ Started GET "/session" for 127.0.0.1 at 2023-02-06 16:04:41 +0200
   
 ActionController::RoutingError (No route matches [GET] "/session"):
   
+  [1m[36mUser Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY "users"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "vlaros19992004@gmail.com"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mUser Exists? (0.6ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "vlaros19992004@gmail.com"], ["LIMIT", 1]]
+Started GET "/" for 127.0.0.1 at 2023-02-07 10:57:12 +0200
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by MainController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/index.html.erb within layouts/application
+  Rendered main/index.html.erb within layouts/application (Duration: 53.8ms | Allocations: 308)
+  Rendered layout layouts/application.html.erb (Duration: 544.3ms | Allocations: 37432)
+Completed 200 OK in 688ms (Views: 591.0ms | ActiveRecord: 0.0ms | Allocations: 40751)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2023-02-07 10:57:18 +0200
+Processing by UsersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 163.2ms | Allocations: 3547)
+  Rendered layout layouts/application.html.erb (Duration: 171.4ms | Allocations: 6229)
+Completed 200 OK in 204ms (Views: 175.7ms | ActiveRecord: 2.3ms | Allocations: 13131)
+
+
+Started POST "/users" for 127.0.0.1 at 2023-02-07 10:57:27 +0200
+Processing by UsersController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"name"=>"", "surname"=>"", "email"=>"", "password"=>"[FILTERED]"}, "commit"=>"Зарегестрироваться"}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:11:in `create'
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", ""], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:11:in `create'
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/users_controller.rb:11:in `create'
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 7.6ms | Allocations: 3642)
+  Rendered layout layouts/application.html.erb (Duration: 16.7ms | Allocations: 6172)
+Completed 200 OK in 30ms (Views: 17.5ms | ActiveRecord: 0.4ms | Allocations: 11403)
+
+
+Started GET "/users" for 127.0.0.1 at 2023-02-07 10:57:36 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/users"):
+  
+Started GET "/users/new" for 127.0.0.1 at 2023-02-07 10:57:40 +0200
+Processing by UsersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 2.0ms | Allocations: 1323)
+  Rendered layout layouts/application.html.erb (Duration: 11.4ms | Allocations: 3877)
+Completed 200 OK in 15ms (Views: 12.2ms | ActiveRecord: 0.0ms | Allocations: 4226)
+
+
+Started POST "/users" for 127.0.0.1 at 2023-02-07 11:02:09 +0200
+Processing by UsersController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"name"=>"", "surname"=>"", "email"=>"", "password"=>"[FILTERED]"}, "commit"=>"Зарегестрироваться"}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:11:in `create'
+  [1m[36mUser Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", ""], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:11:in `create'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/users_controller.rb:11:in `create'
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 36.5ms | Allocations: 1267)
+  Rendered layout layouts/application.html.erb (Duration: 37.2ms | Allocations: 1354)
+Completed 500 Internal Server Error in 65ms (ActiveRecord: 1.6ms | Allocations: 8685)
+
+
+  
+ActionView::Template::Error (wrong number of arguments (given 0, expected 2)):
+    3:     <h2 class = "title"> Регистрация</h2>  
+    4: 
+    5:     <% if @user.errors.any? %>
+    6:         <% @user.errors.full_message.each do | message | %>
+    7:             <p style="text-color:red"> <%= meassage %> </p> </br> 
+    8:         <% end  %>  
+    9:     <% end  %>  
+  
+app/views/users/new.html.erb:6
+app/controllers/users_controller.rb:16:in `create'
+Started POST "/users" for 127.0.0.1 at 2023-02-07 11:02:37 +0200
+Processing by UsersController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"name"=>"", "surname"=>"", "email"=>"", "password"=>"[FILTERED]"}, "commit"=>"Зарегестрироваться"}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:11:in `create'
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", ""], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:11:in `create'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/users_controller.rb:11:in `create'
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 39.8ms | Allocations: 6615)
+  Rendered layout layouts/application.html.erb (Duration: 40.3ms | Allocations: 6701)
+Completed 500 Internal Server Error in 56ms (ActiveRecord: 0.4ms | Allocations: 10396)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `meassage' for #<ActionView::Base:0x000000000115f8>
+
+@output_buffer.safe_append='            <p style="text-color:red"> '.freeze;@output_buffer.append=( meassage );@output_buffer.safe_append=' </p> </br> 
+                                                                                                    ^^^^^^^^
+Did you mean?  message):
+    4: 
+    5:     <% if @user.errors.any? %>
+    6:         <% @user.errors.full_messages.each do | message | %>
+    7:             <p style="text-color:red"> <%= meassage %> </p> </br> 
+    8:         <% end  %>  
+    9:     <% end  %>  
+   10:     <div class = "mt">
+  
+app/views/users/new.html.erb:7
+app/views/users/new.html.erb:6:in `each'
+app/views/users/new.html.erb:6
+app/controllers/users_controller.rb:16:in `create'
+Started POST "/users" for 127.0.0.1 at 2023-02-07 11:02:48 +0200
+Processing by UsersController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"name"=>"", "surname"=>"", "email"=>"", "password"=>"[FILTERED]"}, "commit"=>"Зарегестрироваться"}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:11:in `create'
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", ""], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:11:in `create'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/users_controller.rb:11:in `create'
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 33.9ms | Allocations: 5425)
+  Rendered layout layouts/application.html.erb (Duration: 68.1ms | Allocations: 20163)
+Completed 200 OK in 83ms (Views: 76.7ms | ActiveRecord: 0.4ms | Allocations: 23882)
+
+
+Started GET "/users" for 127.0.0.1 at 2023-02-07 11:03:15 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/users"):
+  
+Started GET "/users/new" for 127.0.0.1 at 2023-02-07 11:03:21 +0200
+Processing by UsersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 34.8ms | Allocations: 1790)
+  Rendered layout layouts/application.html.erb (Duration: 48.4ms | Allocations: 4899)
+Completed 200 OK in 62ms (Views: 56.9ms | ActiveRecord: 0.0ms | Allocations: 5717)
+
+
+Started POST "/users" for 127.0.0.1 at 2023-02-07 11:03:22 +0200
+Processing by UsersController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"name"=>"", "surname"=>"", "email"=>"", "password"=>"[FILTERED]"}, "commit"=>"Зарегестрироваться"}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:11:in `create'
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", ""], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:11:in `create'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/users_controller.rb:11:in `create'
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 8.7ms | Allocations: 4837)
+  Rendered layout layouts/application.html.erb (Duration: 19.9ms | Allocations: 7243)
+Completed 200 OK in 31ms (Views: 21.8ms | ActiveRecord: 0.4ms | Allocations: 10388)
+
+
+Started GET "/users" for 127.0.0.1 at 2023-02-07 11:11:07 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/users"):
+  
+Started GET "/users/new" for 127.0.0.1 at 2023-02-07 11:11:09 +0200
+Processing by UsersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 37.9ms | Allocations: 2097)
+  Rendered layout layouts/application.html.erb (Duration: 47.2ms | Allocations: 5191)
+Completed 200 OK in 56ms (Views: 52.3ms | Allocations: 5967)
+
+
+Started POST "/users" for 127.0.0.1 at 2023-02-07 11:11:14 +0200
+Processing by UsersController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"name"=>"", "surname"=>"", "email"=>"", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Зарегестрироваться"}
+[31mUnpermitted parameter: :password_confirmation. Context: { controller: UsersController, action: create, request: #<ActionDispatch::Request:0x000001fa8db2f938>, params: {"authenticity_token"=>"[FILTERED]", "user"=>{"name"=>"", "surname"=>"", "email"=>"", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Зарегестрироваться", "controller"=>"users", "action"=>"create"} }[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:11:in `create'
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", ""], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:11:in `create'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/users_controller.rb:11:in `create'
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 8.7ms | Allocations: 4126)
+  Rendered layout layouts/application.html.erb (Duration: 17.8ms | Allocations: 6547)
+Completed 200 OK in 294ms (Views: 18.7ms | ActiveRecord: 0.9ms | Allocations: 10000)
+
+
+Started GET "/users" for 127.0.0.1 at 2023-02-07 11:12:20 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/users"):
+  
+Started POST "/users" for 127.0.0.1 at 2023-02-07 11:12:24 +0200
+Processing by UsersController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"name"=>"", "surname"=>"", "email"=>"", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Зарегестрироваться"}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:13:in `create'
+  [1m[36mUser Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", ""], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:13:in `create'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/users_controller.rb:13:in `create'
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 6.2ms | Allocations: 5379)
+  Rendered layout layouts/application.html.erb (Duration: 55.8ms | Allocations: 19666)
+Completed 200 OK in 332ms (Views: 57.7ms | ActiveRecord: 1.5ms | Allocations: 26866)
+
+
