@@ -4846,3 +4846,7 @@ Processing by MainController#index as HTML
 Completed 200 OK in 14ms (Views: 11.6ms | ActiveRecord: 0.3ms | Allocations: 3608)
 
 
+Started GET "/session" for 127.0.0.1 at 2023-02-06 16:04:41 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/session"):
+  

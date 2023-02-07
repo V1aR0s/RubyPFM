@@ -2,9 +2,14 @@
 <div class="container">
     <h2 class = "title"> Регистрация</h2>  
 
+    <% if @user.errors.any? %>
+        <% @user.errors.full_messages.each do | message | %>
+            <p style="color:red"> <%= message %> </p>
+        <% end  %>  
+    <% end  %>  
     <div class = "mt">
 
-        <%= form_with model: @user do |form| %>
+        <%= form_with model: @user, data: {turbo: false} do |form| %>
             <p><%= form.label :name, 'Имя' %></p>
             <p><%= form.text_field :name, class: 'form-text-field'%></p>
 
@@ -17,8 +22,11 @@
             <p><%= form.label :password %></p>
             <p><%= form.password_field :password, class: 'form-text-field'%></p>
 
-            <p class = "mt-lg"><%= form.submit 'Зарегестрироваться', class: 'button button-main' %></p>
+            <p><%= form.label :password_confirmation %></p>
+            <p><%= form.password_field :password_confirmation, class: 'form-text-field'%></p>
 
+
+            <p class = "mt-lg"><%= form.submit 'Зарегестрироваться', class: 'button button-main' %></p>
 
         <% end %>
     </div>
