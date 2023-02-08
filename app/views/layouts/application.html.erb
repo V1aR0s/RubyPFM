@@ -13,56 +13,80 @@
   </head>
 
   <body>
-  <div class = "wrapper">
+
+  <div class="header"> <%= link_to "PFM", root_path, class: "LogoText" %> </div>
+  <input type="checkbox" class="openSidebarMenu" id="openSidebarMenu">
+  <label for="openSidebarMenu" class="sidebarIconToggle">
+    <div class="spinner diagonal part-1"></div>
+    <div class="spinner horizontal"></div>
+    <div class="spinner diagonal part-2"></div>
+  </label>
+  <div id="sidebarMenu">
+    <ul class="sidebarMenuInner">
+      <li>
+        <% if current_user.present? %>
+          <%= "#{current_user.name} #{current_user.surname}" %>
+            <%= button_to "Выход", session_path, method: :delete, class: 'btn btn-danger  btn-width'%>
+          <% else %>
+            <%= link_to "Регистрация", new_user_path, class: 'btn btn-primary btn-width' %>
+            <%= link_to "Вход", new_session_path, class: 'btn btn-success btn-width' %>
+        <% end %>
+      </li>
+      <li><%= link_to "Главная", root_path %></li>
+      <li><%= link_to "Категории", {controller: :categories, action: :index} %></li>
+      <li><%= link_to "Операции", {controller: :operations, action: :index} %></li>
+    </ul>
+  </div>
 
 
+
+
+  <!--
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <%= link_to "PFM", root_path, class: "navbar-brand" %>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
+      <%= link_to "PFM", root_path, class: "navbar-brand" %>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav mr-auto">
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-expanded="false">
-            Categories
-          </a>
-          <div class="dropdown-menu">
-            <%= link_to "Категории", {controller: :categories, action: :index}, class: "dropdown-item" %>
-            <%= link_to "Создать", {controller: :categories, action: :new}, class: "dropdown-item" %>
-          </div>
-        </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-expanded="false">
-            Activities
-          </a>
-          <div class="dropdown-menu">
-            <%= link_to "Операции", {controller: :operations, action: :index}, class: "dropdown-item" %>
-            <%= link_to "Создать", {controller: :operations, action: :new}, class: "dropdown-item" %>
-          </div>
-        </li>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-expanded="false">
+              Categories
+            </a>
+            <div class="dropdown-menu">
+              <%= link_to "Категории", {controller: :categories, action: :index}, class: "dropdown-item" %>
+              <%= link_to "Создать", {controller: :categories, action: :new}, class: "dropdown-item" %>
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-expanded="false">
+              Activities
+            </a>
+            <div class="dropdown-menu">
+              <%= link_to "Операции", {controller: :operations, action: :index}, class: "dropdown-item" %>
+              <%= link_to "Создать", {controller: :operations, action: :new}, class: "dropdown-item" %>
+            </div>
+          </li>
 
-      </ul>
-      <form class="form-inline my-2 my-lg-0">
-            <% if current_user.present? %>
-              <%= content_tag 'span', "#{current_user.name} #{current_user.surname}", class: "btn" %>
-              <%= button_to "Выход", session_path, method: :delete, class: 'btn btn-danger'%>
-            <% else %>
-              <%= link_to "Регистрация", new_user_path, class: 'btn btn-primary' %>
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+              <% if current_user.present? %>
+                <%= content_tag 'span', "#{current_user.name} #{current_user.surname}", class: "btn" %>
+                <%= button_to "Выход", session_path, method: :delete, class: 'btn btn-danger'%>
+              <% else %>
+                <%= link_to "Регистрация", new_user_path, class: 'btn btn-primary' %>
 
-              <%= link_to "Вход", new_session_path, class: 'btn btn-success' %>
-            <% end %>
-      </form>
+                <%= link_to "Вход", new_session_path, class: 'btn btn-success' %>
+              <% end %>
+        </form>
 
-    </div>
-  </nav>
-
-
-
+      </div>
+    </nav>
+  -->
 
 
-
+  <div class = "wrapper">
     <% if flash["notice"].present? %>
       <p class="mb mt message meassage-notice"><%= flash[:notice] %></p>
     <% elsif flash[:alert].present? %>
@@ -77,4 +101,7 @@
 
   <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+  <script>
+
+  </script>
 </html>
