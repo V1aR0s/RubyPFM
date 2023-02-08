@@ -5,11 +5,21 @@
 
 
 .wrapper{
+
     width: 100%;
     margin-top: 70px;
+    display: flex;
+
+    flex-direction: column;
+    align-items: center
+}
+.alert_self{
+    align-self: stretch;
+    margin: 20px 40px
 }
 
 
+/* navbar */
 @import url('https://fonts.googleapis.com/css?family=Varela+Round');
 html, body {
     overflow-x: hidden;
@@ -21,7 +31,7 @@ html, body {
     width: 100%;
     max-width: 100%;
     box-shadow: none;
-    background-color: #FC466B;
+    background-color: #dfdfdf;
     position: fixed;
     height: 60px!important;
     overflow: hidden;
@@ -47,6 +57,7 @@ html, body {
     letter-spacing: 1.25px;
 }
 #sidebarMenu {
+    z-index: 2;
     height: 100%;
     position: fixed;
     left: 0;
@@ -54,7 +65,7 @@ html, body {
     margin-top: 60px;
     transform: translateX(-250px);
     transition: transform 250ms ease-in-out;
-    background: linear-gradient(180deg, #FC466B 0%, #bdf2ad 100%);
+    background: linear-gradient(180deg, #dfdfdf 0%, #b8b7b7 100%);
 }
 .sidebarMenuInner{
     margin:0;
@@ -64,7 +75,7 @@ html, body {
 .sidebarMenuInner li{
     list-style: none;
     transition: .6s;
-    color: #fff;
+    color: #7c0896;
     text-transform: uppercase;
     font-weight: bold;
     padding: 20px;
@@ -78,7 +89,7 @@ html, body {
     color: rgba(255, 255, 255, 0.50);
 }
 .sidebarMenuInner li a{
-    color: #fff;
+    color: #4d4747;
     text-transform: uppercase;
     font-weight: bold;
     cursor: pointer;
@@ -86,7 +97,7 @@ html, body {
 }
 
 .sidebarMenuInner li:hover{
-    background-color: rgb(208, 68, 68);
+    background-color: #dfdfdf;
 }
 .sidebarMenuInner li:first-child{
     background-color: transparent;
@@ -120,7 +131,7 @@ input[type=checkbox] {
     position: absolute;
     height: 3px;
     width: 100%;
-    background-color: #fff;
+    background-color: #5c5c5c;
 }
 .horizontal {
     transition: all 0.3s;
@@ -161,17 +172,113 @@ input[type=checkbox]:checked ~ .sidebarIconToggle > .diagonal.part-2 {
 }
 
 .LogoText{
-    color: #fff;
+    color: #585858;
     text-decoration: none;
     list-style: none;
     font-size: 25px;
 }
 .LogoText:hover{
-    color: #fff;
+    color: #585858;
     text-decoration: none;
 }
 
 .btn-width{
     width: 100%;
     margin-top: 10px;
+}
+
+
+
+/* Maine page login */
+
+.MinPageContainer{
+    max-width: 1100px;
+    width: 100%;
+    margin-top: 30px;
+    background-color: rgb(255, 255, 255);
+
+    border-radius: 20px;
+    display: flex;
+}
+.maininformation{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+.MainPageLeft{
+    width: 40%;
+}
+.MainPageLeft div{
+    box-sizing: border-box;
+    margin-top: 20px;
+}
+
+/*Fixed button*/
+
+
+
+
+.add_button_operation {
+    position: fixed;
+    bottom: 70px;
+    left: 100px;
+
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    font-size: 24px;
+    text-align: center;
+    z-index: 0;
+    list-style: none;
+}
+.btn-info:hover{
+    list-style: none;
+}
+
+
+
+
+.table{
+    width: 100%;
+    border-radius: 20px;
+}
+.current_amount_block{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #c53be4;
+    border-radius: 10px;
+    padding: 20px 30px 30px 30px;
+}
+.current_amount_block a{
+    width: 150px;
+}
+
+.green{
+    color: rgb(174, 255, 182);
+}
+.gray{
+    color: #fffdfd;
+}
+.red{
+    color: rgb(209, 126, 126);
+}
+
+.most_category{
+    display: flex;
+    align-items: center;
+    background-color: #b9e5ca;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+
+@media only screen and (max-width : 768px){
+    .maininformation{
+        flex-direction: column;
+        align-items: center;
+    }
+    .MainPageLeft{
+        width: 90%;
+    }
 }

@@ -13554,3 +13554,1668 @@ Processing by MainController#MainPage as HTML
 Completed 200 OK in 70ms (Views: 40.0ms | ActiveRecord: 2.7ms | Allocations: 27776)
 
 
+Started GET "/indexlog" for 127.0.0.1 at 2023-02-08 15:50:07 +0200
+Processing by MainController#MainPage as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/main_controller.rb:14:in `MainPage'
+  [1m[36mOperation Load (0.4ms)[0m  [1m[34mSELECT "operations".* FROM "operations" WHERE "operations"."user_id" = ? AND "operations"."odate" BETWEEN ? AND ? ORDER BY odate LIMIT ?[0m  [["user_id", 10], ["odate", "2023-02-01"], ["odate", "2023-02-28"], ["LIMIT", 5]]
+  ↳ app/controllers/main_controller.rb:22:in `MainPage'
+  Rendering layout layouts/application.html.erb
+  Rendering main/MainPage.html.erb within layouts/application
+  Rendered main/MainPage.html.erb within layouts/application (Duration: 7.4ms | Allocations: 374)
+  Rendered layout layouts/application.html.erb (Duration: 201.4ms | Allocations: 19604)
+Completed 200 OK in 231ms (Views: 207.1ms | ActiveRecord: 1.0ms | Allocations: 31036)
+
+
+Started GET "/indexlog" for 127.0.0.1 at 2023-02-08 15:50:15 +0200
+Processing by MainController#MainPage as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/main_controller.rb:14:in `MainPage'
+  [1m[36mOperation Load (0.6ms)[0m  [1m[34mSELECT "operations".* FROM "operations" WHERE "operations"."user_id" = ? AND "operations"."odate" BETWEEN ? AND ? ORDER BY odate LIMIT ?[0m  [["user_id", 10], ["odate", "2023-02-01"], ["odate", "2023-02-28"], ["LIMIT", 5]]
+  ↳ app/controllers/main_controller.rb:22:in `MainPage'
+  Rendering layout layouts/application.html.erb
+  Rendering main/MainPage.html.erb within layouts/application
+  Rendered main/MainPage.html.erb within layouts/application (Duration: 0.8ms | Allocations: 356)
+  Rendered layout layouts/application.html.erb (Duration: 15.3ms | Allocations: 4179)
+Completed 200 OK in 32ms (Views: 20.8ms | ActiveRecord: 0.8ms | Allocations: 7126)
+
+
+Started GET "/indexlog" for 127.0.0.1 at 2023-02-08 15:50:16 +0200
+Processing by MainController#MainPage as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/main_controller.rb:14:in `MainPage'
+  [1m[36mOperation Load (0.4ms)[0m  [1m[34mSELECT "operations".* FROM "operations" WHERE "operations"."user_id" = ? AND "operations"."odate" BETWEEN ? AND ? ORDER BY odate LIMIT ?[0m  [["user_id", 10], ["odate", "2023-02-01"], ["odate", "2023-02-28"], ["LIMIT", 5]]
+  ↳ app/controllers/main_controller.rb:22:in `MainPage'
+  Rendering layout layouts/application.html.erb
+  Rendering main/MainPage.html.erb within layouts/application
+  Rendered main/MainPage.html.erb within layouts/application (Duration: 0.3ms | Allocations: 63)
+  Rendered layout layouts/application.html.erb (Duration: 9.6ms | Allocations: 2991)
+Completed 200 OK in 20ms (Views: 10.4ms | ActiveRecord: 0.7ms | Allocations: 5385)
+
+
+Started GET "/indexlog" for 127.0.0.1 at 2023-02-08 15:55:50 +0200
+Processing by MainController#MainPage as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/main_controller.rb:14:in `MainPage'
+  [1m[36mOperation Load (0.4ms)[0m  [1m[34mSELECT "operations".* FROM "operations" WHERE "operations"."user_id" = ? AND "operations"."odate" BETWEEN ? AND ? ORDER BY odate LIMIT ?[0m  [["user_id", 10], ["odate", "2023-02-01"], ["odate", "2023-02-28"], ["LIMIT", 5]]
+  ↳ app/controllers/main_controller.rb:22:in `MainPage'
+  Rendering layout layouts/application.html.erb
+  Rendering main/MainPage.html.erb within layouts/application
+  Rendered main/MainPage.html.erb within layouts/application (Duration: 7.9ms | Allocations: 356)
+  Rendered layout layouts/application.html.erb (Duration: 75.9ms | Allocations: 4192)
+Completed 200 OK in 97ms (Views: 82.0ms | ActiveRecord: 1.0ms | Allocations: 7096)
+
+
+Started GET "/indexlog" for 127.0.0.1 at 2023-02-08 15:56:48 +0200
+Processing by MainController#MainPage as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/main_controller.rb:14:in `MainPage'
+  [1m[36mOperation Load (0.3ms)[0m  [1m[34mSELECT "operations".* FROM "operations" WHERE "operations"."user_id" = ? AND "operations"."odate" BETWEEN ? AND ? ORDER BY odate LIMIT ?[0m  [["user_id", 10], ["odate", "2023-02-01"], ["odate", "2023-02-28"], ["LIMIT", 5]]
+  ↳ app/controllers/main_controller.rb:22:in `MainPage'
+  Rendering layout layouts/application.html.erb
+  Rendering main/MainPage.html.erb within layouts/application
+  Rendered main/MainPage.html.erb within layouts/application (Duration: 8.9ms | Allocations: 357)
+  Rendered layout layouts/application.html.erb (Duration: 64.0ms | Allocations: 4249)
+Completed 200 OK in 79ms (Views: 70.4ms | ActiveRecord: 0.5ms | Allocations: 7210)
+
+
+Started GET "/" for 127.0.0.1 at 2023-02-08 15:56:49 +0200
+Processing by MainController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7:in `current_user'
+Redirected to http://127.0.0.1:3000/indexlog
+Completed 302 Found in 5ms (ActiveRecord: 0.2ms | Allocations: 947)
+
+
+Started GET "/indexlog" for 127.0.0.1 at 2023-02-08 15:56:49 +0200
+Processing by MainController#MainPage as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/main_controller.rb:14:in `MainPage'
+  [1m[36mOperation Load (0.3ms)[0m  [1m[34mSELECT "operations".* FROM "operations" WHERE "operations"."user_id" = ? AND "operations"."odate" BETWEEN ? AND ? ORDER BY odate LIMIT ?[0m  [["user_id", 10], ["odate", "2023-02-01"], ["odate", "2023-02-28"], ["LIMIT", 5]]
+  ↳ app/controllers/main_controller.rb:22:in `MainPage'
+  Rendering layout layouts/application.html.erb
+  Rendering main/MainPage.html.erb within layouts/application
+  Rendered main/MainPage.html.erb within layouts/application (Duration: 0.4ms | Allocations: 63)
+  Rendered layout layouts/application.html.erb (Duration: 9.6ms | Allocations: 3027)
+Completed 200 OK in 19ms (Views: 10.4ms | ActiveRecord: 0.7ms | Allocations: 5340)
+
+
+Started GET "/" for 127.0.0.1 at 2023-02-08 15:56:51 +0200
+Processing by MainController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7:in `current_user'
+Redirected to http://127.0.0.1:3000/indexlog
+Completed 302 Found in 4ms (ActiveRecord: 0.2ms | Allocations: 838)
+
+
+Started GET "/indexlog" for 127.0.0.1 at 2023-02-08 15:56:51 +0200
+Processing by MainController#MainPage as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/main_controller.rb:14:in `MainPage'
+  [1m[36mOperation Load (0.3ms)[0m  [1m[34mSELECT "operations".* FROM "operations" WHERE "operations"."user_id" = ? AND "operations"."odate" BETWEEN ? AND ? ORDER BY odate LIMIT ?[0m  [["user_id", 10], ["odate", "2023-02-01"], ["odate", "2023-02-28"], ["LIMIT", 5]]
+  ↳ app/controllers/main_controller.rb:22:in `MainPage'
+  Rendering layout layouts/application.html.erb
+  Rendering main/MainPage.html.erb within layouts/application
+  Rendered main/MainPage.html.erb within layouts/application (Duration: 0.2ms | Allocations: 63)
+  Rendered layout layouts/application.html.erb (Duration: 10.5ms | Allocations: 3027)
+Completed 200 OK in 19ms (Views: 11.4ms | ActiveRecord: 0.5ms | Allocations: 5200)
+
+
+Started GET "/indexlog" for 127.0.0.1 at 2023-02-08 16:11:02 +0200
+Processing by MainController#MainPage as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/main_controller.rb:14:in `MainPage'
+  [1m[36mOperation Load (0.4ms)[0m  [1m[34mSELECT "operations".* FROM "operations" WHERE "operations"."user_id" = ? AND "operations"."odate" BETWEEN ? AND ? ORDER BY odate LIMIT ?[0m  [["user_id", 10], ["odate", "2023-02-01"], ["odate", "2023-02-28"], ["LIMIT", 5]]
+  ↳ app/controllers/main_controller.rb:22:in `MainPage'
+  Rendering layout layouts/application.html.erb
+  Rendering main/MainPage.html.erb within layouts/application
+  Rendered main/MainPage.html.erb within layouts/application (Duration: 1.7ms | Allocations: 354)
+  Rendered layout layouts/application.html.erb (Duration: 54.4ms | Allocations: 4199)
+Completed 200 OK in 73ms (Views: 59.8ms | ActiveRecord: 1.5ms | Allocations: 7073)
+
+
+Started GET "/logo2.png" for 127.0.0.1 at 2023-02-08 16:11:02 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/logo2.png"):
+  
+Started GET "/indexlog" for 127.0.0.1 at 2023-02-08 16:12:46 +0200
+Processing by MainController#MainPage as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/main_controller.rb:14:in `MainPage'
+  [1m[36mOperation Load (0.4ms)[0m  [1m[34mSELECT "operations".* FROM "operations" WHERE "operations"."user_id" = ? AND "operations"."odate" BETWEEN ? AND ? ORDER BY odate LIMIT ?[0m  [["user_id", 10], ["odate", "2023-02-01"], ["odate", "2023-02-28"], ["LIMIT", 5]]
+  ↳ app/controllers/main_controller.rb:22:in `MainPage'
+  Rendering layout layouts/application.html.erb
+  Rendering main/MainPage.html.erb within layouts/application
+  Rendered main/MainPage.html.erb within layouts/application (Duration: 0.8ms | Allocations: 353)
+  Rendered layout layouts/application.html.erb (Duration: 94.3ms | Allocations: 6042)
+Completed 200 OK in 110ms (Views: 99.5ms | ActiveRecord: 0.7ms | Allocations: 8936)
+
+
+Started GET "/logo2.png" for 127.0.0.1 at 2023-02-08 16:12:46 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/logo2.png"):
+  
+Started GET "/indexlog" for 127.0.0.1 at 2023-02-08 16:13:18 +0200
+Processing by MainController#MainPage as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/main_controller.rb:14:in `MainPage'
+  [1m[36mOperation Load (0.5ms)[0m  [1m[34mSELECT "operations".* FROM "operations" WHERE "operations"."user_id" = ? AND "operations"."odate" BETWEEN ? AND ? ORDER BY odate LIMIT ?[0m  [["user_id", 10], ["odate", "2023-02-01"], ["odate", "2023-02-28"], ["LIMIT", 5]]
+  ↳ app/controllers/main_controller.rb:22:in `MainPage'
+  Rendering layout layouts/application.html.erb
+  Rendering main/MainPage.html.erb within layouts/application
+  Rendered main/MainPage.html.erb within layouts/application (Duration: 1.2ms | Allocations: 353)
+  Rendered layout layouts/application.html.erb (Duration: 54.7ms | Allocations: 4296)
+Completed 200 OK in 72ms (Views: 60.9ms | ActiveRecord: 0.8ms | Allocations: 7188)
+
+
+Started GET "/logo2.png" for 127.0.0.1 at 2023-02-08 16:13:18 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/logo2.png"):
+  
+Started GET "/indexlog" for 127.0.0.1 at 2023-02-08 16:13:39 +0200
+Processing by MainController#MainPage as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/main_controller.rb:14:in `MainPage'
+  [1m[36mOperation Load (0.4ms)[0m  [1m[34mSELECT "operations".* FROM "operations" WHERE "operations"."user_id" = ? AND "operations"."odate" BETWEEN ? AND ? ORDER BY odate LIMIT ?[0m  [["user_id", 10], ["odate", "2023-02-01"], ["odate", "2023-02-28"], ["LIMIT", 5]]
+  ↳ app/controllers/main_controller.rb:22:in `MainPage'
+  Rendering layout layouts/application.html.erb
+  Rendering main/MainPage.html.erb within layouts/application
+  Rendered main/MainPage.html.erb within layouts/application (Duration: 0.9ms | Allocations: 353)
+  Rendered layout layouts/application.html.erb (Duration: 15.3ms | Allocations: 4305)
+Completed 200 OK in 32ms (Views: 21.3ms | ActiveRecord: 1.1ms | Allocations: 7206)
+
+
+Started GET "/logo2.png" for 127.0.0.1 at 2023-02-08 16:13:39 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/logo2.png"):
+  
+Started GET "/indexlog" for 127.0.0.1 at 2023-02-08 16:26:30 +0200
+Processing by MainController#MainPage as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/main_controller.rb:14:in `MainPage'
+  [1m[36mOperation Load (0.6ms)[0m  [1m[34mSELECT "operations".* FROM "operations" WHERE "operations"."user_id" = ? AND "operations"."odate" BETWEEN ? AND ? ORDER BY odate LIMIT ?[0m  [["user_id", 10], ["odate", "2023-02-01"], ["odate", "2023-02-28"], ["LIMIT", 5]]
+  ↳ app/controllers/main_controller.rb:22:in `MainPage'
+  Rendering layout layouts/application.html.erb
+  Rendering main/MainPage.html.erb within layouts/application
+  Rendered main/MainPage.html.erb within layouts/application (Duration: 0.9ms | Allocations: 354)
+  Rendered layout layouts/application.html.erb (Duration: 87.6ms | Allocations: 5698)
+Completed 200 OK in 106ms (Views: 93.5ms | ActiveRecord: 1.2ms | Allocations: 8760)
+
+
+Started GET "/indexlog" for 127.0.0.1 at 2023-02-08 16:26:51 +0200
+Processing by MainController#MainPage as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/main_controller.rb:14:in `MainPage'
+  [1m[36mOperation Load (0.4ms)[0m  [1m[34mSELECT "operations".* FROM "operations" WHERE "operations"."user_id" = ? AND "operations"."odate" BETWEEN ? AND ? ORDER BY odate LIMIT ?[0m  [["user_id", 10], ["odate", "2023-02-01"], ["odate", "2023-02-28"], ["LIMIT", 5]]
+  ↳ app/controllers/main_controller.rb:22:in `MainPage'
+  Rendering layout layouts/application.html.erb
+  Rendering main/MainPage.html.erb within layouts/application
+  Rendered main/MainPage.html.erb within layouts/application (Duration: 0.3ms | Allocations: 63)
+  Rendered layout layouts/application.html.erb (Duration: 40.2ms | Allocations: 4414)
+Completed 200 OK in 52ms (Views: 41.1ms | ActiveRecord: 0.9ms | Allocations: 6826)
+
+
+Started GET "/indexlog" for 127.0.0.1 at 2023-02-08 16:30:44 +0200
+Processing by MainController#MainPage as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/main_controller.rb:14:in `MainPage'
+  [1m[36mOperation Load (0.3ms)[0m  [1m[34mSELECT "operations".* FROM "operations" WHERE "operations"."user_id" = ? AND "operations"."odate" BETWEEN ? AND ? ORDER BY odate LIMIT ?[0m  [["user_id", 10], ["odate", "2023-02-01"], ["odate", "2023-02-28"], ["LIMIT", 5]]
+  ↳ app/controllers/main_controller.rb:22:in `MainPage'
+  Rendering layout layouts/application.html.erb
+  Rendering main/MainPage.html.erb within layouts/application
+  Rendered main/MainPage.html.erb within layouts/application (Duration: 1.6ms | Allocations: 353)
+  Rendered layout layouts/application.html.erb (Duration: 143.6ms | Allocations: 26923)
+Completed 200 OK in 158ms (Views: 149.6ms | ActiveRecord: 0.5ms | Allocations: 29634)
+
+
+Started GET "/indexlog" for 127.0.0.1 at 2023-02-08 16:31:10 +0200
+Processing by MainController#MainPage as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/main_controller.rb:14:in `MainPage'
+  [1m[36mOperation Load (0.5ms)[0m  [1m[34mSELECT "operations".* FROM "operations" WHERE "operations"."user_id" = ? AND "operations"."odate" BETWEEN ? AND ? ORDER BY odate LIMIT ?[0m  [["user_id", 10], ["odate", "2023-02-01"], ["odate", "2023-02-28"], ["LIMIT", 5]]
+  ↳ app/controllers/main_controller.rb:22:in `MainPage'
+  Rendering layout layouts/application.html.erb
+  Rendering main/MainPage.html.erb within layouts/application
+  Rendered main/MainPage.html.erb within layouts/application (Duration: 0.8ms | Allocations: 358)
+  Rendered layout layouts/application.html.erb (Duration: 65.4ms | Allocations: 4726)
+Completed 200 OK in 81ms (Views: 70.8ms | ActiveRecord: 0.7ms | Allocations: 7675)
+
+
+Started GET "/indexlog" for 127.0.0.1 at 2023-02-08 16:31:54 +0200
+Processing by MainController#MainPage as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/main_controller.rb:14:in `MainPage'
+  [1m[36mOperation Load (0.4ms)[0m  [1m[34mSELECT "operations".* FROM "operations" WHERE "operations"."user_id" = ? AND "operations"."odate" BETWEEN ? AND ? ORDER BY odate LIMIT ?[0m  [["user_id", 10], ["odate", "2023-02-01"], ["odate", "2023-02-28"], ["LIMIT", 5]]
+  ↳ app/controllers/main_controller.rb:22:in `MainPage'
+  Rendering layout layouts/application.html.erb
+  Rendering main/MainPage.html.erb within layouts/application
+  Rendered main/MainPage.html.erb within layouts/application (Duration: 0.5ms | Allocations: 63)
+  Rendered layout layouts/application.html.erb (Duration: 45.6ms | Allocations: 4973)
+Completed 200 OK in 55ms (Views: 46.6ms | ActiveRecord: 0.6ms | Allocations: 7379)
+
+
+Started GET "/indexlog" for 127.0.0.1 at 2023-02-08 16:32:10 +0200
+Processing by MainController#MainPage as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/main_controller.rb:14:in `MainPage'
+  [1m[36mOperation Load (0.3ms)[0m  [1m[34mSELECT "operations".* FROM "operations" WHERE "operations"."user_id" = ? AND "operations"."odate" BETWEEN ? AND ? ORDER BY odate LIMIT ?[0m  [["user_id", 10], ["odate", "2023-02-01"], ["odate", "2023-02-28"], ["LIMIT", 5]]
+  ↳ app/controllers/main_controller.rb:22:in `MainPage'
+  Rendering layout layouts/application.html.erb
+  Rendering main/MainPage.html.erb within layouts/application
+  Rendered main/MainPage.html.erb within layouts/application (Duration: 0.5ms | Allocations: 63)
+  Rendered layout layouts/application.html.erb (Duration: 46.9ms | Allocations: 4896)
+Completed 200 OK in 56ms (Views: 47.6ms | ActiveRecord: 0.6ms | Allocations: 7058)
+
+
+Started GET "/indexlog" for 127.0.0.1 at 2023-02-08 16:32:21 +0200
+Processing by MainController#MainPage as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/main_controller.rb:14:in `MainPage'
+  [1m[36mOperation Load (0.4ms)[0m  [1m[34mSELECT "operations".* FROM "operations" WHERE "operations"."user_id" = ? AND "operations"."odate" BETWEEN ? AND ? ORDER BY odate LIMIT ?[0m  [["user_id", 10], ["odate", "2023-02-01"], ["odate", "2023-02-28"], ["LIMIT", 5]]
+  ↳ app/controllers/main_controller.rb:22:in `MainPage'
+  Rendering layout layouts/application.html.erb
+  Rendering main/MainPage.html.erb within layouts/application
+  Rendered main/MainPage.html.erb within layouts/application (Duration: 0.2ms | Allocations: 63)
+  Rendered layout layouts/application.html.erb (Duration: 43.3ms | Allocations: 4883)
+Completed 200 OK in 54ms (Views: 44.1ms | ActiveRecord: 0.7ms | Allocations: 7048)
+
+
+Started GET "/indexlog" for 127.0.0.1 at 2023-02-08 16:32:29 +0200
+Processing by MainController#MainPage as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/main_controller.rb:14:in `MainPage'
+  [1m[36mOperation Load (0.3ms)[0m  [1m[34mSELECT "operations".* FROM "operations" WHERE "operations"."user_id" = ? AND "operations"."odate" BETWEEN ? AND ? ORDER BY odate LIMIT ?[0m  [["user_id", 10], ["odate", "2023-02-01"], ["odate", "2023-02-28"], ["LIMIT", 5]]
+  ↳ app/controllers/main_controller.rb:22:in `MainPage'
+  Rendering layout layouts/application.html.erb
+  Rendering main/MainPage.html.erb within layouts/application
+  Rendered main/MainPage.html.erb within layouts/application (Duration: 0.6ms | Allocations: 63)
+  Rendered layout layouts/application.html.erb (Duration: 87.3ms | Allocations: 4898)
+Completed 200 OK in 95ms (Views: 88.7ms | ActiveRecord: 0.5ms | Allocations: 7075)
+
+
+Started GET "/indexlog" for 127.0.0.1 at 2023-02-08 16:32:32 +0200
+Processing by MainController#MainPage as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/main_controller.rb:14:in `MainPage'
+  [1m[36mOperation Load (0.3ms)[0m  [1m[34mSELECT "operations".* FROM "operations" WHERE "operations"."user_id" = ? AND "operations"."odate" BETWEEN ? AND ? ORDER BY odate LIMIT ?[0m  [["user_id", 10], ["odate", "2023-02-01"], ["odate", "2023-02-28"], ["LIMIT", 5]]
+  ↳ app/controllers/main_controller.rb:22:in `MainPage'
+  Rendering layout layouts/application.html.erb
+  Rendering main/MainPage.html.erb within layouts/application
+  Rendered main/MainPage.html.erb within layouts/application (Duration: 0.2ms | Allocations: 63)
+  Rendered layout layouts/application.html.erb (Duration: 17.3ms | Allocations: 3529)
+Completed 200 OK in 27ms (Views: 18.0ms | ActiveRecord: 0.5ms | Allocations: 5700)
+
+
+Started GET "/indexlog" for 127.0.0.1 at 2023-02-08 16:33:00 +0200
+Processing by MainController#MainPage as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/main_controller.rb:14:in `MainPage'
+  [1m[36mOperation Load (0.3ms)[0m  [1m[34mSELECT "operations".* FROM "operations" WHERE "operations"."user_id" = ? AND "operations"."odate" BETWEEN ? AND ? ORDER BY odate LIMIT ?[0m  [["user_id", 10], ["odate", "2023-02-01"], ["odate", "2023-02-28"], ["LIMIT", 5]]
+  ↳ app/controllers/main_controller.rb:22:in `MainPage'
+  Rendering layout layouts/application.html.erb
+  Rendering main/MainPage.html.erb within layouts/application
+  Rendered main/MainPage.html.erb within layouts/application (Duration: 0.2ms | Allocations: 63)
+  Rendered layout layouts/application.html.erb (Duration: 45.1ms | Allocations: 4890)
+Completed 200 OK in 55ms (Views: 46.1ms | ActiveRecord: 0.6ms | Allocations: 7076)
+
+
+Started GET "/indexlog" for 127.0.0.1 at 2023-02-08 16:33:07 +0200
+Processing by MainController#MainPage as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/main_controller.rb:14:in `MainPage'
+  [1m[36mOperation Load (0.4ms)[0m  [1m[34mSELECT "operations".* FROM "operations" WHERE "operations"."user_id" = ? AND "operations"."odate" BETWEEN ? AND ? ORDER BY odate LIMIT ?[0m  [["user_id", 10], ["odate", "2023-02-01"], ["odate", "2023-02-28"], ["LIMIT", 5]]
+  ↳ app/controllers/main_controller.rb:22:in `MainPage'
+  Rendering layout layouts/application.html.erb
+  Rendering main/MainPage.html.erb within layouts/application
+  Rendered main/MainPage.html.erb within layouts/application (Duration: 0.2ms | Allocations: 63)
+  Rendered layout layouts/application.html.erb (Duration: 50.9ms | Allocations: 4898)
+Completed 200 OK in 61ms (Views: 51.7ms | ActiveRecord: 0.8ms | Allocations: 7066)
+
+
+Started GET "/indexlog" for 127.0.0.1 at 2023-02-08 16:33:21 +0200
+Processing by MainController#MainPage as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/main_controller.rb:14:in `MainPage'
+  [1m[36mOperation Load (0.3ms)[0m  [1m[34mSELECT "operations".* FROM "operations" WHERE "operations"."user_id" = ? AND "operations"."odate" BETWEEN ? AND ? ORDER BY odate LIMIT ?[0m  [["user_id", 10], ["odate", "2023-02-01"], ["odate", "2023-02-28"], ["LIMIT", 5]]
+  ↳ app/controllers/main_controller.rb:22:in `MainPage'
+  Rendering layout layouts/application.html.erb
+  Rendering main/MainPage.html.erb within layouts/application
+  Rendered main/MainPage.html.erb within layouts/application (Duration: 0.2ms | Allocations: 63)
+  Rendered layout layouts/application.html.erb (Duration: 44.8ms | Allocations: 4906)
+Completed 200 OK in 56ms (Views: 45.7ms | ActiveRecord: 0.6ms | Allocations: 7098)
+
+
+Started GET "/indexlog" for 127.0.0.1 at 2023-02-08 16:33:26 +0200
+Processing by MainController#MainPage as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/main_controller.rb:14:in `MainPage'
+  [1m[36mOperation Load (0.5ms)[0m  [1m[34mSELECT "operations".* FROM "operations" WHERE "operations"."user_id" = ? AND "operations"."odate" BETWEEN ? AND ? ORDER BY odate LIMIT ?[0m  [["user_id", 10], ["odate", "2023-02-01"], ["odate", "2023-02-28"], ["LIMIT", 5]]
+  ↳ app/controllers/main_controller.rb:22:in `MainPage'
+  Rendering layout layouts/application.html.erb
+  Rendering main/MainPage.html.erb within layouts/application
+  Rendered main/MainPage.html.erb within layouts/application (Duration: 0.2ms | Allocations: 63)
+  Rendered layout layouts/application.html.erb (Duration: 39.3ms | Allocations: 4892)
+Completed 200 OK in 48ms (Views: 40.1ms | ActiveRecord: 0.6ms | Allocations: 7070)
+
+
+Started GET "/indexlog" for 127.0.0.1 at 2023-02-08 16:33:34 +0200
+Processing by MainController#MainPage as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/main_controller.rb:14:in `MainPage'
+  [1m[36mOperation Load (0.3ms)[0m  [1m[34mSELECT "operations".* FROM "operations" WHERE "operations"."user_id" = ? AND "operations"."odate" BETWEEN ? AND ? ORDER BY odate LIMIT ?[0m  [["user_id", 10], ["odate", "2023-02-01"], ["odate", "2023-02-28"], ["LIMIT", 5]]
+  ↳ app/controllers/main_controller.rb:22:in `MainPage'
+  Rendering layout layouts/application.html.erb
+  Rendering main/MainPage.html.erb within layouts/application
+  Rendered main/MainPage.html.erb within layouts/application (Duration: 0.2ms | Allocations: 63)
+  Rendered layout layouts/application.html.erb (Duration: 43.9ms | Allocations: 4884)
+Completed 200 OK in 53ms (Views: 44.9ms | ActiveRecord: 0.5ms | Allocations: 7055)
+
+
+Started GET "/indexlog" for 127.0.0.1 at 2023-02-08 16:34:58 +0200
+Processing by MainController#MainPage as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/main_controller.rb:14:in `MainPage'
+  [1m[36mOperation Load (0.4ms)[0m  [1m[34mSELECT "operations".* FROM "operations" WHERE "operations"."user_id" = ? AND "operations"."odate" BETWEEN ? AND ? ORDER BY odate LIMIT ?[0m  [["user_id", 10], ["odate", "2023-02-01"], ["odate", "2023-02-28"], ["LIMIT", 5]]
+  ↳ app/controllers/main_controller.rb:22:in `MainPage'
+  Rendering layout layouts/application.html.erb
+  Rendering main/MainPage.html.erb within layouts/application
+  Rendered main/MainPage.html.erb within layouts/application (Duration: 0.8ms | Allocations: 358)
+  Rendered layout layouts/application.html.erb (Duration: 66.6ms | Allocations: 4835)
+Completed 200 OK in 85ms (Views: 73.8ms | ActiveRecord: 0.6ms | Allocations: 7544)
+
+
+Started GET "/indexlog" for 127.0.0.1 at 2023-02-08 16:35:34 +0200
+Processing by MainController#MainPage as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/main_controller.rb:14:in `MainPage'
+  [1m[36mOperation Load (0.3ms)[0m  [1m[34mSELECT "operations".* FROM "operations" WHERE "operations"."user_id" = ? AND "operations"."odate" BETWEEN ? AND ? ORDER BY odate LIMIT ?[0m  [["user_id", 10], ["odate", "2023-02-01"], ["odate", "2023-02-28"], ["LIMIT", 5]]
+  ↳ app/controllers/main_controller.rb:22:in `MainPage'
+  Rendering layout layouts/application.html.erb
+  Rendering main/MainPage.html.erb within layouts/application
+  Rendered main/MainPage.html.erb within layouts/application (Duration: 1.1ms | Allocations: 353)
+  Rendered layout layouts/application.html.erb (Duration: 60.9ms | Allocations: 4250)
+Completed 200 OK in 79ms (Views: 68.5ms | ActiveRecord: 0.6ms | Allocations: 7190)
+
+
+Started GET "/indexlog" for 127.0.0.1 at 2023-02-08 16:35:53 +0200
+Processing by MainController#MainPage as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/main_controller.rb:14:in `MainPage'
+  [1m[36mOperation Load (0.4ms)[0m  [1m[34mSELECT "operations".* FROM "operations" WHERE "operations"."user_id" = ? AND "operations"."odate" BETWEEN ? AND ? ORDER BY odate LIMIT ?[0m  [["user_id", 10], ["odate", "2023-02-01"], ["odate", "2023-02-28"], ["LIMIT", 5]]
+  ↳ app/controllers/main_controller.rb:22:in `MainPage'
+  Rendering layout layouts/application.html.erb
+  Rendering main/MainPage.html.erb within layouts/application
+  Rendered main/MainPage.html.erb within layouts/application (Duration: 1.3ms | Allocations: 353)
+  Rendered layout layouts/application.html.erb (Duration: 90.3ms | Allocations: 4765)
+Completed 200 OK in 117ms (Views: 104.6ms | ActiveRecord: 0.6ms | Allocations: 7705)
+
+
+Started GET "/indexlog" for 127.0.0.1 at 2023-02-08 16:36:01 +0200
+Processing by MainController#MainPage as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/main_controller.rb:14:in `MainPage'
+  [1m[36mOperation Load (0.3ms)[0m  [1m[34mSELECT "operations".* FROM "operations" WHERE "operations"."user_id" = ? AND "operations"."odate" BETWEEN ? AND ? ORDER BY odate LIMIT ?[0m  [["user_id", 10], ["odate", "2023-02-01"], ["odate", "2023-02-28"], ["LIMIT", 5]]
+  ↳ app/controllers/main_controller.rb:22:in `MainPage'
+  Rendering layout layouts/application.html.erb
+  Rendering main/MainPage.html.erb within layouts/application
+  Rendered main/MainPage.html.erb within layouts/application (Duration: 0.9ms | Allocations: 356)
+  Rendered layout layouts/application.html.erb (Duration: 15.0ms | Allocations: 4265)
+Completed 200 OK in 76ms (Views: 23.0ms | ActiveRecord: 0.8ms | Allocations: 7226)
+
+
+Started GET "/indexlog" for 127.0.0.1 at 2023-02-08 16:36:07 +0200
+Processing by MainController#MainPage as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/main_controller.rb:14:in `MainPage'
+  [1m[36mOperation Load (0.3ms)[0m  [1m[34mSELECT "operations".* FROM "operations" WHERE "operations"."user_id" = ? AND "operations"."odate" BETWEEN ? AND ? ORDER BY odate LIMIT ?[0m  [["user_id", 10], ["odate", "2023-02-01"], ["odate", "2023-02-28"], ["LIMIT", 5]]
+  ↳ app/controllers/main_controller.rb:22:in `MainPage'
+  Rendering layout layouts/application.html.erb
+  Rendering main/MainPage.html.erb within layouts/application
+  Rendered main/MainPage.html.erb within layouts/application (Duration: 1.5ms | Allocations: 353)
+  Rendered layout layouts/application.html.erb (Duration: 16.2ms | Allocations: 4720)
+Completed 200 OK in 30ms (Views: 21.6ms | ActiveRecord: 0.5ms | Allocations: 7660)
+
+
+Started GET "/indexlog" for 127.0.0.1 at 2023-02-08 16:36:09 +0200
+Processing by MainController#MainPage as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/main_controller.rb:14:in `MainPage'
+  [1m[36mOperation Load (0.3ms)[0m  [1m[34mSELECT "operations".* FROM "operations" WHERE "operations"."user_id" = ? AND "operations"."odate" BETWEEN ? AND ? ORDER BY odate LIMIT ?[0m  [["user_id", 10], ["odate", "2023-02-01"], ["odate", "2023-02-28"], ["LIMIT", 5]]
+  ↳ app/controllers/main_controller.rb:22:in `MainPage'
+  Rendering layout layouts/application.html.erb
+  Rendering main/MainPage.html.erb within layouts/application
+  Rendered main/MainPage.html.erb within layouts/application (Duration: 0.2ms | Allocations: 63)
+  Rendered layout layouts/application.html.erb (Duration: 10.6ms | Allocations: 3485)
+Completed 200 OK in 18ms (Views: 11.3ms | ActiveRecord: 0.5ms | Allocations: 5899)
+
+
+Started GET "/indexlog" for 127.0.0.1 at 2023-02-08 16:36:10 +0200
+Processing by MainController#MainPage as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/main_controller.rb:14:in `MainPage'
+  [1m[36mOperation Load (0.3ms)[0m  [1m[34mSELECT "operations".* FROM "operations" WHERE "operations"."user_id" = ? AND "operations"."odate" BETWEEN ? AND ? ORDER BY odate LIMIT ?[0m  [["user_id", 10], ["odate", "2023-02-01"], ["odate", "2023-02-28"], ["LIMIT", 5]]
+  ↳ app/controllers/main_controller.rb:22:in `MainPage'
+  Rendering layout layouts/application.html.erb
+  Rendering main/MainPage.html.erb within layouts/application
+  Rendered main/MainPage.html.erb within layouts/application (Duration: 0.2ms | Allocations: 63)
+  Rendered layout layouts/application.html.erb (Duration: 14.3ms | Allocations: 3487)
+Completed 200 OK in 22ms (Views: 15.1ms | ActiveRecord: 0.5ms | Allocations: 5669)
+
+
+Started GET "/indexlog" for 127.0.0.1 at 2023-02-08 16:36:13 +0200
+Processing by MainController#MainPage as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/main_controller.rb:14:in `MainPage'
+  [1m[36mOperation Load (0.3ms)[0m  [1m[34mSELECT "operations".* FROM "operations" WHERE "operations"."user_id" = ? AND "operations"."odate" BETWEEN ? AND ? ORDER BY odate LIMIT ?[0m  [["user_id", 10], ["odate", "2023-02-01"], ["odate", "2023-02-28"], ["LIMIT", 5]]
+  ↳ app/controllers/main_controller.rb:22:in `MainPage'
+  Rendering layout layouts/application.html.erb
+  Rendering main/MainPage.html.erb within layouts/application
+  Rendered main/MainPage.html.erb within layouts/application (Duration: 1.3ms | Allocations: 353)
+  Rendered layout layouts/application.html.erb (Duration: 65.2ms | Allocations: 4765)
+Completed 200 OK in 82ms (Views: 72.3ms | ActiveRecord: 0.6ms | Allocations: 7485)
+
+
+Started GET "/indexlog" for 127.0.0.1 at 2023-02-08 16:36:36 +0200
+Processing by MainController#MainPage as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/main_controller.rb:14:in `MainPage'
+  [1m[36mOperation Load (0.3ms)[0m  [1m[34mSELECT "operations".* FROM "operations" WHERE "operations"."user_id" = ? AND "operations"."odate" BETWEEN ? AND ? ORDER BY odate LIMIT ?[0m  [["user_id", 10], ["odate", "2023-02-01"], ["odate", "2023-02-28"], ["LIMIT", 5]]
+  ↳ app/controllers/main_controller.rb:22:in `MainPage'
+  Rendering layout layouts/application.html.erb
+  Rendering main/MainPage.html.erb within layouts/application
+  Rendered main/MainPage.html.erb within layouts/application (Duration: 1.3ms | Allocations: 353)
+  Rendered layout layouts/application.html.erb (Duration: 60.9ms | Allocations: 4750)
+Completed 200 OK in 79ms (Views: 67.9ms | ActiveRecord: 0.5ms | Allocations: 7702)
+
+
+Started GET "/indexlog" for 127.0.0.1 at 2023-02-08 16:37:23 +0200
+Processing by MainController#MainPage as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/main_controller.rb:14:in `MainPage'
+  [1m[36mOperation Load (0.4ms)[0m  [1m[34mSELECT "operations".* FROM "operations" WHERE "operations"."user_id" = ? AND "operations"."odate" BETWEEN ? AND ? ORDER BY odate LIMIT ?[0m  [["user_id", 10], ["odate", "2023-02-01"], ["odate", "2023-02-28"], ["LIMIT", 5]]
+  ↳ app/controllers/main_controller.rb:22:in `MainPage'
+  Rendering layout layouts/application.html.erb
+  Rendering main/MainPage.html.erb within layouts/application
+  Rendered main/MainPage.html.erb within layouts/application (Duration: 0.8ms | Allocations: 353)
+  Rendered layout layouts/application.html.erb (Duration: 89.7ms | Allocations: 6244)
+Completed 200 OK in 109ms (Views: 95.6ms | ActiveRecord: 0.7ms | Allocations: 9184)
+
+
+Started GET "/indexlog" for 127.0.0.1 at 2023-02-08 16:51:14 +0200
+Processing by MainController#MainPage as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/main_controller.rb:14:in `MainPage'
+  [1m[36mOperation Load (0.4ms)[0m  [1m[34mSELECT "operations".* FROM "operations" WHERE "operations"."user_id" = ? AND "operations"."odate" BETWEEN ? AND ? ORDER BY odate LIMIT ?[0m  [["user_id", 10], ["odate", "2023-02-01"], ["odate", "2023-02-28"], ["LIMIT", 5]]
+  ↳ app/controllers/main_controller.rb:22:in `MainPage'
+  Rendering layout layouts/application.html.erb
+  Rendering main/MainPage.html.erb within layouts/application
+  Rendered main/MainPage.html.erb within layouts/application (Duration: 1.8ms | Allocations: 354)
+  Rendered layout layouts/application.html.erb (Duration: 100.3ms | Allocations: 5826)
+Completed 200 OK in 123ms (Views: 107.7ms | ActiveRecord: 1.3ms | Allocations: 8939)
+
+
+Started GET "/indexlog" for 127.0.0.1 at 2023-02-08 16:51:28 +0200
+Processing by MainController#MainPage as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/main_controller.rb:14:in `MainPage'
+  [1m[36mOperation Load (0.4ms)[0m  [1m[34mSELECT "operations".* FROM "operations" WHERE "operations"."user_id" = ? AND "operations"."odate" BETWEEN ? AND ? ORDER BY odate LIMIT ?[0m  [["user_id", 10], ["odate", "2023-02-01"], ["odate", "2023-02-28"], ["LIMIT", 5]]
+  ↳ app/controllers/main_controller.rb:22:in `MainPage'
+  Rendering layout layouts/application.html.erb
+  Rendering main/MainPage.html.erb within layouts/application
+  Rendered main/MainPage.html.erb within layouts/application (Duration: 0.2ms | Allocations: 63)
+  Rendered layout layouts/application.html.erb (Duration: 50.5ms | Allocations: 4520)
+Completed 200 OK in 62ms (Views: 51.4ms | ActiveRecord: 0.8ms | Allocations: 6929)
+
+
+Started GET "/indexlog" for 127.0.0.1 at 2023-02-08 16:52:50 +0200
+Processing by MainController#MainPage as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/main_controller.rb:14:in `MainPage'
+  [1m[36mOperation Load (0.3ms)[0m  [1m[34mSELECT "operations".* FROM "operations" WHERE "operations"."user_id" = ? AND "operations"."odate" BETWEEN ? AND ? ORDER BY odate LIMIT ?[0m  [["user_id", 10], ["odate", "2023-02-01"], ["odate", "2023-02-28"], ["LIMIT", 5]]
+  ↳ app/controllers/main_controller.rb:22:in `MainPage'
+  Rendering layout layouts/application.html.erb
+  Rendering main/MainPage.html.erb within layouts/application
+  Rendered main/MainPage.html.erb within layouts/application (Duration: 0.2ms | Allocations: 63)
+  Rendered layout layouts/application.html.erb (Duration: 44.4ms | Allocations: 4504)
+Completed 200 OK in 54ms (Views: 45.1ms | ActiveRecord: 0.6ms | Allocations: 6687)
+
+
+Started GET "/indexlog" for 127.0.0.1 at 2023-02-08 16:52:56 +0200
+Processing by MainController#MainPage as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/main_controller.rb:14:in `MainPage'
+  [1m[36mOperation Load (0.4ms)[0m  [1m[34mSELECT "operations".* FROM "operations" WHERE "operations"."user_id" = ? AND "operations"."odate" BETWEEN ? AND ? ORDER BY odate LIMIT ?[0m  [["user_id", 10], ["odate", "2023-02-01"], ["odate", "2023-02-28"], ["LIMIT", 5]]
+  ↳ app/controllers/main_controller.rb:22:in `MainPage'
+  Rendering layout layouts/application.html.erb
+  Rendering main/MainPage.html.erb within layouts/application
+  Rendered main/MainPage.html.erb within layouts/application (Duration: 0.2ms | Allocations: 63)
+  Rendered layout layouts/application.html.erb (Duration: 37.8ms | Allocations: 4499)
+Completed 200 OK in 48ms (Views: 38.6ms | ActiveRecord: 0.6ms | Allocations: 6664)
+
+
+Started GET "/indexlog" for 127.0.0.1 at 2023-02-08 16:53:05 +0200
+Processing by MainController#MainPage as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/main_controller.rb:14:in `MainPage'
+  [1m[36mOperation Load (0.5ms)[0m  [1m[34mSELECT "operations".* FROM "operations" WHERE "operations"."user_id" = ? AND "operations"."odate" BETWEEN ? AND ? ORDER BY odate LIMIT ?[0m  [["user_id", 10], ["odate", "2023-02-01"], ["odate", "2023-02-28"], ["LIMIT", 5]]
+  ↳ app/controllers/main_controller.rb:22:in `MainPage'
+  Rendering layout layouts/application.html.erb
+  Rendering main/MainPage.html.erb within layouts/application
+  Rendered main/MainPage.html.erb within layouts/application (Duration: 0.2ms | Allocations: 63)
+  Rendered layout layouts/application.html.erb (Duration: 36.4ms | Allocations: 4510)
+Completed 200 OK in 46ms (Views: 37.3ms | ActiveRecord: 0.7ms | Allocations: 6675)
+
+
+Started GET "/indexlog" for 127.0.0.1 at 2023-02-08 16:53:10 +0200
+Processing by MainController#MainPage as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/main_controller.rb:14:in `MainPage'
+  [1m[36mOperation Load (0.4ms)[0m  [1m[34mSELECT "operations".* FROM "operations" WHERE "operations"."user_id" = ? AND "operations"."odate" BETWEEN ? AND ? ORDER BY odate LIMIT ?[0m  [["user_id", 10], ["odate", "2023-02-01"], ["odate", "2023-02-28"], ["LIMIT", 5]]
+  ↳ app/controllers/main_controller.rb:22:in `MainPage'
+  Rendering layout layouts/application.html.erb
+  Rendering main/MainPage.html.erb within layouts/application
+  Rendered main/MainPage.html.erb within layouts/application (Duration: 0.4ms | Allocations: 63)
+  Rendered layout layouts/application.html.erb (Duration: 45.9ms | Allocations: 4509)
+Completed 200 OK in 57ms (Views: 47.4ms | ActiveRecord: 0.7ms | Allocations: 6704)
+
+
+Started GET "/indexlog" for 127.0.0.1 at 2023-02-08 16:53:15 +0200
+Processing by MainController#MainPage as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/main_controller.rb:14:in `MainPage'
+  [1m[36mOperation Load (0.3ms)[0m  [1m[34mSELECT "operations".* FROM "operations" WHERE "operations"."user_id" = ? AND "operations"."odate" BETWEEN ? AND ? ORDER BY odate LIMIT ?[0m  [["user_id", 10], ["odate", "2023-02-01"], ["odate", "2023-02-28"], ["LIMIT", 5]]
+  ↳ app/controllers/main_controller.rb:22:in `MainPage'
+  Rendering layout layouts/application.html.erb
+  Rendering main/MainPage.html.erb within layouts/application
+  Rendered main/MainPage.html.erb within layouts/application (Duration: 0.2ms | Allocations: 63)
+  Rendered layout layouts/application.html.erb (Duration: 44.8ms | Allocations: 4506)
+Completed 200 OK in 52ms (Views: 45.6ms | ActiveRecord: 0.5ms | Allocations: 6674)
+
+
+Started GET "/indexlog" for 127.0.0.1 at 2023-02-08 16:53:39 +0200
+Processing by MainController#MainPage as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/main_controller.rb:14:in `MainPage'
+  [1m[36mOperation Load (0.4ms)[0m  [1m[34mSELECT "operations".* FROM "operations" WHERE "operations"."user_id" = ? AND "operations"."odate" BETWEEN ? AND ? ORDER BY odate LIMIT ?[0m  [["user_id", 10], ["odate", "2023-02-01"], ["odate", "2023-02-28"], ["LIMIT", 5]]
+  ↳ app/controllers/main_controller.rb:22:in `MainPage'
+  Rendering layout layouts/application.html.erb
+  Rendering main/MainPage.html.erb within layouts/application
+  Rendered main/MainPage.html.erb within layouts/application (Duration: 1.7ms | Allocations: 358)
+  Rendered layout layouts/application.html.erb (Duration: 56.2ms | Allocations: 4269)
+Completed 200 OK in 73ms (Views: 62.8ms | ActiveRecord: 0.6ms | Allocations: 6980)
+
+
+Started GET "/indexlog" for 127.0.0.1 at 2023-02-08 16:53:46 +0200
+Processing by MainController#MainPage as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/main_controller.rb:14:in `MainPage'
+  [1m[36mOperation Load (0.4ms)[0m  [1m[34mSELECT "operations".* FROM "operations" WHERE "operations"."user_id" = ? AND "operations"."odate" BETWEEN ? AND ? ORDER BY odate LIMIT ?[0m  [["user_id", 10], ["odate", "2023-02-01"], ["odate", "2023-02-28"], ["LIMIT", 5]]
+  ↳ app/controllers/main_controller.rb:22:in `MainPage'
+  Rendering layout layouts/application.html.erb
+  Rendering main/MainPage.html.erb within layouts/application
+  Rendered main/MainPage.html.erb within layouts/application (Duration: 1.1ms | Allocations: 354)
+  Rendered layout layouts/application.html.erb (Duration: 54.8ms | Allocations: 4273)
+Completed 200 OK in 74ms (Views: 63.2ms | ActiveRecord: 0.6ms | Allocations: 7210)
+
+
+Started GET "/indexlog" for 127.0.0.1 at 2023-02-08 16:53:52 +0200
+Processing by MainController#MainPage as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/main_controller.rb:14:in `MainPage'
+  [1m[36mOperation Load (0.4ms)[0m  [1m[34mSELECT "operations".* FROM "operations" WHERE "operations"."user_id" = ? AND "operations"."odate" BETWEEN ? AND ? ORDER BY odate LIMIT ?[0m  [["user_id", 10], ["odate", "2023-02-01"], ["odate", "2023-02-28"], ["LIMIT", 5]]
+  ↳ app/controllers/main_controller.rb:22:in `MainPage'
+  Rendering layout layouts/application.html.erb
+  Rendering main/MainPage.html.erb within layouts/application
+  Rendered main/MainPage.html.erb within layouts/application (Duration: 0.3ms | Allocations: 63)
+  Rendered layout layouts/application.html.erb (Duration: 49.2ms | Allocations: 4608)
+Completed 200 OK in 59ms (Views: 50.1ms | ActiveRecord: 0.6ms | Allocations: 7021)
+
+
+Started GET "/indexlog" for 127.0.0.1 at 2023-02-08 16:54:01 +0200
+Processing by MainController#MainPage as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/main_controller.rb:14:in `MainPage'
+  [1m[36mOperation Load (0.4ms)[0m  [1m[34mSELECT "operations".* FROM "operations" WHERE "operations"."user_id" = ? AND "operations"."odate" BETWEEN ? AND ? ORDER BY odate LIMIT ?[0m  [["user_id", 10], ["odate", "2023-02-01"], ["odate", "2023-02-28"], ["LIMIT", 5]]
+  ↳ app/controllers/main_controller.rb:22:in `MainPage'
+  Rendering layout layouts/application.html.erb
+  Rendering main/MainPage.html.erb within layouts/application
+  Rendered main/MainPage.html.erb within layouts/application (Duration: 1.1ms | Allocations: 356)
+  Rendered layout layouts/application.html.erb (Duration: 45.6ms | Allocations: 5815)
+Completed 200 OK in 65ms (Views: 54.9ms | ActiveRecord: 0.6ms | Allocations: 8526)
+
+
+Started GET "/indexlog" for 127.0.0.1 at 2023-02-08 16:56:15 +0200
+Processing by MainController#MainPage as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/main_controller.rb:14:in `MainPage'
+  [1m[36mOperation Load (0.3ms)[0m  [1m[34mSELECT "operations".* FROM "operations" WHERE "operations"."user_id" = ? AND "operations"."odate" BETWEEN ? AND ? ORDER BY odate LIMIT ?[0m  [["user_id", 10], ["odate", "2023-02-01"], ["odate", "2023-02-28"], ["LIMIT", 5]]
+  ↳ app/controllers/main_controller.rb:22:in `MainPage'
+  Rendering layout layouts/application.html.erb
+  Rendering main/MainPage.html.erb within layouts/application
+  Rendered main/MainPage.html.erb within layouts/application (Duration: 0.4ms | Allocations: 63)
+  Rendered layout layouts/application.html.erb (Duration: 47.2ms | Allocations: 4498)
+Completed 200 OK in 57ms (Views: 48.2ms | ActiveRecord: 0.7ms | Allocations: 6895)
+
+
+Started GET "/indexlog" for 127.0.0.1 at 2023-02-08 16:56:21 +0200
+Processing by MainController#MainPage as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/main_controller.rb:14:in `MainPage'
+  [1m[36mOperation Load (0.4ms)[0m  [1m[34mSELECT "operations".* FROM "operations" WHERE "operations"."user_id" = ? AND "operations"."odate" BETWEEN ? AND ? ORDER BY odate LIMIT ?[0m  [["user_id", 10], ["odate", "2023-02-01"], ["odate", "2023-02-28"], ["LIMIT", 5]]
+  ↳ app/controllers/main_controller.rb:22:in `MainPage'
+  Rendering layout layouts/application.html.erb
+  Rendering main/MainPage.html.erb within layouts/application
+  Rendered main/MainPage.html.erb within layouts/application (Duration: 0.2ms | Allocations: 63)
+  Rendered layout layouts/application.html.erb (Duration: 45.6ms | Allocations: 4500)
+Completed 200 OK in 55ms (Views: 46.4ms | ActiveRecord: 0.7ms | Allocations: 6665)
+
+
+Started GET "/indexlog" for 127.0.0.1 at 2023-02-08 16:56:30 +0200
+Processing by MainController#MainPage as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/main_controller.rb:14:in `MainPage'
+  [1m[36mOperation Load (0.3ms)[0m  [1m[34mSELECT "operations".* FROM "operations" WHERE "operations"."user_id" = ? AND "operations"."odate" BETWEEN ? AND ? ORDER BY odate LIMIT ?[0m  [["user_id", 10], ["odate", "2023-02-01"], ["odate", "2023-02-28"], ["LIMIT", 5]]
+  ↳ app/controllers/main_controller.rb:22:in `MainPage'
+  Rendering layout layouts/application.html.erb
+  Rendering main/MainPage.html.erb within layouts/application
+  Rendered main/MainPage.html.erb within layouts/application (Duration: 0.2ms | Allocations: 63)
+  Rendered layout layouts/application.html.erb (Duration: 41.5ms | Allocations: 4504)
+Completed 200 OK in 51ms (Views: 42.4ms | ActiveRecord: 0.5ms | Allocations: 6690)
+
+
+Started GET "/indexlog" for 127.0.0.1 at 2023-02-08 16:56:42 +0200
+Processing by MainController#MainPage as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/main_controller.rb:14:in `MainPage'
+  [1m[36mOperation Load (0.3ms)[0m  [1m[34mSELECT "operations".* FROM "operations" WHERE "operations"."user_id" = ? AND "operations"."odate" BETWEEN ? AND ? ORDER BY odate LIMIT ?[0m  [["user_id", 10], ["odate", "2023-02-01"], ["odate", "2023-02-28"], ["LIMIT", 5]]
+  ↳ app/controllers/main_controller.rb:22:in `MainPage'
+  Rendering layout layouts/application.html.erb
+  Rendering main/MainPage.html.erb within layouts/application
+  Rendered main/MainPage.html.erb within layouts/application (Duration: 0.2ms | Allocations: 63)
+  Rendered layout layouts/application.html.erb (Duration: 45.5ms | Allocations: 4499)
+Completed 200 OK in 56ms (Views: 46.4ms | ActiveRecord: 1.0ms | Allocations: 6679)
+
+
+Started GET "/indexlog" for 127.0.0.1 at 2023-02-08 16:56:51 +0200
+Processing by MainController#MainPage as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/main_controller.rb:14:in `MainPage'
+  [1m[36mOperation Load (0.4ms)[0m  [1m[34mSELECT "operations".* FROM "operations" WHERE "operations"."user_id" = ? AND "operations"."odate" BETWEEN ? AND ? ORDER BY odate LIMIT ?[0m  [["user_id", 10], ["odate", "2023-02-01"], ["odate", "2023-02-28"], ["LIMIT", 5]]
+  ↳ app/controllers/main_controller.rb:22:in `MainPage'
+  Rendering layout layouts/application.html.erb
+  Rendering main/MainPage.html.erb within layouts/application
+  Rendered main/MainPage.html.erb within layouts/application (Duration: 0.3ms | Allocations: 63)
+  Rendered layout layouts/application.html.erb (Duration: 43.6ms | Allocations: 4500)
+Completed 200 OK in 54ms (Views: 44.5ms | ActiveRecord: 0.7ms | Allocations: 6686)
+
+
+Started GET "/indexlog" for 127.0.0.1 at 2023-02-08 16:56:58 +0200
+Processing by MainController#MainPage as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/main_controller.rb:14:in `MainPage'
+  [1m[36mOperation Load (0.3ms)[0m  [1m[34mSELECT "operations".* FROM "operations" WHERE "operations"."user_id" = ? AND "operations"."odate" BETWEEN ? AND ? ORDER BY odate LIMIT ?[0m  [["user_id", 10], ["odate", "2023-02-01"], ["odate", "2023-02-28"], ["LIMIT", 5]]
+  ↳ app/controllers/main_controller.rb:22:in `MainPage'
+  Rendering layout layouts/application.html.erb
+  Rendering main/MainPage.html.erb within layouts/application
+  Rendered main/MainPage.html.erb within layouts/application (Duration: 0.5ms | Allocations: 63)
+  Rendered layout layouts/application.html.erb (Duration: 48.3ms | Allocations: 4511)
+Completed 200 OK in 57ms (Views: 49.1ms | ActiveRecord: 0.6ms | Allocations: 6682)
+
+
+Started GET "/indexlog" for 127.0.0.1 at 2023-02-08 16:57:05 +0200
+Processing by MainController#MainPage as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/main_controller.rb:14:in `MainPage'
+  [1m[36mOperation Load (0.3ms)[0m  [1m[34mSELECT "operations".* FROM "operations" WHERE "operations"."user_id" = ? AND "operations"."odate" BETWEEN ? AND ? ORDER BY odate LIMIT ?[0m  [["user_id", 10], ["odate", "2023-02-01"], ["odate", "2023-02-28"], ["LIMIT", 5]]
+  ↳ app/controllers/main_controller.rb:22:in `MainPage'
+  Rendering layout layouts/application.html.erb
+  Rendering main/MainPage.html.erb within layouts/application
+  Rendered main/MainPage.html.erb within layouts/application (Duration: 0.2ms | Allocations: 63)
+  Rendered layout layouts/application.html.erb (Duration: 46.6ms | Allocations: 4499)
+Completed 200 OK in 54ms (Views: 47.4ms | ActiveRecord: 0.5ms | Allocations: 6688)
+
+
+Started GET "/indexlog" for 127.0.0.1 at 2023-02-08 16:57:13 +0200
+Processing by MainController#MainPage as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/main_controller.rb:14:in `MainPage'
+  [1m[36mOperation Load (0.3ms)[0m  [1m[34mSELECT "operations".* FROM "operations" WHERE "operations"."user_id" = ? AND "operations"."odate" BETWEEN ? AND ? ORDER BY odate LIMIT ?[0m  [["user_id", 10], ["odate", "2023-02-01"], ["odate", "2023-02-28"], ["LIMIT", 5]]
+  ↳ app/controllers/main_controller.rb:22:in `MainPage'
+  Rendering layout layouts/application.html.erb
+  Rendering main/MainPage.html.erb within layouts/application
+  Rendered main/MainPage.html.erb within layouts/application (Duration: 0.2ms | Allocations: 63)
+  Rendered layout layouts/application.html.erb (Duration: 48.5ms | Allocations: 4503)
+Completed 200 OK in 61ms (Views: 49.6ms | ActiveRecord: 0.6ms | Allocations: 6677)
+
+
+Started GET "/indexlog" for 127.0.0.1 at 2023-02-08 16:57:25 +0200
+Processing by MainController#MainPage as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/main_controller.rb:14:in `MainPage'
+  [1m[36mOperation Load (0.4ms)[0m  [1m[34mSELECT "operations".* FROM "operations" WHERE "operations"."user_id" = ? AND "operations"."odate" BETWEEN ? AND ? ORDER BY odate LIMIT ?[0m  [["user_id", 10], ["odate", "2023-02-01"], ["odate", "2023-02-28"], ["LIMIT", 5]]
+  ↳ app/controllers/main_controller.rb:22:in `MainPage'
+  Rendering layout layouts/application.html.erb
+  Rendering main/MainPage.html.erb within layouts/application
+  Rendered main/MainPage.html.erb within layouts/application (Duration: 0.3ms | Allocations: 63)
+  Rendered layout layouts/application.html.erb (Duration: 47.6ms | Allocations: 4499)
+Completed 200 OK in 58ms (Views: 48.5ms | ActiveRecord: 0.7ms | Allocations: 6652)
+
+
+Started GET "/indexlog" for 127.0.0.1 at 2023-02-08 16:57:41 +0200
+Processing by MainController#MainPage as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/main_controller.rb:14:in `MainPage'
+  [1m[36mOperation Load (0.5ms)[0m  [1m[34mSELECT "operations".* FROM "operations" WHERE "operations"."user_id" = ? AND "operations"."odate" BETWEEN ? AND ? ORDER BY odate LIMIT ?[0m  [["user_id", 10], ["odate", "2023-02-01"], ["odate", "2023-02-28"], ["LIMIT", 5]]
+  ↳ app/controllers/main_controller.rb:22:in `MainPage'
+  Rendering layout layouts/application.html.erb
+  Rendering main/MainPage.html.erb within layouts/application
+  Rendered main/MainPage.html.erb within layouts/application (Duration: 0.2ms | Allocations: 63)
+  Rendered layout layouts/application.html.erb (Duration: 38.0ms | Allocations: 4495)
+Completed 200 OK in 49ms (Views: 38.8ms | ActiveRecord: 0.9ms | Allocations: 6672)
+
+
+Started GET "/indexlog" for 127.0.0.1 at 2023-02-08 17:00:31 +0200
+Processing by MainController#MainPage as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/main_controller.rb:14:in `MainPage'
+  [1m[36mOperation Load (0.4ms)[0m  [1m[34mSELECT "operations".* FROM "operations" WHERE "operations"."user_id" = ? AND "operations"."odate" BETWEEN ? AND ? ORDER BY odate LIMIT ?[0m  [["user_id", 10], ["odate", "2023-02-01"], ["odate", "2023-02-28"], ["LIMIT", 5]]
+  ↳ app/controllers/main_controller.rb:22:in `MainPage'
+  Rendering layout layouts/application.html.erb
+  Rendering main/MainPage.html.erb within layouts/application
+  Rendered main/MainPage.html.erb within layouts/application (Duration: 1.3ms | Allocations: 354)
+  Rendered layout layouts/application.html.erb (Duration: 58.4ms | Allocations: 4519)
+Completed 200 OK in 77ms (Views: 65.6ms | ActiveRecord: 0.7ms | Allocations: 7230)
+
+
+Started GET "/indexlog" for 127.0.0.1 at 2023-02-08 17:00:42 +0200
+Processing by MainController#MainPage as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/main_controller.rb:14:in `MainPage'
+  [1m[36mOperation Load (0.6ms)[0m  [1m[34mSELECT "operations".* FROM "operations" WHERE "operations"."user_id" = ? AND "operations"."odate" BETWEEN ? AND ? ORDER BY odate LIMIT ?[0m  [["user_id", 10], ["odate", "2023-02-01"], ["odate", "2023-02-28"], ["LIMIT", 5]]
+  ↳ app/controllers/main_controller.rb:22:in `MainPage'
+  Rendering layout layouts/application.html.erb
+  Rendering main/MainPage.html.erb within layouts/application
+  Rendered main/MainPage.html.erb within layouts/application (Duration: 1.0ms | Allocations: 353)
+  Rendered layout layouts/application.html.erb (Duration: 59.8ms | Allocations: 4265)
+Completed 200 OK in 82ms (Views: 67.0ms | ActiveRecord: 0.9ms | Allocations: 7220)
+
+
+Started GET "/indexlog" for 127.0.0.1 at 2023-02-08 17:01:32 +0200
+Processing by MainController#MainPage as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/main_controller.rb:14:in `MainPage'
+  [1m[36mOperation Load (0.7ms)[0m  [1m[34mSELECT "operations".* FROM "operations" WHERE "operations"."user_id" = ? AND "operations"."odate" BETWEEN ? AND ? ORDER BY odate LIMIT ?[0m  [["user_id", 10], ["odate", "2023-02-01"], ["odate", "2023-02-28"], ["LIMIT", 5]]
+  ↳ app/controllers/main_controller.rb:22:in `MainPage'
+  Rendering layout layouts/application.html.erb
+  Rendering main/MainPage.html.erb within layouts/application
+  Rendered main/MainPage.html.erb within layouts/application (Duration: 0.3ms | Allocations: 63)
+  Rendered layout layouts/application.html.erb (Duration: 10.0ms | Allocations: 3011)
+Completed 200 OK in 22ms (Views: 11.0ms | ActiveRecord: 0.9ms | Allocations: 5426)
+
+
+Started GET "/indexlog" for 127.0.0.1 at 2023-02-08 17:01:37 +0200
+Processing by MainController#MainPage as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/main_controller.rb:14:in `MainPage'
+  [1m[36mOperation Load (0.4ms)[0m  [1m[34mSELECT "operations".* FROM "operations" WHERE "operations"."user_id" = ? AND "operations"."odate" BETWEEN ? AND ? ORDER BY odate LIMIT ?[0m  [["user_id", 10], ["odate", "2023-02-01"], ["odate", "2023-02-28"], ["LIMIT", 5]]
+  ↳ app/controllers/main_controller.rb:22:in `MainPage'
+  Rendering layout layouts/application.html.erb
+  Rendering main/MainPage.html.erb within layouts/application
+  Rendered main/MainPage.html.erb within layouts/application (Duration: 1.8ms | Allocations: 353)
+  Rendered layout layouts/application.html.erb (Duration: 15.3ms | Allocations: 4515)
+Completed 200 OK in 34ms (Views: 22.7ms | ActiveRecord: 0.8ms | Allocations: 7229)
+
+
+Started GET "/indexlog" for 127.0.0.1 at 2023-02-08 17:02:10 +0200
+Processing by MainController#MainPage as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/main_controller.rb:14:in `MainPage'
+  [1m[36mOperation Load (0.3ms)[0m  [1m[34mSELECT "operations".* FROM "operations" WHERE "operations"."user_id" = ? AND "operations"."odate" BETWEEN ? AND ? ORDER BY odate LIMIT ?[0m  [["user_id", 10], ["odate", "2023-02-01"], ["odate", "2023-02-28"], ["LIMIT", 5]]
+  ↳ app/controllers/main_controller.rb:22:in `MainPage'
+  Rendering layout layouts/application.html.erb
+  Rendering main/MainPage.html.erb within layouts/application
+  Rendered main/MainPage.html.erb within layouts/application (Duration: 1.4ms | Allocations: 353)
+  Rendered layout layouts/application.html.erb (Duration: 68.4ms | Allocations: 4572)
+Completed 200 OK in 84ms (Views: 76.1ms | ActiveRecord: 0.5ms | Allocations: 7527)
+
+
+Started DELETE "/session" for 127.0.0.1 at 2023-02-08 17:02:12 +0200
+Processing by SessionsController#destroy as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]"}
+Redirected to http://127.0.0.1:3000/
+Completed 302 Found in 4ms (ActiveRecord: 0.0ms | Allocations: 558)
+
+
+Started GET "/" for 127.0.0.1 at 2023-02-08 17:02:12 +0200
+Processing by MainController#index as TURBO_STREAM
+  Rendering layout layouts/application.html.erb
+  Rendering main/index.html.erb within layouts/application
+  Rendered main/index.html.erb within layouts/application (Duration: 6.2ms | Allocations: 102)
+  Rendered layout layouts/application.html.erb (Duration: 14.4ms | Allocations: 3088)
+Completed 200 OK in 20ms (Views: 15.3ms | ActiveRecord: 0.0ms | Allocations: 3715)
+
+
+Started GET "/" for 127.0.0.1 at 2023-02-08 17:03:04 +0200
+Processing by MainController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/index.html.erb within layouts/application
+  Rendered main/index.html.erb within layouts/application (Duration: 0.5ms | Allocations: 108)
+  Rendered layout layouts/application.html.erb (Duration: 98.9ms | Allocations: 5578)
+Completed 200 OK in 112ms (Views: 107.1ms | ActiveRecord: 0.0ms | Allocations: 6541)
+
+
+Started GET "/" for 127.0.0.1 at 2023-02-08 17:03:16 +0200
+Processing by MainController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/index.html.erb within layouts/application
+  Rendered main/index.html.erb within layouts/application (Duration: 1.2ms | Allocations: 108)
+  Rendered layout layouts/application.html.erb (Duration: 74.5ms | Allocations: 3981)
+Completed 200 OK in 84ms (Views: 79.8ms | ActiveRecord: 0.0ms | Allocations: 5009)
+
+
+Started GET "/" for 127.0.0.1 at 2023-02-08 17:03:26 +0200
+Processing by MainController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/index.html.erb within layouts/application
+  Rendered main/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 44.0ms | Allocations: 4439)
+Completed 200 OK in 50ms (Views: 45.3ms | ActiveRecord: 0.0ms | Allocations: 4936)
+
+
+Started GET "/" for 127.0.0.1 at 2023-02-08 17:03:36 +0200
+Processing by MainController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/index.html.erb within layouts/application
+  Rendered main/index.html.erb within layouts/application (Duration: 0.6ms | Allocations: 111)
+  Rendered layout layouts/application.html.erb (Duration: 75.8ms | Allocations: 3999)
+Completed 200 OK in 95ms (Views: 83.7ms | ActiveRecord: 0.0ms | Allocations: 4980)
+
+
+Started GET "/session/new" for 127.0.0.1 at 2023-02-08 17:03:37 +0200
+Processing by SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 3.8ms | Allocations: 1219)
+  Rendered layout layouts/application.html.erb (Duration: 11.8ms | Allocations: 4292)
+Completed 200 OK in 23ms (Views: 17.9ms | ActiveRecord: 0.0ms | Allocations: 4982)
+
+
+Started POST "/session" for 127.0.0.1 at 2023-02-08 17:03:40 +0200
+Processing by SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "session"=>{"email"=>"vlaros19992004@gmail.com", "password"=>"[FILTERED]"}, "commit"=>"Войти"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "vlaros19992004@gmail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:12:in `create'
+Redirected to http://127.0.0.1:3000/
+Completed 302 Found in 239ms (ActiveRecord: 0.2ms | Allocations: 1188)
+
+
+Started GET "/" for 127.0.0.1 at 2023-02-08 17:03:41 +0200
+Processing by MainController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7:in `current_user'
+Redirected to http://127.0.0.1:3000/indexlog
+Completed 302 Found in 5ms (ActiveRecord: 0.2ms | Allocations: 833)
+
+
+Started GET "/indexlog" for 127.0.0.1 at 2023-02-08 17:03:41 +0200
+Processing by MainController#MainPage as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/main_controller.rb:14:in `MainPage'
+  [1m[36mOperation Load (0.4ms)[0m  [1m[34mSELECT "operations".* FROM "operations" WHERE "operations"."user_id" = ? AND "operations"."odate" BETWEEN ? AND ? ORDER BY odate LIMIT ?[0m  [["user_id", 10], ["odate", "2023-02-01"], ["odate", "2023-02-28"], ["LIMIT", 5]]
+  ↳ app/controllers/main_controller.rb:22:in `MainPage'
+  Rendering layout layouts/application.html.erb
+  Rendering main/MainPage.html.erb within layouts/application
+  Rendered main/MainPage.html.erb within layouts/application (Duration: 1.2ms | Allocations: 317)
+  Rendered layout layouts/application.html.erb (Duration: 14.1ms | Allocations: 3520)
+Completed 200 OK in 26ms (Views: 15.0ms | ActiveRecord: 0.7ms | Allocations: 5847)
+
+
+Started GET "/indexlog" for 127.0.0.1 at 2023-02-08 17:04:24 +0200
+Processing by MainController#MainPage as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/main_controller.rb:14:in `MainPage'
+  [1m[36mOperation Load (0.6ms)[0m  [1m[34mSELECT "operations".* FROM "operations" WHERE "operations"."user_id" = ? AND "operations"."odate" BETWEEN ? AND ? ORDER BY odate LIMIT ?[0m  [["user_id", 10], ["odate", "2023-02-01"], ["odate", "2023-02-28"], ["LIMIT", 5]]
+  ↳ app/controllers/main_controller.rb:22:in `MainPage'
+  Rendering layout layouts/application.html.erb
+  Rendering main/MainPage.html.erb within layouts/application
+  Rendered main/MainPage.html.erb within layouts/application (Duration: 0.2ms | Allocations: 63)
+  Rendered layout layouts/application.html.erb (Duration: 44.1ms | Allocations: 4846)
+Completed 200 OK in 55ms (Views: 44.9ms | ActiveRecord: 1.1ms | Allocations: 7021)
+
+
+Started GET "/indexlog" for 127.0.0.1 at 2023-02-08 17:04:32 +0200
+Processing by MainController#MainPage as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/main_controller.rb:14:in `MainPage'
+  [1m[36mOperation Load (0.5ms)[0m  [1m[34mSELECT "operations".* FROM "operations" WHERE "operations"."user_id" = ? AND "operations"."odate" BETWEEN ? AND ? ORDER BY odate LIMIT ?[0m  [["user_id", 10], ["odate", "2023-02-01"], ["odate", "2023-02-28"], ["LIMIT", 5]]
+  ↳ app/controllers/main_controller.rb:22:in `MainPage'
+  Rendering layout layouts/application.html.erb
+  Rendering main/MainPage.html.erb within layouts/application
+  Rendered main/MainPage.html.erb within layouts/application (Duration: 0.2ms | Allocations: 63)
+  Rendered layout layouts/application.html.erb (Duration: 60.5ms | Allocations: 4744)
+Completed 200 OK in 71ms (Views: 61.5ms | ActiveRecord: 0.7ms | Allocations: 6918)
+
+
+Started GET "/indexlog" for 127.0.0.1 at 2023-02-08 17:04:40 +0200
+Processing by MainController#MainPage as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/main_controller.rb:14:in `MainPage'
+  [1m[36mOperation Load (0.3ms)[0m  [1m[34mSELECT "operations".* FROM "operations" WHERE "operations"."user_id" = ? AND "operations"."odate" BETWEEN ? AND ? ORDER BY odate LIMIT ?[0m  [["user_id", 10], ["odate", "2023-02-01"], ["odate", "2023-02-28"], ["LIMIT", 5]]
+  ↳ app/controllers/main_controller.rb:22:in `MainPage'
+  Rendering layout layouts/application.html.erb
+  Rendering main/MainPage.html.erb within layouts/application
+  Rendered main/MainPage.html.erb within layouts/application (Duration: 0.2ms | Allocations: 63)
+  Rendered layout layouts/application.html.erb (Duration: 42.9ms | Allocations: 4753)
+Completed 200 OK in 51ms (Views: 43.7ms | ActiveRecord: 0.5ms | Allocations: 6915)
+
+
+Started GET "/indexlog" for 127.0.0.1 at 2023-02-08 17:04:44 +0200
+Processing by MainController#MainPage as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/main_controller.rb:14:in `MainPage'
+  [1m[36mOperation Load (0.4ms)[0m  [1m[34mSELECT "operations".* FROM "operations" WHERE "operations"."user_id" = ? AND "operations"."odate" BETWEEN ? AND ? ORDER BY odate LIMIT ?[0m  [["user_id", 10], ["odate", "2023-02-01"], ["odate", "2023-02-28"], ["LIMIT", 5]]
+  ↳ app/controllers/main_controller.rb:22:in `MainPage'
+  Rendering layout layouts/application.html.erb
+  Rendering main/MainPage.html.erb within layouts/application
+  Rendered main/MainPage.html.erb within layouts/application (Duration: 0.2ms | Allocations: 63)
+  Rendered layout layouts/application.html.erb (Duration: 43.6ms | Allocations: 4753)
+Completed 200 OK in 55ms (Views: 44.9ms | ActiveRecord: 0.6ms | Allocations: 6918)
+
+
+Started GET "/indexlog" for 127.0.0.1 at 2023-02-08 17:04:54 +0200
+Processing by MainController#MainPage as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/main_controller.rb:14:in `MainPage'
+  [1m[36mOperation Load (0.5ms)[0m  [1m[34mSELECT "operations".* FROM "operations" WHERE "operations"."user_id" = ? AND "operations"."odate" BETWEEN ? AND ? ORDER BY odate LIMIT ?[0m  [["user_id", 10], ["odate", "2023-02-01"], ["odate", "2023-02-28"], ["LIMIT", 5]]
+  ↳ app/controllers/main_controller.rb:22:in `MainPage'
+  Rendering layout layouts/application.html.erb
+  Rendering main/MainPage.html.erb within layouts/application
+  Rendered main/MainPage.html.erb within layouts/application (Duration: 0.2ms | Allocations: 63)
+  Rendered layout layouts/application.html.erb (Duration: 40.5ms | Allocations: 4748)
+Completed 200 OK in 51ms (Views: 41.4ms | ActiveRecord: 0.7ms | Allocations: 6949)
+
+
+Started GET "/indexlog" for 127.0.0.1 at 2023-02-08 17:05:06 +0200
+Processing by MainController#MainPage as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/main_controller.rb:14:in `MainPage'
+  [1m[36mOperation Load (0.4ms)[0m  [1m[34mSELECT "operations".* FROM "operations" WHERE "operations"."user_id" = ? AND "operations"."odate" BETWEEN ? AND ? ORDER BY odate LIMIT ?[0m  [["user_id", 10], ["odate", "2023-02-01"], ["odate", "2023-02-28"], ["LIMIT", 5]]
+  ↳ app/controllers/main_controller.rb:22:in `MainPage'
+  Rendering layout layouts/application.html.erb
+  Rendering main/MainPage.html.erb within layouts/application
+  Rendered main/MainPage.html.erb within layouts/application (Duration: 0.2ms | Allocations: 63)
+  Rendered layout layouts/application.html.erb (Duration: 42.3ms | Allocations: 4759)
+Completed 200 OK in 55ms (Views: 43.2ms | ActiveRecord: 0.7ms | Allocations: 6921)
+
+
+Started GET "/indexlog" for 127.0.0.1 at 2023-02-08 17:05:14 +0200
+Processing by MainController#MainPage as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/main_controller.rb:14:in `MainPage'
+  [1m[36mOperation Load (0.3ms)[0m  [1m[34mSELECT "operations".* FROM "operations" WHERE "operations"."user_id" = ? AND "operations"."odate" BETWEEN ? AND ? ORDER BY odate LIMIT ?[0m  [["user_id", 10], ["odate", "2023-02-01"], ["odate", "2023-02-28"], ["LIMIT", 5]]
+  ↳ app/controllers/main_controller.rb:22:in `MainPage'
+  Rendering layout layouts/application.html.erb
+  Rendering main/MainPage.html.erb within layouts/application
+  Rendered main/MainPage.html.erb within layouts/application (Duration: 0.2ms | Allocations: 63)
+  Rendered layout layouts/application.html.erb (Duration: 42.7ms | Allocations: 4750)
+Completed 200 OK in 50ms (Views: 43.4ms | ActiveRecord: 0.5ms | Allocations: 6915)
+
+
+Started GET "/indexlog" for 127.0.0.1 at 2023-02-08 17:05:24 +0200
+Processing by MainController#MainPage as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/main_controller.rb:14:in `MainPage'
+  [1m[36mOperation Load (0.7ms)[0m  [1m[34mSELECT "operations".* FROM "operations" WHERE "operations"."user_id" = ? AND "operations"."odate" BETWEEN ? AND ? ORDER BY odate LIMIT ?[0m  [["user_id", 10], ["odate", "2023-02-01"], ["odate", "2023-02-28"], ["LIMIT", 5]]
+  ↳ app/controllers/main_controller.rb:22:in `MainPage'
+  Rendering layout layouts/application.html.erb
+  Rendering main/MainPage.html.erb within layouts/application
+  Rendered main/MainPage.html.erb within layouts/application (Duration: 0.3ms | Allocations: 63)
+  Rendered layout layouts/application.html.erb (Duration: 43.3ms | Allocations: 4750)
+Completed 200 OK in 54ms (Views: 44.2ms | ActiveRecord: 0.8ms | Allocations: 6939)
+
+
+Started GET "/indexlog" for 127.0.0.1 at 2023-02-08 17:05:32 +0200
+Processing by MainController#MainPage as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/main_controller.rb:14:in `MainPage'
+  [1m[36mOperation Load (0.5ms)[0m  [1m[34mSELECT "operations".* FROM "operations" WHERE "operations"."user_id" = ? AND "operations"."odate" BETWEEN ? AND ? ORDER BY odate LIMIT ?[0m  [["user_id", 10], ["odate", "2023-02-01"], ["odate", "2023-02-28"], ["LIMIT", 5]]
+  ↳ app/controllers/main_controller.rb:22:in `MainPage'
+  Rendering layout layouts/application.html.erb
+  Rendering main/MainPage.html.erb within layouts/application
+  Rendered main/MainPage.html.erb within layouts/application (Duration: 0.2ms | Allocations: 63)
+  Rendered layout layouts/application.html.erb (Duration: 44.6ms | Allocations: 4746)
+Completed 200 OK in 56ms (Views: 45.9ms | ActiveRecord: 0.7ms | Allocations: 6941)
+
+
+Started GET "/indexlog" for 127.0.0.1 at 2023-02-08 17:06:12 +0200
+Processing by MainController#MainPage as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/main_controller.rb:14:in `MainPage'
+  [1m[36mOperation Load (0.7ms)[0m  [1m[34mSELECT "operations".* FROM "operations" WHERE "operations"."user_id" = ? AND "operations"."odate" BETWEEN ? AND ? ORDER BY odate LIMIT ?[0m  [["user_id", 10], ["odate", "2023-02-01"], ["odate", "2023-02-28"], ["LIMIT", 5]]
+  ↳ app/controllers/main_controller.rb:22:in `MainPage'
+  Rendering layout layouts/application.html.erb
+  Rendering main/MainPage.html.erb within layouts/application
+  Rendered main/MainPage.html.erb within layouts/application (Duration: 1.4ms | Allocations: 353)
+  Rendered layout layouts/application.html.erb (Duration: 73.4ms | Allocations: 4686)
+Completed 200 OK in 95ms (Views: 83.3ms | ActiveRecord: 0.9ms | Allocations: 7391)
+
+
+Started GET "/indexlog" for 127.0.0.1 at 2023-02-08 17:06:25 +0200
+Processing by MainController#MainPage as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/main_controller.rb:14:in `MainPage'
+  [1m[36mOperation Load (0.3ms)[0m  [1m[34mSELECT "operations".* FROM "operations" WHERE "operations"."user_id" = ? AND "operations"."odate" BETWEEN ? AND ? ORDER BY odate LIMIT ?[0m  [["user_id", 10], ["odate", "2023-02-01"], ["odate", "2023-02-28"], ["LIMIT", 5]]
+  ↳ app/controllers/main_controller.rb:22:in `MainPage'
+  Rendering layout layouts/application.html.erb
+  Rendering main/MainPage.html.erb within layouts/application
+  Rendered main/MainPage.html.erb within layouts/application (Duration: 1.1ms | Allocations: 354)
+  Rendered layout layouts/application.html.erb (Duration: 72.5ms | Allocations: 4671)
+Completed 200 OK in 88ms (Views: 79.8ms | ActiveRecord: 0.5ms | Allocations: 7614)
+
+
+Started GET "/operations" for 127.0.0.1 at 2023-02-08 17:06:27 +0200
+Processing by OperationsController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7:in `current_user'
+  Rendering layout layouts/application.html.erb
+  Rendering operations/index.html.erb within layouts/application
+  [1m[36mOperation Load (0.3ms)[0m  [1m[34mSELECT "operations".* FROM "operations"[0m
+  ↳ app/views/operations/index.html.erb:21
+  [1m[36mCategory Load (0.7ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/operations/index.html.erb:27
+  [1m[36mCategory Load (0.4ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/operations/index.html.erb:27
+  Rendered operations/index.html.erb within layouts/application (Duration: 23.8ms | Allocations: 7124)
+  Rendered layout layouts/application.html.erb (Duration: 33.9ms | Allocations: 10615)
+Completed 200 OK in 45ms (Views: 34.3ms | ActiveRecord: 4.4ms | Allocations: 12239)
+
+
+Started GET "/operations" for 127.0.0.1 at 2023-02-08 17:06:46 +0200
+Processing by OperationsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7:in `current_user'
+  Rendering layout layouts/application.html.erb
+  Rendering operations/index.html.erb within layouts/application
+  [1m[36mOperation Load (0.4ms)[0m  [1m[34mSELECT "operations".* FROM "operations"[0m
+  ↳ app/views/operations/index.html.erb:21
+  [1m[36mCategory Load (0.3ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/operations/index.html.erb:27
+  [1m[36mCategory Load (0.3ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/operations/index.html.erb:27
+  Rendered operations/index.html.erb within layouts/application (Duration: 8.8ms | Allocations: 2584)
+  Rendered layout layouts/application.html.erb (Duration: 85.5ms | Allocations: 6805)
+Completed 200 OK in 100ms (Views: 91.5ms | ActiveRecord: 1.3ms | Allocations: 8394)
+
+
+Started GET "/operations" for 127.0.0.1 at 2023-02-08 17:06:57 +0200
+Processing by OperationsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7:in `current_user'
+  Rendering layout layouts/application.html.erb
+  Rendering operations/index.html.erb within layouts/application
+  [1m[36mOperation Load (0.2ms)[0m  [1m[34mSELECT "operations".* FROM "operations"[0m
+  ↳ app/views/operations/index.html.erb:21
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/operations/index.html.erb:27
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/operations/index.html.erb:27
+  Rendered operations/index.html.erb within layouts/application (Duration: 6.5ms | Allocations: 2583)
+  Rendered layout layouts/application.html.erb (Duration: 79.8ms | Allocations: 6860)
+Completed 200 OK in 95ms (Views: 87.0ms | ActiveRecord: 0.7ms | Allocations: 8413)
+
+
+Started GET "/operations" for 127.0.0.1 at 2023-02-08 17:07:28 +0200
+Processing by OperationsController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7:in `current_user'
+  Rendering layout layouts/application.html.erb
+  Rendering operations/index.html.erb within layouts/application
+  [1m[36mOperation Load (0.2ms)[0m  [1m[34mSELECT "operations".* FROM "operations"[0m
+  ↳ app/views/operations/index.html.erb:21
+  [1m[36mCategory Load (0.1ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/operations/index.html.erb:27
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/operations/index.html.erb:27
+  Rendered operations/index.html.erb within layouts/application (Duration: 4.6ms | Allocations: 2044)
+  Rendered layout layouts/application.html.erb (Duration: 48.7ms | Allocations: 6903)
+Completed 200 OK in 56ms (Views: 49.1ms | ActiveRecord: 0.7ms | Allocations: 7907)
+
+
+Started GET "/operations" for 127.0.0.1 at 2023-02-08 17:07:50 +0200
+Processing by OperationsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7:in `current_user'
+  Rendering layout layouts/application.html.erb
+  Rendering operations/index.html.erb within layouts/application
+  [1m[36mOperation Load (0.2ms)[0m  [1m[34mSELECT "operations".* FROM "operations"[0m
+  ↳ app/views/operations/index.html.erb:21
+  [1m[36mCategory Load (0.4ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/operations/index.html.erb:27
+  [1m[36mCategory Load (0.3ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/operations/index.html.erb:27
+  Rendered operations/index.html.erb within layouts/application (Duration: 8.5ms | Allocations: 2044)
+  Rendered layout layouts/application.html.erb (Duration: 51.7ms | Allocations: 6817)
+Completed 200 OK in 56ms (Views: 51.5ms | ActiveRecord: 1.1ms | Allocations: 7757)
+
+
+Started GET "/operations" for 127.0.0.1 at 2023-02-08 17:07:57 +0200
+Processing by OperationsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7:in `current_user'
+  Rendering layout layouts/application.html.erb
+  Rendering operations/index.html.erb within layouts/application
+  [1m[36mOperation Load (0.2ms)[0m  [1m[34mSELECT "operations".* FROM "operations"[0m
+  ↳ app/views/operations/index.html.erb:21
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/operations/index.html.erb:27
+  [1m[36mCategory Load (0.6ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/operations/index.html.erb:27
+  Rendered operations/index.html.erb within layouts/application (Duration: 8.5ms | Allocations: 2044)
+  Rendered layout layouts/application.html.erb (Duration: 50.0ms | Allocations: 6826)
+Completed 200 OK in 56ms (Views: 49.9ms | ActiveRecord: 1.2ms | Allocations: 7739)
+
+
+Started GET "/operations" for 127.0.0.1 at 2023-02-08 17:08:12 +0200
+Processing by OperationsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7:in `current_user'
+  Rendering layout layouts/application.html.erb
+  Rendering operations/index.html.erb within layouts/application
+  [1m[36mOperation Load (0.2ms)[0m  [1m[34mSELECT "operations".* FROM "operations"[0m
+  ↳ app/views/operations/index.html.erb:21
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/operations/index.html.erb:27
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/operations/index.html.erb:27
+  Rendered operations/index.html.erb within layouts/application (Duration: 6.4ms | Allocations: 2044)
+  Rendered layout layouts/application.html.erb (Duration: 51.1ms | Allocations: 6823)
+Completed 200 OK in 59ms (Views: 51.3ms | ActiveRecord: 0.9ms | Allocations: 7745)
+
+
+Started GET "/operations" for 127.0.0.1 at 2023-02-08 17:08:21 +0200
+Processing by OperationsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7:in `current_user'
+  Rendering layout layouts/application.html.erb
+  Rendering operations/index.html.erb within layouts/application
+  [1m[36mOperation Load (0.2ms)[0m  [1m[34mSELECT "operations".* FROM "operations"[0m
+  ↳ app/views/operations/index.html.erb:21
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/operations/index.html.erb:27
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/operations/index.html.erb:27
+  Rendered operations/index.html.erb within layouts/application (Duration: 6.4ms | Allocations: 2044)
+  Rendered layout layouts/application.html.erb (Duration: 52.7ms | Allocations: 6836)
+Completed 200 OK in 59ms (Views: 52.9ms | ActiveRecord: 0.9ms | Allocations: 7761)
+
+
+Started GET "/operations" for 127.0.0.1 at 2023-02-08 17:08:27 +0200
+Processing by OperationsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7:in `current_user'
+  Rendering layout layouts/application.html.erb
+  Rendering operations/index.html.erb within layouts/application
+  [1m[36mOperation Load (0.2ms)[0m  [1m[34mSELECT "operations".* FROM "operations"[0m
+  ↳ app/views/operations/index.html.erb:21
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/operations/index.html.erb:27
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/operations/index.html.erb:27
+  Rendered operations/index.html.erb within layouts/application (Duration: 5.5ms | Allocations: 2044)
+  Rendered layout layouts/application.html.erb (Duration: 47.6ms | Allocations: 6815)
+Completed 200 OK in 54ms (Views: 47.7ms | ActiveRecord: 0.8ms | Allocations: 7734)
+
+
+Started GET "/operations" for 127.0.0.1 at 2023-02-08 17:08:33 +0200
+Processing by OperationsController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7:in `current_user'
+  Rendering layout layouts/application.html.erb
+  Rendering operations/index.html.erb within layouts/application
+  [1m[36mOperation Load (0.2ms)[0m  [1m[34mSELECT "operations".* FROM "operations"[0m
+  ↳ app/views/operations/index.html.erb:21
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/operations/index.html.erb:27
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/operations/index.html.erb:27
+  Rendered operations/index.html.erb within layouts/application (Duration: 6.5ms | Allocations: 2044)
+  Rendered layout layouts/application.html.erb (Duration: 53.0ms | Allocations: 6822)
+Completed 200 OK in 61ms (Views: 53.3ms | ActiveRecord: 1.0ms | Allocations: 7735)
+
+
+Started GET "/operations" for 127.0.0.1 at 2023-02-08 17:08:36 +0200
+Processing by OperationsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7:in `current_user'
+  Rendering layout layouts/application.html.erb
+  Rendering operations/index.html.erb within layouts/application
+  [1m[36mOperation Load (0.3ms)[0m  [1m[34mSELECT "operations".* FROM "operations"[0m
+  ↳ app/views/operations/index.html.erb:21
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/operations/index.html.erb:27
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/operations/index.html.erb:27
+  Rendered operations/index.html.erb within layouts/application (Duration: 5.3ms | Allocations: 2044)
+  Rendered layout layouts/application.html.erb (Duration: 17.0ms | Allocations: 5350)
+Completed 200 OK in 23ms (Views: 17.5ms | ActiveRecord: 0.9ms | Allocations: 6275)
+
+
+Started GET "/operations" for 127.0.0.1 at 2023-02-08 17:08:39 +0200
+Processing by OperationsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7:in `current_user'
+  Rendering layout layouts/application.html.erb
+  Rendering operations/index.html.erb within layouts/application
+  [1m[36mOperation Load (0.2ms)[0m  [1m[34mSELECT "operations".* FROM "operations"[0m
+  ↳ app/views/operations/index.html.erb:21
+  [1m[36mCategory Load (0.4ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/operations/index.html.erb:27
+  [1m[36mCategory Load (0.3ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/operations/index.html.erb:27
+  Rendered operations/index.html.erb within layouts/application (Duration: 7.6ms | Allocations: 2044)
+  Rendered layout layouts/application.html.erb (Duration: 51.5ms | Allocations: 6816)
+Completed 200 OK in 59ms (Views: 51.8ms | ActiveRecord: 1.1ms | Allocations: 7747)
+
+
+Started GET "/operations" for 127.0.0.1 at 2023-02-08 17:08:43 +0200
+Processing by OperationsController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7:in `current_user'
+  Rendering layout layouts/application.html.erb
+  Rendering operations/index.html.erb within layouts/application
+  [1m[36mOperation Load (0.2ms)[0m  [1m[34mSELECT "operations".* FROM "operations"[0m
+  ↳ app/views/operations/index.html.erb:21
+  [1m[36mCategory Load (0.1ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/operations/index.html.erb:27
+  [1m[36mCategory Load (0.3ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/operations/index.html.erb:27
+  Rendered operations/index.html.erb within layouts/application (Duration: 5.5ms | Allocations: 2044)
+  Rendered layout layouts/application.html.erb (Duration: 42.3ms | Allocations: 6827)
+Completed 200 OK in 48ms (Views: 42.4ms | ActiveRecord: 0.9ms | Allocations: 7785)
+
+
+Started GET "/operations" for 127.0.0.1 at 2023-02-08 17:10:03 +0200
+Processing by OperationsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7:in `current_user'
+  Rendering layout layouts/application.html.erb
+  Rendering operations/index.html.erb within layouts/application
+  [1m[36mOperation Load (0.6ms)[0m  [1m[34mSELECT "operations".* FROM "operations"[0m
+  ↳ app/views/operations/index.html.erb:21
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/operations/index.html.erb:27
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/operations/index.html.erb:27
+  Rendered operations/index.html.erb within layouts/application (Duration: 10.6ms | Allocations: 2588)
+  Rendered layout layouts/application.html.erb (Duration: 93.0ms | Allocations: 6974)
+Completed 200 OK in 104ms (Views: 97.8ms | ActiveRecord: 1.2ms | Allocations: 8436)
+
+
+Started GET "/operations" for 127.0.0.1 at 2023-02-08 17:10:10 +0200
+Processing by OperationsController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7:in `current_user'
+  Rendering layout layouts/application.html.erb
+  Rendering operations/index.html.erb within layouts/application
+  [1m[36mOperation Load (0.2ms)[0m  [1m[34mSELECT "operations".* FROM "operations"[0m
+  ↳ app/views/operations/index.html.erb:21
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/operations/index.html.erb:27
+  [1m[36mCategory Load (0.4ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/operations/index.html.erb:27
+  Rendered operations/index.html.erb within layouts/application (Duration: 6.9ms | Allocations: 2583)
+  Rendered layout layouts/application.html.erb (Duration: 89.6ms | Allocations: 6952)
+Completed 200 OK in 105ms (Views: 96.2ms | ActiveRecord: 1.0ms | Allocations: 8520)
+
+
+Started GET "/operations" for 127.0.0.1 at 2023-02-08 17:11:15 +0200
+Processing by OperationsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7:in `current_user'
+  Rendering layout layouts/application.html.erb
+  Rendering operations/index.html.erb within layouts/application
+  [1m[36mOperation Load (0.2ms)[0m  [1m[34mSELECT "operations".* FROM "operations"[0m
+  ↳ app/views/operations/index.html.erb:21
+  [1m[36mCategory Load (0.5ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/operations/index.html.erb:27
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/operations/index.html.erb:27
+  Rendered operations/index.html.erb within layouts/application (Duration: 8.2ms | Allocations: 2044)
+  Rendered layout layouts/application.html.erb (Duration: 50.4ms | Allocations: 6998)
+Completed 200 OK in 56ms (Views: 50.2ms | ActiveRecord: 1.1ms | Allocations: 8023)
+
+
+Started GET "/" for 127.0.0.1 at 2023-02-08 17:11:43 +0200
+Processing by MainController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7:in `current_user'
+Redirected to http://127.0.0.1:3000/indexlog
+Completed 302 Found in 4ms (ActiveRecord: 0.2ms | Allocations: 828)
+
+
+Started GET "/indexlog" for 127.0.0.1 at 2023-02-08 17:11:43 +0200
+Processing by MainController#MainPage as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/main_controller.rb:14:in `MainPage'
+  [1m[36mOperation Load (0.7ms)[0m  [1m[34mSELECT "operations".* FROM "operations" WHERE "operations"."user_id" = ? AND "operations"."odate" BETWEEN ? AND ? ORDER BY odate LIMIT ?[0m  [["user_id", 10], ["odate", "2023-02-01"], ["odate", "2023-02-28"], ["LIMIT", 5]]
+  ↳ app/controllers/main_controller.rb:22:in `MainPage'
+  Rendering layout layouts/application.html.erb
+  Rendering main/MainPage.html.erb within layouts/application
+  Rendered main/MainPage.html.erb within layouts/application (Duration: 1.2ms | Allocations: 352)
+  Rendered layout layouts/application.html.erb (Duration: 14.7ms | Allocations: 4040)
+Completed 200 OK in 33ms (Views: 21.5ms | ActiveRecord: 0.9ms | Allocations: 6620)
+
+
+Started GET "/indexlog" for 127.0.0.1 at 2023-02-08 17:12:10 +0200
+Processing by MainController#MainPage as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/main_controller.rb:14:in `MainPage'
+  [1m[36mOperation Load (0.4ms)[0m  [1m[34mSELECT "operations".* FROM "operations" WHERE "operations"."user_id" = ? AND "operations"."odate" BETWEEN ? AND ? ORDER BY odate LIMIT ?[0m  [["user_id", 10], ["odate", "2023-02-01"], ["odate", "2023-02-28"], ["LIMIT", 5]]
+  ↳ app/controllers/main_controller.rb:22:in `MainPage'
+  Rendering layout layouts/application.html.erb
+  Rendering main/MainPage.html.erb within layouts/application
+  Rendered main/MainPage.html.erb within layouts/application (Duration: 1.7ms | Allocations: 354)
+  Rendered layout layouts/application.html.erb (Duration: 95.9ms | Allocations: 4862)
+Completed 200 OK in 115ms (Views: 102.3ms | ActiveRecord: 0.9ms | Allocations: 7819)
+
+
+Started GET "/indexlog" for 127.0.0.1 at 2023-02-08 17:13:04 +0200
+Processing by MainController#MainPage as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/main_controller.rb:14:in `MainPage'
+  [1m[36mOperation Load (0.3ms)[0m  [1m[34mSELECT "operations".* FROM "operations" WHERE "operations"."user_id" = ? AND "operations"."odate" BETWEEN ? AND ? ORDER BY odate LIMIT ?[0m  [["user_id", 10], ["odate", "2023-02-01"], ["odate", "2023-02-28"], ["LIMIT", 5]]
+  ↳ app/controllers/main_controller.rb:22:in `MainPage'
+  Rendering layout layouts/application.html.erb
+  Rendering main/MainPage.html.erb within layouts/application
+  Rendered main/MainPage.html.erb within layouts/application (Duration: 0.8ms | Allocations: 353)
+  Rendered layout layouts/application.html.erb (Duration: 113.5ms | Allocations: 6478)
+Completed 200 OK in 129ms (Views: 118.8ms | ActiveRecord: 0.8ms | Allocations: 9421)
+
+
+Started GET "/indexlog" for 127.0.0.1 at 2023-02-08 17:13:11 +0200
+Processing by MainController#MainPage as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/main_controller.rb:14:in `MainPage'
+  [1m[36mOperation Load (0.4ms)[0m  [1m[34mSELECT "operations".* FROM "operations" WHERE "operations"."user_id" = ? AND "operations"."odate" BETWEEN ? AND ? ORDER BY odate LIMIT ?[0m  [["user_id", 10], ["odate", "2023-02-01"], ["odate", "2023-02-28"], ["LIMIT", 5]]
+  ↳ app/controllers/main_controller.rb:22:in `MainPage'
+  Rendering layout layouts/application.html.erb
+  Rendering main/MainPage.html.erb within layouts/application
+  Rendered main/MainPage.html.erb within layouts/application (Duration: 0.2ms | Allocations: 63)
+  Rendered layout layouts/application.html.erb (Duration: 45.0ms | Allocations: 4985)
+Completed 200 OK in 57ms (Views: 46.1ms | ActiveRecord: 0.6ms | Allocations: 7385)
+
+
+Started GET "/indexlog" for 127.0.0.1 at 2023-02-08 17:13:21 +0200
+Processing by MainController#MainPage as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/main_controller.rb:14:in `MainPage'
+  [1m[36mOperation Load (0.4ms)[0m  [1m[34mSELECT "operations".* FROM "operations" WHERE "operations"."user_id" = ? AND "operations"."odate" BETWEEN ? AND ? ORDER BY odate LIMIT ?[0m  [["user_id", 10], ["odate", "2023-02-01"], ["odate", "2023-02-28"], ["LIMIT", 5]]
+  ↳ app/controllers/main_controller.rb:22:in `MainPage'
+  Rendering layout layouts/application.html.erb
+  Rendering main/MainPage.html.erb within layouts/application
+  Rendered main/MainPage.html.erb within layouts/application (Duration: 0.2ms | Allocations: 63)
+  Rendered layout layouts/application.html.erb (Duration: 40.4ms | Allocations: 4982)
+Completed 200 OK in 51ms (Views: 41.2ms | ActiveRecord: 0.9ms | Allocations: 7162)
+
+
+Started GET "/indexlog" for 127.0.0.1 at 2023-02-08 17:13:51 +0200
+Processing by MainController#MainPage as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/main_controller.rb:14:in `MainPage'
+  [1m[36mOperation Load (0.4ms)[0m  [1m[34mSELECT "operations".* FROM "operations" WHERE "operations"."user_id" = ? AND "operations"."odate" BETWEEN ? AND ? ORDER BY odate LIMIT ?[0m  [["user_id", 10], ["odate", "2023-02-01"], ["odate", "2023-02-28"], ["LIMIT", 5]]
+  ↳ app/controllers/main_controller.rb:22:in `MainPage'
+  Rendering layout layouts/application.html.erb
+  Rendering main/MainPage.html.erb within layouts/application
+  Rendered main/MainPage.html.erb within layouts/application (Duration: 0.4ms | Allocations: 63)
+  Rendered layout layouts/application.html.erb (Duration: 43.5ms | Allocations: 4993)
+Completed 200 OK in 55ms (Views: 44.2ms | ActiveRecord: 0.6ms | Allocations: 7188)
+
+
+Started GET "/indexlog" for 127.0.0.1 at 2023-02-08 17:13:59 +0200
+Processing by MainController#MainPage as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/main_controller.rb:14:in `MainPage'
+  [1m[36mOperation Load (0.3ms)[0m  [1m[34mSELECT "operations".* FROM "operations" WHERE "operations"."user_id" = ? AND "operations"."odate" BETWEEN ? AND ? ORDER BY odate LIMIT ?[0m  [["user_id", 10], ["odate", "2023-02-01"], ["odate", "2023-02-28"], ["LIMIT", 5]]
+  ↳ app/controllers/main_controller.rb:22:in `MainPage'
+  Rendering layout layouts/application.html.erb
+  Rendering main/MainPage.html.erb within layouts/application
+  Rendered main/MainPage.html.erb within layouts/application (Duration: 0.2ms | Allocations: 63)
+  Rendered layout layouts/application.html.erb (Duration: 43.4ms | Allocations: 4998)
+Completed 200 OK in 51ms (Views: 44.2ms | ActiveRecord: 0.5ms | Allocations: 7163)
+
+
+Started GET "/indexlog" for 127.0.0.1 at 2023-02-08 17:14:07 +0200
+Processing by MainController#MainPage as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/main_controller.rb:14:in `MainPage'
+  [1m[36mOperation Load (0.4ms)[0m  [1m[34mSELECT "operations".* FROM "operations" WHERE "operations"."user_id" = ? AND "operations"."odate" BETWEEN ? AND ? ORDER BY odate LIMIT ?[0m  [["user_id", 10], ["odate", "2023-02-01"], ["odate", "2023-02-28"], ["LIMIT", 5]]
+  ↳ app/controllers/main_controller.rb:22:in `MainPage'
+  Rendering layout layouts/application.html.erb
+  Rendering main/MainPage.html.erb within layouts/application
+  Rendered main/MainPage.html.erb within layouts/application (Duration: 0.4ms | Allocations: 63)
+  Rendered layout layouts/application.html.erb (Duration: 47.8ms | Allocations: 5003)
+Completed 200 OK in 57ms (Views: 48.7ms | ActiveRecord: 0.6ms | Allocations: 7183)
+
+
+Started GET "/indexlog" for 127.0.0.1 at 2023-02-08 17:14:12 +0200
+Processing by MainController#MainPage as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/main_controller.rb:14:in `MainPage'
+  [1m[36mOperation Load (0.6ms)[0m  [1m[34mSELECT "operations".* FROM "operations" WHERE "operations"."user_id" = ? AND "operations"."odate" BETWEEN ? AND ? ORDER BY odate LIMIT ?[0m  [["user_id", 10], ["odate", "2023-02-01"], ["odate", "2023-02-28"], ["LIMIT", 5]]
+  ↳ app/controllers/main_controller.rb:22:in `MainPage'
+  Rendering layout layouts/application.html.erb
+  Rendering main/MainPage.html.erb within layouts/application
+  Rendered main/MainPage.html.erb within layouts/application (Duration: 0.2ms | Allocations: 63)
+  Rendered layout layouts/application.html.erb (Duration: 43.0ms | Allocations: 4996)
+Completed 200 OK in 53ms (Views: 43.8ms | ActiveRecord: 0.8ms | Allocations: 7179)
+
+
+Started GET "/indexlog" for 127.0.0.1 at 2023-02-08 17:14:15 +0200
+Processing by MainController#MainPage as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/main_controller.rb:14:in `MainPage'
+  [1m[36mOperation Load (0.4ms)[0m  [1m[34mSELECT "operations".* FROM "operations" WHERE "operations"."user_id" = ? AND "operations"."odate" BETWEEN ? AND ? ORDER BY odate LIMIT ?[0m  [["user_id", 10], ["odate", "2023-02-01"], ["odate", "2023-02-28"], ["LIMIT", 5]]
+  ↳ app/controllers/main_controller.rb:22:in `MainPage'
+  Rendering layout layouts/application.html.erb
+  Rendering main/MainPage.html.erb within layouts/application
+  Rendered main/MainPage.html.erb within layouts/application (Duration: 0.3ms | Allocations: 63)
+  Rendered layout layouts/application.html.erb (Duration: 45.0ms | Allocations: 4996)
+Completed 200 OK in 54ms (Views: 46.3ms | ActiveRecord: 0.6ms | Allocations: 7185)
+
+
+Started GET "/indexlog" for 127.0.0.1 at 2023-02-08 17:14:18 +0200
+Processing by MainController#MainPage as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/main_controller.rb:14:in `MainPage'
+  [1m[36mOperation Load (0.3ms)[0m  [1m[34mSELECT "operations".* FROM "operations" WHERE "operations"."user_id" = ? AND "operations"."odate" BETWEEN ? AND ? ORDER BY odate LIMIT ?[0m  [["user_id", 10], ["odate", "2023-02-01"], ["odate", "2023-02-28"], ["LIMIT", 5]]
+  ↳ app/controllers/main_controller.rb:22:in `MainPage'
+  Rendering layout layouts/application.html.erb
+  Rendering main/MainPage.html.erb within layouts/application
+  Rendered main/MainPage.html.erb within layouts/application (Duration: 0.2ms | Allocations: 63)
+  Rendered layout layouts/application.html.erb (Duration: 14.6ms | Allocations: 3501)
+Completed 200 OK in 22ms (Views: 15.4ms | ActiveRecord: 0.5ms | Allocations: 5684)
+
+
+Started GET "/indexlog" for 127.0.0.1 at 2023-02-08 17:14:35 +0200
+Processing by MainController#MainPage as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/main_controller.rb:14:in `MainPage'
+  [1m[36mOperation Load (0.3ms)[0m  [1m[34mSELECT "operations".* FROM "operations" WHERE "operations"."user_id" = ? AND "operations"."odate" BETWEEN ? AND ? ORDER BY odate LIMIT ?[0m  [["user_id", 10], ["odate", "2023-02-01"], ["odate", "2023-02-28"], ["LIMIT", 5]]
+  ↳ app/controllers/main_controller.rb:22:in `MainPage'
+  Rendering layout layouts/application.html.erb
+  Rendering main/MainPage.html.erb within layouts/application
+  Rendered main/MainPage.html.erb within layouts/application (Duration: 0.2ms | Allocations: 63)
+  Rendered layout layouts/application.html.erb (Duration: 45.1ms | Allocations: 4999)
+Completed 200 OK in 56ms (Views: 45.9ms | ActiveRecord: 0.7ms | Allocations: 7173)
+
+

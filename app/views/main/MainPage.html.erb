@@ -1,21 +1,58 @@
 
 
-<h2> <%= @user.current_amount %> UAH </h2>
+
+<div class="MinPageContainer">
+   <div class="maininformation">
+      <div class="MainPageLeft">
+         <div class = "current_amount_block">
+            <h2>
+               <% if @user.current_amount  > 0 %>
+                  <%= tag.div class: 'green' do %>
+                     <%= @user.current_amount %> UAH
+                  <% end %>
+               <%elsif @user.current_amount  == 0%>
+                  <%= tag.div class: 'gray' do %>
+                     <%= @user.current_amount %> UAH
+                  <% end %>
+               <% else %>
+                  <%= tag.div class: 'red' do %>
+                     <%= @user.current_amount %> UAH
+                  <% end %>
+               <% end %>
+            </h2>
+            <%= link_to "+ операцию", new_operation_path, class: 'btn btn-info  btn-width'%>
+         </div>
+         <div class= "most_category">
+            <h2> <%= @user.categories.first.name %> </h2>
+         </div>
+         <div class = "last_five_operation">
+            <table class="table">
+               <tbody>
+
+                  <% @last_op.each do |op| %>
+                     <tr>
+                        <td> <%=  op.description %> </td>
+                        <td>
+                           <% if op.income %> + <%else%> - <% end %> <%= op.amount %> UAH
+                        </td>
+
+                        <td> <%= op.odate.to_date %> </td>
+
+                     </tr>
+                  <% end  %>
+               </tbody>
+            </table>
+         </div>
+
+      </div>
+      <div class="MainPageLeft">
+      </div>
+   </div>
 
 
 
 
+</div>
 
-<% @last_op.each do |op| %>
-   <%=  op.description %>:
-   <% if op.income %>
-    +
-   <%else%>
-    -
-   <% end %>
-   <%= op.amount %> UAH
-   <%= op.odate.to_date %>
-   </br>
-<% end  %>
 
-</br>
+
