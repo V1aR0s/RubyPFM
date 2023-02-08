@@ -1,0 +1,23 @@
+<h1>Main#mainpage</h1>
+<p>Find me in app/views/main/index.html.erb</p>
+
+
+<h2> <%= @user.current_amount %> UAH </h2>
+
+
+
+
+
+<% @last_op.each do |op| %>
+   <%=  op.description %>:
+   <% if op.income %>
+    +
+   <%else%>
+    -
+   <% end %>
+   <%= op.amount %> UAH
+   <%= op.odate.to_date %>
+   </br>
+<% end  %>
+
+</br>

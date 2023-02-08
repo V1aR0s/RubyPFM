@@ -1,7 +1,7 @@
 class OperationsController < ApplicationController
   before_action :set_operation, only: %i[ show edit update destroy ]
   before_action :authenticate_user!
-  
+
   # GET /operations or /operations.json
   def index
     @operations = Operation.all
@@ -26,12 +26,19 @@ class OperationsController < ApplicationController
     @operation.user_id = session[:user_id]
     respond_to do |format|
       if @operation.save
-        format.html { redirect_to operation_url(@operation), notice: "Operation was successfully created." }
-        format.json { render :show, status: :created, location: @operation }
-      else
-        format.html { render :new, status: :unprocessable_entity }
-        format.json { render json: @operation.errors, status: :unprocessable_entity }
+        us = User.find_by(id:session[:user_id])
+        if @operation.income
+          us.current_amount += @operation.amount
+        else
+          us.current_amount -= @operation.amount
+        end
+        if us.save
+          format.html { redirect_to operation_url(@operation), notice: "Operation was successfully created." }
+          format.json { render :show, status: :created, location: @operation }
+        end
       end
+      format.html { render :new, status: :unprocessable_entity }
+      format.json { render json: @operation.errors, status: :unprocessable_entity }
     end
   end
 
@@ -66,6 +73,6 @@ class OperationsController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def operation_params
-      params.require(:operation).permit(:amount, :odate, :description, :category_id)
+      params.require(:operation).permit(:amount, :odate, :description, :category_id, :income)
     end
 end

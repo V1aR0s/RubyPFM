@@ -10,14 +10,14 @@ class UsersController < ApplicationController
     )
 
     @user = User.new(user_params)
+    @user.current_amount = 0.0
 
-    
     if @user.save
 
 
       redirect_to root_path, notice: "Вы успешона зарегестрировались"
 
-      
+
     else
       flash.now[:alert] = "Вы неправильно заполнили поля формы регистрации"
 

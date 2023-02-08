@@ -1,14 +1,35 @@
 <p style="color: green"><%= notice %></p>
 
-<h1>Operations</h1>
+<h1>Operations <%= link_to "New operation", new_operation_path, class:"btn btn-success" %></h1>
 
-<div id="operations">
-  <% @operations.each do |operation| %>
-    <%= render operation %>
-    <p>
-      <%= link_to "Show this operation", operation %>
-    </p>
-  <% end %>
-</div>
 
-<%= link_to "New operation", new_operation_path %>
+
+
+<table class="table table-hover">
+  <thead>
+    <tr>
+      <th scope="col">id</th>
+      <th scope="col">Name</th>
+      <th scope="col">amount</th>
+      <th scope="col">date</th>
+      <th scope="col">category</th>
+      <th scope="col"></th>
+    </tr>
+  </thead>
+  <tbody>
+
+    <% @operations.each do |operation| %>
+      <tr>
+        <th scope="row"><%= operation.id %></th>
+        <th><%= operation.description %></th>
+        <th><%= operation.amount %> uah</th>
+        <th><%= operation.odate %></th>
+        <th><%= operation.category.name %></th>
+        <th><p><%= link_to "Show this operation", operation %></p></th>
+
+      </tr>
+    <% end %>
+
+  </tbody>
+</table>
+
