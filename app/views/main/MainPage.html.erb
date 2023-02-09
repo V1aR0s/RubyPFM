@@ -60,7 +60,8 @@
 
 
    <div class="point-graph">
-      <%= line_chart Operation.all.where(:user_id == @user.id).group_by_day(:odate).(:amount) %>
+      <%= line_chart @operation_graph %>
+       <h2> <%= @current_month_first_day.to_date.strftime('%a, %e %b %Y') %> - <%= @current_month_last_day.to_date.strftime('%a, %e %b %Y') %> </h2>
    </div>
 
 </div>

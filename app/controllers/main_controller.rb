@@ -1,3 +1,5 @@
+
+
 class MainController < ApplicationController
   def index
     if current_user
@@ -18,9 +20,35 @@ class MainController < ApplicationController
     @current_month_first_day = Date.today.beginning_of_month
     @current_month_last_day = Date.today.end_of_month
 
+
+
+
+    #last operations rails for table
     @last_op = @user.operations.order("odate")
       .where(:odate => @current_month_first_day..@current_month_last_day).last(3).reverse
 
+
+
+
+
+    op_full_info = @user.operations.order("odate").where(:odate => @current_month_first_day..@current_month_last_day)
+
+    #@op.unshift("start month" => 0)
+
+    start_value = 0
+
+    arr = []
+
+    op_full_info.each do |op|
+      if op.income == true
+        start_value += op.amount
+      else
+        start_value -= op.amount
+      end
+      op.amount = start_value
+    end
+
+    @operation_graph = op_full_info.pluck(:odate, :amount)
 
 
   end
