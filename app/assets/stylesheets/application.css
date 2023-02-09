@@ -205,6 +205,10 @@ input[type=checkbox]:checked ~ .sidebarIconToggle > .diagonal.part-2 {
     display: flex;
     flex-direction: row;
 }
+
+.MainPageRight{
+    width: 50%;
+}
 .MainPageLeft{
     width: 40%;
 }
@@ -261,7 +265,7 @@ input[type=checkbox]:checked ~ .sidebarIconToggle > .diagonal.part-2 {
     color: #fffdfd;
 }
 .red{
-    color: rgb(209, 126, 126);
+    color: rgb(255, 176, 176);
 }
 
 .most_category{

@@ -21,5 +21,7 @@ class MainController < ApplicationController
     @last_op = @user.operations.limit(5).order("odate")
       .where(:odate => @current_month_first_day..@current_month_last_day).reverse
 
+
+
   end
 end
