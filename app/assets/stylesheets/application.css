@@ -220,8 +220,6 @@ input[type=checkbox]:checked ~ .sidebarIconToggle > .diagonal.part-2 {
 /*Fixed button*/
 
 
-
-
 .add_button_operation {
     position: fixed;
     bottom: 70px;
@@ -250,7 +248,7 @@ input[type=checkbox]:checked ~ .sidebarIconToggle > .diagonal.part-2 {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: #c53be4;
+    background-color: #cf58ea;
     border-radius: 10px;
     padding: 10px 20px 20px 20px;
 }
@@ -296,6 +294,98 @@ input[type=checkbox]:checked ~ .sidebarIconToggle > .diagonal.part-2 {
     font-size: 16px;
 }
 
+
+
+/*fixed button*/
+.fixed-btn{
+    position: fixed;
+    z-index: 1;
+    bottom: 15%;
+    right: 12%;
+    box-sizing: border-box;
+
+}
+
+.btn-add{
+    display: block; margin: auto;
+    width: 60px;
+    height: 60px;
+    background-color: rgb(99, 171, 27);
+    text-align: center;
+    border-radius: 50%;
+    text-align: center;
+    margin-top: auto;
+    transition: .5s;
+    border: 3px solid rgb(116, 169, 31);
+    list-style: none;
+    font-size: 30px;
+    color: rgb(227, 255, 226);
+}
+.btn-add:hover{
+    text-decoration: none;
+    color: rgb(227, 255, 226);
+    background-color: rgb(143, 185, 77);;
+}
+
+
+/* Categories page */
+
+.CategoriesPageContainer{
+    max-width: 1100px;
+    width: 100%;
+    margin-top: 30px;
+    align-items: center;
+    text-align: center;
+}
+.CategoriesPageContainer h1{
+    color: #5a5656;
+}
+
+
+.categorie-blocks{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: start;
+}
+.category-img{
+    width: 50px;
+}
+@media only screen and (max-width : 1079px){
+    .categorie-blocks{
+
+        justify-content: center;
+    }
+}
+
+.categorie-blocks div{
+    margin: 15px 10px;
+}
+
+.block-categorie{
+    max-width: 340px;
+    width: 100%;
+    height: 100px;
+    margin: 10px 0;
+    border: 3px solid rgb(218, 218, 218);
+    border-radius: 15px;
+    justify-content: space-around;
+    background-color: #82dcbf;
+    box-sizing: border-box;
+    padding: 0 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    justify-content: space-between;
+}
+.block-categorie h3{
+    color: #5c5c5c;
+}
+.block-categorie p{
+    margin-top: 13px;
+}
 @media only screen and (max-width : 768px){
     .maininformation{
         flex-direction: column-reverse;
@@ -311,4 +401,26 @@ input[type=checkbox]:checked ~ .sidebarIconToggle > .diagonal.part-2 {
     .pie_grpah{
         justify-self: self-start;
     }
+
+    .categorie-blocks{
+        flex-direction: column;
+        box-sizing: border-box;
+        padding: 10px 10px;
+        align-items: center;
+        margin-bottom: 70px;
+    }
+
+    .categorie-blocks div{
+        margin: 15px 0px;
+    }
+    .block-categorie{
+        max-width: 350px;
+    }
+    .fixed-btn{
+        position: fixed;
+        z-index: 1;
+        bottom: 20px;
+        right: 15px;
+    }
+
 }

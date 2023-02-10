@@ -1,31 +1,48 @@
-<p style="color: green"><%= notice %></p>
 
-<h1>Categories  <%= link_to "New category", new_category_path, class:"btn btn-success" %></h1>
-
-
-<table class="table table-hover">
-  <thead>
-    <tr>
-      <th scope="col">id</th>
-      <th scope="col">Name</th>
-      <th scope="col">Description</th>
-      <th scope="col"></th>
-    </tr>
-  </thead>
-  <tbody>
-
+<div class="CategoriesPageContainer">
+  <h1>Categories</h1>
+  <div class="categorie-blocks">
     <% @categories.each do |category| %>
-      <tr>
-        <th scope="row"><%= category.id %></th>
-        <th><%= category.name %></th>
-        <th><%= category.description %></th>
-        <th><p><%= link_to "Show this category", category %></p></th>
-
-      </tr>
+      <div class = "block-categorie">
+        <h3><%= category.name %></h3>
+        <p>
+          <a href="<%= category_path(category) %>">
+            <%= image_tag "enter.png", class:"category-img" %>
+          </a>
+        </p>
+      </div>
     <% end %>
-
-  </tbody>
-</table>
+  </div>
 
 
+</div>
+
+<%= link_to "+", new_category_path, class:"fixed-btn btn-add" %>
+
+<!--
+  <p style="color: green"><%= notice %></p>
+    <table class="table table-hover">
+    <thead>
+      <tr>
+        <th scope="col">id</th>
+        <th scope="col">Name</th>
+        <th scope="col">Description</th>
+        <th scope="col"></th>
+      </tr>
+    </thead>
+    <tbody>
+
+      <% @categories.each do |category| %>
+        <tr>
+          <th scope="row"><%= category.id %></th>
+          <th><%= category.name %></th>
+          <th><%= category.description %></th>
+          <th><p><%= link_to "Show this category", category %></p></th>
+
+        </tr>
+      <% end %>
+
+    </tbody>
+  </table>
+-->
 
