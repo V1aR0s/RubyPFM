@@ -1,10 +1,18 @@
 
-<h1>New category</h1>
 
-<%= render "form", category: @category, class:"d-flex justify-content-center", style:"width:100%" %>
+<div class="form-create-block">
+  <div class="card">
+      <div class="card-header">
+        <h1>Создать категорию</h1>
+      </div>
+    <%= render "form", category: @category, class:"d-flex justify-content-center", style:"width:100%" %>
 
 
 
-<div>
-  <%= link_to "Back to categories", categories_path %>
+  </div>
+    <div>
+      <%= link_to "<- Все категории", categories_path, class:"btn btn-info" %>
+    </div>
 </div>
+
+
