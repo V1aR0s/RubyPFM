@@ -33,7 +33,7 @@ class OperationsController < ApplicationController
           us.current_amount -= @operation.amount
         end
         if us.save
-          format.html { redirect_to operation_url(@operation), notice: "Operation was successfully created." }
+          format.html { redirect_to operation_url(@operation), notice: "Операция была создана." }
           format.json { render :show, status: :created, location: @operation }
         end
       end
@@ -46,7 +46,7 @@ class OperationsController < ApplicationController
   def update
     respond_to do |format|
       if @operation.update(operation_params)
-        format.html { redirect_to operation_url(@operation), notice: "Operation was successfully updated." }
+        format.html { redirect_to operation_url(@operation), notice: "Операция была обновлена." }
         format.json { render :show, status: :ok, location: @operation }
       else
         format.html { render :edit, status: :unprocessable_entity }
@@ -57,12 +57,26 @@ class OperationsController < ApplicationController
 
   # DELETE /operations/1 or /operations/1.json
   def destroy
-    @operation.destroy
 
-    respond_to do |format|
-      format.html { redirect_to operations_url, notice: "Operation was successfully destroyed." }
-      format.json { head :no_content }
+    us = User.find_by(id:session[:user_id])
+    if @operation.income
+      us.current_amount -= @operation.amount
+    else
+      us.current_amount += @operation.amount
     end
+
+    if us.save
+      @operation.destroy
+
+      respond_to do |format|
+        format.html { redirect_to operations_url, notice: "Операция была удалена." }
+        format.json { head :no_content }
+      end
+    else
+
+    end
+
+
   end
 
   private
