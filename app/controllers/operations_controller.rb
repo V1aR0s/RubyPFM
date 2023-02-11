@@ -45,13 +45,28 @@ class OperationsController < ApplicationController
   # PATCH/PUT /operations/1 or /operations/1.json
   def update
     respond_to do |format|
-      if @operation.update(operation_params)
-        format.html { redirect_to operation_url(@operation), notice: "Операция была обновлена." }
-        format.json { render :show, status: :ok, location: @operation }
+
+      us = User.find_by(id:session[:user_id])
+      if @operation.income
+        us.current_amount -= @operation.amount
       else
-        format.html { render :edit, status: :unprocessable_entity }
-        format.json { render json: @operation.errors, status: :unprocessable_entity }
+        us.current_amount += @operation.amount
       end
+
+      if @operation.update(operation_params)
+        if @operation.income
+          us.current_amount += @operation.amount
+        else
+          us.current_amount -= @operation.amount
+        end
+        if us.save
+          format.html { redirect_to operation_url(@operation), notice: "Операция была обновлена." }
+          format.json { render :show, status: :created, location: @operation }
+        end
+      end
+
+      format.html { render :edit, status: :unprocessable_entity }
+      format.json { render json: @operation.errors, status: :unprocessable_entity }
     end
   end
 
