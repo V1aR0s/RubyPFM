@@ -23,11 +23,8 @@
           <div class="input-group-prepend">
             <label class="input-group-text" for="Category_selector">Категория</label>
           </div>
-          <select class="custom-select" id="Category_selector">
-            <% User.find_by(id:session[:user_id]).categories.each do |categorie| %>
-              <option value="{<%= categorie.id %>}"><%= categorie.name %></option>
-            <% end %>
-          </select>
+          <%= form.select :category_id, options_for_select(User.find_by(id:session[:user_id]).categories.collect{ |u| [u.name, u.id] }), {}, class:"custom-select" %>
+
         </div>
 
 
