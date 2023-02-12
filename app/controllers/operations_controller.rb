@@ -1,10 +1,14 @@
 class OperationsController < ApplicationController
+  
+
   before_action :set_operation, only: %i[ show edit update destroy ]
   before_action :authenticate_user!
-
+  
   # GET /operations or /operations.json
   def index
-    @operations = User.find_by(id:session[:user_id]).operations
+    #@operations = User.find_by(id:session[:user_id]).operations
+    @pagy, @operations = pagy(User.find_by(id:session[:user_id]).operations, items: 10)
+
   end
 
   # GET /operations/1 or /operations/1.json

@@ -2,7 +2,7 @@
 
 <div class="MinPageContainer">
    <div class="maininformation">
-      <div class="MainPageLeft">
+      <div class="MainPageLeft" style="z-index:1;">
          <div class = "current_amount_block">
             <h2>
                <% if @user.current_amount  > 0 %>
@@ -44,7 +44,7 @@
          </div>
 
       </div>
-      <div class="MainPageRight">
+      <div class="MainPageRight"  style="z-index:0;">
          <h2> <%= @current_month_first_day.to_date.strftime('%a, %e %b %Y') %> - <%= @current_month_last_day.to_date.strftime('%a, %e %b %Y') %> </h2>
          <div class = "pie_grpah">
             <%= pie_chart @user.categories.where(:user_id == @user.id).group(:name)

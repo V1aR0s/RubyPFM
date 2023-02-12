@@ -5,7 +5,7 @@
 
 
 
-  <table class="table table-bordered">
+  <table class="table table-bordered table-striped" style="background-color:white; border-radius:0px;">
     <thead class="thead-dark">
       <tr>
         <th scope="col">Категория</th>
@@ -17,8 +17,8 @@
     </thead>
     <tbody>
       <% @operations.each do |operation| %>
-        <tr>
-          <th><%= operation.category.name %></th>
+        <tr >
+          <th ><%= operation.category.name %></th>
           <th><%= operation.odate.to_date.strftime("%Y.%m.%d") %></th>
           <th><%= operation.description %></th>
           <th>
@@ -45,8 +45,11 @@
       <% end %>
 
     </tbody>
-  </table>
 
+    
+
+  </table>
+  <%== pagy_nav(@pagy) %>
 
 </div>
   <%= link_to "+", new_operation_path, class:"fixed-btn btn-add" %>
