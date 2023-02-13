@@ -1,16 +1,31 @@
-<div class = "container">
-    <h2>Вход</h2>
-    <p class = "mt">Введите свои email и пароль для входа</p>
-    
-    <div class = "mt">
-        <%= form_with scope: :session, url: session_path, data: {turbo: false} do | form | %>
-            <p><%= form.label :email%></p>
-            <p><%= form.text_field :email, class:'form-text-field'%></p>
+<div class = "container_login_reg">
+    <div class="logreg">
 
-            <p><%= form.label :password %></p>
-            <p><%= form.text_field :password, class:'form-text-field'%></p>
+        <h2>Вход</h2>
+        
+        <div class = "mt">
+            <%= form_with scope: :session, url: session_path, data: {turbo: false} do | form | %>
+                <p class="placehold"><%= form.label :email%></p>
+                <div class="input-block"> 
+                    <div class="input_icon">
+                        <i class="fa fa-street-view" aria-hidden="true"></i>
+                    </div> 
+                    <%= form.text_field :email, class:'form-text-field',  placeholder:"Email"%>
+                </div>
 
-            <p class = "mt-lg"> <%= form.submit "Войти", class: 'button button-main'%></p>
-        <%end%>
+                <p class="placehold"><%= form.label :password %></p>
+                <div class="input-block"> 
+                    <div class="input_icon">
+                        <i class="fa fa-user-secret" aria-hidden="true"></i>
+
+                    </div> 
+                    <%= form.password_field :password, class:'form-text-field', placeholder:"Пароль"%>
+                </div>
+                <p class = "mt-lg"> <%= form.submit "Войти", class: 'button-loginreg'%></p>
+            <%end%>
+        </div>
+
     </div>
+    
+
 </div>
