@@ -53066,3 +53066,22 @@ Processing by MainController#MainPage as HTML
 Completed 200 OK in 45ms (Views: 29.2ms | ActiveRecord: 2.9ms | Allocations: 10494)
 
 
+Started GET "/" for 127.0.0.1 at 2023-02-14 19:01:42 +0200
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by MainController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/index.html.erb within layouts/application
+  Rendered main/index.html.erb within layouts/application (Duration: 14.9ms | Allocations: 309)
+  Rendered layout layouts/application.html.erb (Duration: 2210.5ms | Allocations: 79475)
+Completed 200 OK in 2340ms (Views: 2252.4ms | ActiveRecord: 0.0ms | Allocations: 83014)
+
+
+Started GET "/session/new" for 127.0.0.1 at 2023-02-14 19:01:47 +0200
+Processing by SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 144.5ms | Allocations: 2826)
+  Rendered layout layouts/application.html.erb (Duration: 171.0ms | Allocations: 7221)
+Completed 200 OK in 180ms (Views: 177.0ms | ActiveRecord: 0.0ms | Allocations: 7998)
+
+
