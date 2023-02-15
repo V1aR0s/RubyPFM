@@ -4,7 +4,17 @@ class CategoriesController < ApplicationController
 
   # GET /categories or /categories.json
   def index
-    @categories = User.find_by(id:session[:user_id]).categories
+    
+
+    
+    if params[:serch_name].present?
+      @serach_name = params[:serch_name]   
+      
+      @categories = User.find_by(id:session[:user_id]).categories.where('name LIKE ?', "%#{ @serach_name }%")
+    else
+      @categories = User.find_by(id:session[:user_id]).categories
+    end
+
   end
 
   # GET /categories/1 or /categories/1.json

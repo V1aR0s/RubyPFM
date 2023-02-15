@@ -1,48 +1,36 @@
 
 <div class="CategoriesPageContainer">
-  <h1>Categories</h1>
-  <div class="categorie-blocks">
-    <% @categories.each do |category| %>
-      <div class = "block-categorie">
-        <h3><%= category.name %></h3>
-        <p>
-          <a href="<%= category_path(category) %>">
-            <%= image_tag "enter.png", class:"category-img" %>
-          </a>
-        </p>
-      </div>
-    <% end %>
-  </div>
+  <h1>Категории</h1>
 
+  <div class = "search-block">
+    <div class="container">
+        <h3>поиск</h3>
+        <%= form_with(method: :get) do |form| %>
+          <%= form.text_field :serch_name, class:"search-cat-input", value:"#{@serach_name}" %>
+      
+          <button type="submit" class="search-btn"> <i class="fa fa-search" aria-hidden="true"></i></button>
+        <% end %>
+
+        <%= link_to "все категории", {controller: :categories, action: :index}, class:"all-cat" %>
+    </div>
+  </div>
+  <% if @categories.any? %>
+    <div class="categorie-blocks">
+      <% @categories.each do |category| %>
+        <div class = "block-categorie">
+          <h3><%= category.name %></h3>
+          <p>
+            <a href="<%= category_path(category) %>">
+              <%= image_tag "enter.png", class:"category-img" %>
+            </a>
+          </p>
+        </div>
+      <% end %>
+    </div>
+  <% end %>
 
 </div>
 
 <%= link_to "+", new_category_path, class:"fixed-btn btn-add" %>
 
-<!--
-  <p style="color: green"><%= notice %></p>
-    <table class="table table-hover">
-    <thead>
-      <tr>
-        <th scope="col">id</th>
-        <th scope="col">Name</th>
-        <th scope="col">Description</th>
-        <th scope="col"></th>
-      </tr>
-    </thead>
-    <tbody>
-
-      <% @categories.each do |category| %>
-        <tr>
-          <th scope="row"><%= category.id %></th>
-          <th><%= category.name %></th>
-          <th><%= category.description %></th>
-          <th><p><%= link_to "Show this category", category %></p></th>
-
-        </tr>
-      <% end %>
-
-    </tbody>
-  </table>
--->
 
