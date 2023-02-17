@@ -18,6 +18,11 @@ class OperationsController < ApplicationController
   # GET /operations/new
   def new
     @operation = Operation.new
+
+
+
+
+
   end
 
   # GET /operations/1/edit
@@ -98,6 +103,32 @@ class OperationsController < ApplicationController
 
   end
 
+
+
+  def graphic
+    
+    @user = User.find_by(id: session[:user_id])
+
+    @first_day = Date.today.beginning_of_month
+    @last_dat = Date.today.end_of_month
+
+    operations_before =  @user.operations.order("odate").where(:odate => @first_day..@last_dat)
+    start_value = 0
+
+    operations_before.each do |op|
+      if op.income == true
+        start_value += op.amount
+      else
+        start_value -= op.amount
+      end
+      op.amount = start_value
+    end
+    
+    @operations = operations_before.pluck(:odate, :amount)
+    
+  end
+
+  
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_operation
@@ -108,4 +139,6 @@ class OperationsController < ApplicationController
     def operation_params
       params.require(:operation).permit(:amount, :odate, :description, :category_id, :income)
     end
+
+
 end

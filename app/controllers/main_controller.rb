@@ -37,7 +37,6 @@ class MainController < ApplicationController
 
     start_value = 0
 
-    arr = []
 
     op_full_info.each do |op|
       if op.income == true

@@ -6,7 +6,8 @@ Rails.application.routes.draw do
   get 'reports/report_by_category'
   get 'reports/report_by_dates'
   get 'main/index'
-
+  get 'operations/graphic'
+  
   resources :operations
   resources :categories
   resource :session, only: %i[new create destroy]
