@@ -107,25 +107,6 @@ class OperationsController < ApplicationController
 
   def graphic
     
-    @user = User.find_by(id: session[:user_id])
-
-    @first_day = Date.today.beginning_of_month
-    @last_dat = Date.today.end_of_month
-
-    operations_before =  @user.operations.order("odate").where(:odate => @first_day..@last_dat)
-    start_value = 0
-
-    operations_before.each do |op|
-      if op.income == true
-        start_value += op.amount
-      else
-        start_value -= op.amount
-      end
-      op.amount = start_value
-    end
-    
-    @operations = operations_before.pluck(:odate, :amount)
-    
   end
 
   

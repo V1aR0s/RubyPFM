@@ -1,12 +1,54 @@
-<div id="<%= dom_id category %>">
-  <p>
-    <strong>Name:</strong>
-    <%= category.name %>
-  </p>
+<div class="operation-index-container">
 
-  <p>
-    <strong>Description:</strong>
-    <%= category.description %>
-  </p>
+  <h1>Операции в категории <%= category.name %></h1>
+  <h5 style="margin-bottom:30px">Описание: <%= category.description %></h5>
+
+
+
+  <table class="table table-bordered table-striped" style="background-color:white; border-radius:0px;">
+    <thead class="thead-dark">
+      <tr>
+        <th scope="col">Категория</th>
+        <th scope="col">Дата</th>
+        <th scope="col">Описание</th>
+        <th scope="col">Сумма</th>
+        <th scope="col">Действие</th>
+      </tr>
+    </thead>
+    <tbody>
+      <% @operations.each do |operation| %>
+        <tr >
+          <th ><%= operation.category.name %></th>
+          <th><%= operation.odate.to_date.strftime("%Y.%m.%d") %></th>
+          <th><%= operation.description %></th>
+          <th>
+            <% if operation.income == true %>
+              <p style="color:rgb(93, 166, 108);">
+            <% else %>
+              <p style="color:rgb(170, 79, 79);">
+            <% end %>
+
+            <%= operation.amount %>
+
+            </p>
+          <th>
+            <div class="button-table">
+              <a href="<%= edit_operation_path(operation) %>" class="btn btn-primary">
+                <i class="fa fa-cog" style="font-size:14px"></i>
+              </a>
+
+              <%= button_to "X",operation, method: :delete, class:"btn btn-danger", style:"font-weight: bold;" %>
+            </div>
+
+          </th>
+        </tr>
+      <% end %>
+
+    </tbody>
+
+    
+
+  </table>
+  <%== pagy_nav(@pagy) %>
 
 </div>

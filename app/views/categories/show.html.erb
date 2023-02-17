@@ -2,9 +2,13 @@
 
 <%= render @category %>
 
-<div>
-  <%= link_to "Edit this category", edit_category_path(@category) %> |
-  <%= link_to "Back to categories", categories_path %>
+<div class="buttons-categories">
+    <div class="container">
+        <%= link_to "Изменить", edit_category_path(@category), class:"btn btn-info" %> 
+        <%= link_to "Все категории", categories_path, class:"btn btn-success" %>
 
-  <%= button_to "Destroy this category", @category, method: :delete %>
+        <!--<%= button_to "Удалить", @category, method: :delete, class:"btn btn-danger" %>--> 
+    </div>
+
+
 </div>

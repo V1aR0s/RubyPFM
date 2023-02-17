@@ -19,6 +19,10 @@ class CategoriesController < ApplicationController
 
   # GET /categories/1 or /categories/1.json
   def show
+
+    @pagy, @operations = pagy(User.find_by(id:session[:user_id]).operations.where("category_id Like ?",  params[:id]), items: 10)
+    
+
   end
 
   # GET /categories/new
