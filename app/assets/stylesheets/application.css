@@ -498,6 +498,45 @@ input[type=checkbox]:checked ~ .sidebarIconToggle > .diagonal.part-2 {
     height: 40px;
 }
 
+
+
+
+/*report controller*/
+.report-container{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+
+    padding: 40px 40px;
+}
+.report-form{
+    max-width: 1000px;
+    width: 100%;
+    background-color: rgba(231, 231, 231, 0.75);
+    padding: 20px 15px;
+    border-radius: 10px;
+}
+.report-form h1{
+    width: 100%;
+    border-bottom:2px solid black ;
+    padding-bottom: 10px;
+}
+
+.check-form{
+    margin-left: 10px;
+}
+
+
+.report-form .form{
+    width: 100%;
+}
+.buttons-form{
+    width: 100%;
+    display: flex;
+}
+
+
+
 @media only screen and (max-width : 768px){
     .maininformation{
         flex-direction: column-reverse;
@@ -760,3 +799,82 @@ input[type=checkbox]:checked ~ .sidebarIconToggle > .diagonal.part-2 {
     display: flex;
     justify-content: space-around;
 }
+
+
+
+/*form checkbox*/
+
+
+  .checkbox-result{
+    display: flex;
+    width: 300px;
+    justify-content: space-around;
+    margin-bottom: 20px;
+    border:4px solid rgba(177, 177, 177, 0.436);
+    padding: 10px;
+    border-radius: 20px;
+  }
+  .checkbox-result span{
+    width: 100px;
+  }
+  .checkbox-result span:last-child{
+    padding-left: 30px;
+  }
+  .checkbox-wrapper-3{
+    margin-left: -20px;
+
+  }
+  .checkbox-wrapper-3 input[type="checkbox"] {
+    visibility: hidden;
+    display: none;
+  }
+
+  .checkbox-wrapper-3 .toggle {
+    position: relative;
+    display: block;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    -webkit-tap-highlight-color: transparent;
+    transform: translate3d(0, 0, 0);
+  }
+  .checkbox-wrapper-3 .toggle:before {
+    content: "";
+    position: relative;
+    top: 3px;
+    left: 3px;
+    width: 60px;
+    height: 24px;
+    display: block;
+    background: #9A9999;
+    border-radius: 8px;
+    transition: background 0.2s ease;
+  }
+
+  .checkbox-wrapper-3 .toggle span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 30px;
+    height: 30px;
+    display: block;
+    background: white;
+    border-radius: 30px;
+    box-shadow: 0 3px 8px rgba(154, 153, 153, 0.5);
+    transition: all 0.2s ease;
+  }
+  .checkbox-wrapper-3 #cbx-3:checked + .toggle:before {
+    background: #519993;
+  }
+  .checkbox-wrapper-3 #cbx-3:checked + .toggle span {
+    background: #55a901;
+    transform: translateX(40px);
+    transition: all 0.2s cubic-bezier(0.8, 0.4, 0.3, 1.25), background 0.15s ease;
+    box-shadow: 0 3px 8px rgba(130, 112, 0, 0.2);
+  }
+  .checkbox-wrapper-3 #cbx-3:checked + .toggle span:before {
+    transform: scale(1);
+    opacity: 0;
+    transition: all 0.4s ease;
+  }
+
