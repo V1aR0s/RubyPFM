@@ -1,11 +1,4 @@
 <h1>Reports#report_by_category</h1>
 <p>Find me in app/views/reports/report_by_category.html.erb</p>
 
-<% @operations.each do |operation| %>
-  <div>
-    <h2><%= operation.description  %></h2>
-    <h4><%= Category.find(operation.category_id).name %></h4>
-    <p><%= operation.odate  %></p>
-    <p><%= operation.amount  %></p>
-  </div>
-<% end %>
+<%= @cat_id %>
