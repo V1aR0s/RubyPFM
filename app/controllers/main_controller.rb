@@ -31,7 +31,7 @@ class MainController < ApplicationController
 
 
 
-    op_full_info = @user.operations.order("odate").where(:odate => @current_month_first_day..@current_month_last_day)
+    op_full_info = @user.operations.order("odate").where("odate BETWEEN ? AND ?", @current_month_first_day, @current_month_last_day)
 
     #@op.unshift("start month" => 0)
 

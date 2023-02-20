@@ -1,4 +1,38 @@
-<h1>Reports#report_by_category</h1>
-<p>Find me in app/views/reports/report_by_category.html.erb</p>
+<div class="report-container-by">
 
-<%= @cat_id %>
+    <h1 class = "Reports-title"> <%= @first_date.to_date.strftime('%a, %e %b %Y') %> - <%= @last_date.to_date.strftime('%a, %e %b %Y') %> </h1>
+
+    <div class = "report-categories">
+
+        <table class="table table-striped">
+        <thead>
+            <tr>
+            <th scope="col">Категория</th>
+            <th scope="col">Сумма</th>
+            </tr>
+        </thead>
+        <tbody>
+            <% @categories.each do |cat| %>
+                <tr>
+                    <% cat.each do |c| %>
+                        <td><%= c %></td>
+                    <% end %>
+                </tr>
+            <% end %>
+            <tr>
+                <td class="table-success">Всего <%= @sum.to_i %> ГРН </td>
+                <td class="table-success"></td>
+            </tr>
+        </tbody>
+        </table>
+
+
+
+        <div>
+            <%= pie_chart  @categories, donut: true, width: "500px", legend: "bottom"  %>
+        </div>
+
+
+    </div>
+
+</div>

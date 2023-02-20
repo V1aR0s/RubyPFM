@@ -1,11 +1,36 @@
-<h1>Reports#report_by_dates</h1>
-<p>Find me in app/views/reports/report_by_dates.html.erb</p>
 
-<% @operations.each do |operation| %>
-  <div>
-    <h2><%= operation.description  %></h2>
-    <h4><%= Category.find(operation.category_id).name %></h4>
-    <p><%= operation.odate  %></p>
-    <p><%= operation.amount  %></p>
-  </div>
-<% end %>
+<p class = "Reports-title"> 
+  <%= @first_date.to_date.strftime('%a, %e %b %Y') %> - <%= @last_date.to_date.strftime('%a, %e %b %Y') %>
+  </br>
+  
+  <%= Category.all.find_by(id:@cat_id).name %> [<%= @income == 1 ? "Доход" : "Траты" %>] по датам
+</p>
+
+<div class = "report-data-container">
+    <%= line_chart @op_full_info.group(:odate).sum(:amount) %>
+    
+    <div class = "table-dates">
+
+
+    <table class="table table-striped">
+        <thead>
+            <tr>
+            <th scope="col">Категория</th>
+            <th scope="col">Сумма</th>
+            <th scope="col">Сумма</th>
+            <th scope="col">Сумма</th>
+            </tr>
+        </thead>
+        <tbody>
+            <% @op_full_info.each  do |operation| %>
+                <tr>
+                    <th scope="col"><%= operation.description %></th>
+                    <th scope="col"><%= Category.all.find_by(id:operation.category_id).name %></th>
+                    <th scope="col"><%= operation.amount.to_i %></th>
+                    <th scope="col"><%= operation.odate.to_date %></th>
+                </tr>
+            <% end %>
+        </tbody>
+      </table>
+    </div>
+</div>

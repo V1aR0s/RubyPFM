@@ -11,7 +11,7 @@ class ReportsController < ApplicationController
 
       @first_date = params[:first_date]# Date.today.beginning_of_month
       @last_date = params[:last_date]
-      if params[:first_date] == nil || params[:first_date]
+      if params[:first_date] == nil or params[:first_date] == nil
           @first_date = Date.today.beginning_of_month
           @last_date = Date.today.end_of_month
       end
@@ -37,11 +37,28 @@ class ReportsController < ApplicationController
   def report_by_category
     #@operations = Operation.all
     #@categories = Category.all
+    @user = User.find_by(id: session[:user_id])
     @cat_id = params[:category_id]
+    @first_date = params[:first_date]
+    @last_date = params[:last_date]
+    @income = params[:income]
+
+
+    @categories = @user.categories.where(:user_id == @user.id).group(:name).joins(:operations).where("operations.income == ? AND operations.odate BETWEEN ? AND ?", @income , @first_date, @last_date).sum(:amount)
+    @sum = @user.categories.where(:user_id == @user.id).joins(:operations).where("operations.income == ? AND operations.odate BETWEEN ? AND ?", @income , @first_date, @last_date).sum(:amount)
+
   end
 
   def report_by_dates
-    @operations = Operation.all
-    @categories = Category.all
+    @user = User.find_by(id: session[:user_id])
+    @cat_id = params[:category_id]
+    @first_date = params[:first_date]
+    @last_date = params[:last_date]
+    @income = params[:income]
+
+
+    
+    @op_full_info = @user.operations.order("odate").where("income == ? AND odate BETWEEN ? AND ?", @income , @first_date, @last_date)
+    
   end
 end
