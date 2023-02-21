@@ -15,13 +15,13 @@
  <div class="card-body">
       <blockquote class="blockquote mb-0">
         <div class="form-outline">
-          <%= form.label "Описание", style: "display: block" %>
+          <%= form.label t("operations_view.create_description"), style: "display: block" %>
           <%= form.text_field :description, class:"form-control" %>
         </div>
 
         <div class="input-group mb-3" style="margin-top:30px;">
           <div class="input-group-prepend">
-            <label class="input-group-text" for="Category_selector">Категория</label>
+            <label class="input-group-text" for="Category_selector"><%= t("operations_view.create_category") %></label>
           </div>
           <%= form.select :category_id, options_for_select(User.find_by(id:session[:user_id]).categories.collect{ |u| [u.name, u.id] }), {}, class:"custom-select" %>
 
@@ -29,22 +29,22 @@
 
 
         <div class="form-outline">
-          <%= form.label "Сумма",  style: "display: block" %>
+          <%= form.label t("operations_view.create_category"),  style: "display: block" %>
           <%= form.text_field :amount, type:"number",class:"form-control" %>
         </div>
 
         <div>
-          <%= form.label "Дата", style: "display: block" %>
+          <%= form.label t("operations_view.create_date"), style: "display: block" %>
           <%= form.datetime_field :odate, class:"form-control" %>
         </div>
 
-        <label class="container-checkbox"><p>Доход?</p>
+        <label class="container-checkbox"><p><%= t("operations_view.craete_income") %></p>
           <%= form.check_box :income,  {tupe: "checkbox"}, 1, 0 %>
           <span class="checkmark"></span>
         </label>
 
         <div>
-          <%= form.submit "Сохранить", class:"btn btn-success"%>
+          <%= form.submit t("buttons.save"), class:"btn btn-success"%>
         </div>
       </blockquote>
   </div>

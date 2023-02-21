@@ -7,8 +7,8 @@
         <table class="table table-striped">
         <thead>
             <tr>
-            <th scope="col">Категория</th>
-            <th scope="col">Сумма</th>
+            <th scope="col"><%= t("table.category") %></th>
+            <th scope="col"><%= t("table.amount") %></th>
             </tr>
         </thead>
         <tbody>
@@ -20,7 +20,7 @@
                 </tr>
             <% end %>
             <tr>
-                <td class="table-success">Всего <%= @sum.to_i %> ГРН </td>
+                <td class="table-success"><%= t("table.total") %> <%= @sum.to_i %> ГРН </td>
                 <td class="table-success"></td>
             </tr>
         </tbody>

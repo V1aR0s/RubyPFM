@@ -15,11 +15,11 @@ class UsersController < ApplicationController
     if @user.save
 
 
-      redirect_to root_path, notice: "Вы успешона зарегестрировались"
+      redirect_to root_path, notice: t("notions.user_register")
 
 
     else
-      flash.now[:alert] = "Вы неправильно заполнили поля формы регистрации"
+      flash.now[:alert] = t("notions.incorrect_reg")
 
       render :new
     end

@@ -2,7 +2,7 @@
 <div class="form-create-block">
   <div class="card">
       <div class="card-header">
-        <h1>Изменить категорию</h1>
+        <h1><%= t("categories_view.edit") %></h1>
       </div>
     <%= render "form", category: @category, class:"d-flex justify-content-center", style:"width:100%" %>
 
@@ -10,8 +10,8 @@
 
   </div>
     <div>
-      <%= link_to "<- Все категории", categories_path, class:"btn btn-info" %>
-      <%= link_to "Показать категорию", @category, class:"btn btn-secondary" %>
+      <%= link_to t("buttons.categories_all"), categories_path, class:"btn btn-info" %>
+      <%= link_to t("buttons.show_category"), @category, class:"btn btn-secondary" %>
     </div>
 </div>
 

@@ -1,7 +1,6 @@
 Rails.application.routes.draw do
 
-  scope "(:locale)", locale: /#{I18n.available_locales.join("|")}/ do
-    root 'main#index'
+  root 'main#index'
 
     get '/indexlog', to: 'main#MainPage'
     get 'reports/index'
@@ -16,11 +15,5 @@ Rails.application.routes.draw do
     resources :categories
     resource :session, only: %i[new create destroy]
     resources :users, only: %i[new create]
-  
-    # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
-  
-    # Defines the root path route ("/")
-    # root "articles#index"  
-  end
   
 end

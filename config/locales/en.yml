@@ -1,5 +1,88 @@
 en:
+  buttons:
+      exit: "Exit"
+      login: "Login"
+      register: "Register"
+      save: "Save"
+      cancel: "Cancel"
+      categories_all: "<- all categories"
+      operations_all: "<- all operations"
+      show_category: "show category"
+      change: "change"
+      generate: "generate"
+      clear: "clear"
   menu:
-    main_title: "Main"
-  hello: "Hello world"
+      main_title: "Main"
+      categoty_title: "Categories"
+      operation_title: "Operations"
+      graphic_title: "Graphics"
+      language: "language"
+  forms:
+      login: "Login"
+      register: "Register"
+  user:
+      name: "Name"
+      surname: "Surname"
+      password: "Password"
+      repassword: "Confirm password"
+      email: "Email"
+  main_page:
+      operation: "+ operation"
+  categories_view:
+      title: "Categories"
+      search: "search"
+      all_categories: "all categories"
+      create: "Create category"
+      edit: "Edit category"
+
+      create_name: "Name"
+      create_description: "Description"
+  operations_view:
+      title: "Operations"
+      all_categories: "all operation"
+      create: "Create operation"
+      edit: "Edit operation"
+
+      create_description: "Description"
+      create_category: "Category"
+      create_amount: "Amount"
+      create_date: "Date"
+      craete_income: "Income?"
+  graph_view:
+      title: "Report Generator"
+      date_first: "date first"
+      date_last: "date last"
+      category: "Category"
+      income: "Income?"
+
+      by_category: "by categoies"
+      by_date: "by date"
+  tables:
+      category: "Category"
+      date: "Date"
+      description: "Description"
+      amount: "Amount"
+      action: "Action"
+      total: "Total"
+  slogans:
+      op_in_cat: "Operations in a category"
+      description: "Description:"
+      spending: "spended"
+      income: "income"
+      by_dates: "by dates"
   
+  
+  notions: 
+    category_created: "Category created"
+    category_updated: "Category update"
+    category_deleted: "Category deleted"
+
+    operation_deleted: "Operation deleted"
+    operation_created: "Operation created"
+    operation_updated: "Operation updated"
+    
+    user_login: "You logined to site"
+    user_register: "You registered to site"
+    logout: "logout"
+    incorrect_reg: "You filled in the fields of the registration form incorrectly"
+    incorrect_login_or_password: "incorrect email or password"

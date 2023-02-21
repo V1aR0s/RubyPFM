@@ -3,12 +3,12 @@
     <div class="card-body">
       <blockquote class="blockquote mb-0">
           <div>
-            <%= form.label "Название", style: "display: block" %>
+            <%= form.label t("categories_view.create_name"), style: "display: block" %>
             <%= form.text_field :name, class:"form-control" %>
           </div>
 
           <div>
-            <%= form.label "Описание", style: "display: block" %>
+            <%= form.label t("categories_view.create_description"), style: "display: block" %>
             <%= form.text_field :description, class:"form-control"  %>
           </div>
         <footer class="blockquote-footer">
@@ -25,7 +25,7 @@
           <% end %>
         </footer>
 
-         <%= form.submit "Сохранить", class:"btn btn-success"%>
+         <%= form.submit t("buttons.save"), class:"btn btn-success"%>
       </blockquote>
     </div>
 

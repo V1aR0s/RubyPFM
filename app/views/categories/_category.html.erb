@@ -1,18 +1,18 @@
 <div class="operation-index-container">
 
-  <h1>Операции в категории <%= category.name %></h1>
-  <h5 style="margin-bottom:30px">Описание: <%= category.description %></h5>
+  <h1><%= t("slogans.op_in_cat") %> <%= category.name %></h1>
+  <h5 style="margin-bottom:30px"><%= t("slogans.description") %> <%= category.description %></h5>
 
 
 
   <table class="table table-bordered table-striped" style="background-color:white; border-radius:0px;">
     <thead class="thead-dark">
       <tr>
-        <th scope="col">Категория</th>
-        <th scope="col">Дата</th>
-        <th scope="col">Описание</th>
-        <th scope="col">Сумма</th>
-        <th scope="col">Действие</th>
+        <th scope="col"><%= t("tables.category") %></th>
+        <th scope="col"><%= t("tables.date") %></th>
+        <th scope="col"><%= t("tables.description") %></th>
+        <th scope="col"><%= t("tables.amount") %></th>
+        <th scope="col"><%= t("tables.action") %></th>
       </tr>
     </thead>
     <tbody>

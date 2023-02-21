@@ -92,6 +92,10 @@ html, body {
     font-size: 14px;
     color: rgba(255, 255, 255, 0.50);
 }
+.sidebarMenuInner li a .translation_missing{
+    color:#4d4747;
+}
+
 .sidebarMenuInner li a{
     color: #4d4747;
     text-transform: uppercase;

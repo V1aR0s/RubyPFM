@@ -3,7 +3,7 @@
   <%= @first_date.to_date.strftime('%a, %e %b %Y') %> - <%= @last_date.to_date.strftime('%a, %e %b %Y') %>
   </br>
   
-  <%= Category.all.find_by(id:@cat_id).name %> [<%= @income == 1 ? "Доход" : "Траты" %>] по датам
+  <%= Category.all.find_by(id:@cat_id).name %> [<%= @income == 1 ? t("slogans.income") : t("slogans.spending") %>] <%= t("slogans.by_dates") %>
 </p>
 
 <div class = "report-data-container">
@@ -15,10 +15,10 @@
     <table class="table table-striped">
         <thead>
             <tr>
-            <th scope="col">Категория</th>
-            <th scope="col">Сумма</th>
-            <th scope="col">Сумма</th>
-            <th scope="col">Сумма</th>
+            <th scope="col"><%= t("tables.description") %></th>
+            <th scope="col"><%= t("tables.category") %></th>
+            <th scope="col"><%= t("tables.amount") %></th>
+            <th scope="col"><%= t("tables.date") %></th>
             </tr>
         </thead>
         <tbody>

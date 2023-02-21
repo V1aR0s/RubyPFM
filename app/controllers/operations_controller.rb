@@ -42,7 +42,7 @@ class OperationsController < ApplicationController
           us.current_amount -= @operation.amount
         end
         if us.save
-          format.html { redirect_to operations_url, notice: "Операция была создана." }
+          format.html { redirect_to operations_url, notice: t("notions.operation_created") }
           format.json { render :show, status: :created, location: @operation }
         end
       end
@@ -69,7 +69,7 @@ class OperationsController < ApplicationController
           us.current_amount -= @operation.amount
         end
         if us.save
-          format.html { redirect_to operations_url, notice: "Операция была обновлена." }
+          format.html { redirect_to operations_url, notice: t("notions.operation_updated") }
           format.json { render :show, status: :created, location: @operation }
         end
       end
@@ -93,7 +93,7 @@ class OperationsController < ApplicationController
       @operation.destroy
 
       respond_to do |format|
-        format.html { redirect_to operations_url, notice: "Операция была удалена." }
+        format.html { redirect_to operations_url, notice: t("notions.operation_deleted") }
         format.json { head :no_content }
       end
     else

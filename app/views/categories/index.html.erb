@@ -1,17 +1,17 @@
 
 <div class="CategoriesPageContainer">
-  <h1>Категории</h1>
+  <h1><%= t("categories_view.title") %></h1>
 
   <div class = "search-block">
     <div class="container">
-        <h3>поиск</h3>
+        <h3><%= t("categories_view.search") %></h3>
         <%= form_with(method: :get) do |form| %>
           <%= form.text_field :serch_name, class:"search-cat-input", value:"#{@serach_name}" %>
       
           <button type="submit" class="search-btn"> <i class="fa fa-search" aria-hidden="true"></i></button>
         <% end %>
 
-        <%= link_to "все категории", {controller: :categories, action: :index}, class:"all-cat" %>
+        <%= link_to t("categories_view.all_categories"), {controller: :categories, action: :index}, class:"all-cat" %>
     </div>
   </div>
   <% if @categories.any? %>

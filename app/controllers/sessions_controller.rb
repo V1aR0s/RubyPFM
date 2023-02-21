@@ -17,10 +17,10 @@ class SessionsController < ApplicationController
     if user.present? 
       session[:user_id] = user.id
 
-      redirect_to root_path, notice: "Вы вошли на сайт"
+      redirect_to root_path, notice: t("notions.user_login")
     
     else
-        flash.now[:alert] = "Неправильная почта или пароль"
+        flash.now[:alert] = t("notions.incorrect_login_or_password")
 
         render :new
      end
@@ -31,7 +31,7 @@ class SessionsController < ApplicationController
   def destroy
     session.delete(:user_id)
 
-    redirect_to root_path, notice: "Выход успешен"
+    redirect_to root_path, notice: t("notions.logout")
   end
 
 end

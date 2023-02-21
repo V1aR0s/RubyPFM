@@ -1,27 +1,27 @@
 <div class = "container_login_reg">
     <div class="logreg">
 
-        <h2>Вход</h2>
+        <h2><%= t("forms.login") %></h2>
         
         <div class = "mt">
             <%= form_with scope: :session, url: session_path, data: {turbo: false} do | form | %>
-                <p class="placehold"><%= form.label :email%></p>
+                <p class="placehold" style="margin-bottom:30px;"><%= t("user.email") %></p>
                 <div class="input-block"> 
                     <div class="input_icon">
                         <i class="fa fa-street-view" aria-hidden="true"></i>
                     </div> 
-                    <%= form.text_field :email, class:'form-text-field',  placeholder:"Email"%>
+                    <%= form.text_field :email, class:'form-text-field',  placeholder:t("user.email")%>
                 </div>
 
-                <p class="placehold"><%= form.label :password %></p>
+                <p class="placehold" style="margin-bottom:30px;"><%= t("user.password") %></p>
                 <div class="input-block"> 
                     <div class="input_icon">
                         <i class="fa fa-user-secret" aria-hidden="true"></i>
 
                     </div> 
-                    <%= form.password_field :password, class:'form-text-field', placeholder:"Пароль"%>
+                    <%= form.password_field :password, class:'form-text-field', placeholder:t("user.password")%>
                 </div>
-                <p class = "mt-lg"> <%= form.submit "Войти", class: 'button-loginreg'%></p>
+                <p class = "mt-lg"> <%= form.submit t("buttons.login"), class: 'button-loginreg'%></p>
             <%end%>
         </div>
 

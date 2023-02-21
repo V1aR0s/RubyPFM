@@ -26,16 +26,29 @@
       <li>
         <% if current_user.present? %>
           <%= "#{current_user.name} #{current_user.surname}" %>
-            <%= button_to "Выход", session_path, method: :delete, class: 'btn btn-danger  btn-width'%>
+            <%= button_to t("buttons.exit"), session_path, method: :delete, class: 'btn btn-danger  btn-width'%>
           <% else %>
-            <%= link_to "Регистрация", new_user_path, class: 'btn btn-primary btn-width' %>
-            <%= link_to "Вход", new_session_path, class: 'btn btn-success btn-width' %>
+            <%= link_to t("buttons.register"), new_user_path, class: 'btn btn-primary btn-width' %>
+            <%= link_to t("buttons.login"), new_session_path, class: 'btn btn-success btn-width' %>
         <% end %>
       </li>
-      <li><%= link_to "Главная", root_path %></li>
-      <li><%= link_to "Категории", {controller: :categories, action: :index} %></li>
-      <li><%= link_to "Операции", {controller: :operations, action: :index} %></li>
-      <li><%= link_to "График", {controller: :reports, action: :index} %></li>
+      <li><%= link_to t("menu.main_title"), root_path %></li>
+      <li><%= link_to t("menu.categoty_title"), {controller: :categories, action: :index} %></li>
+      <li><%= link_to t("menu.operation_title"), {controller: :operations, action: :index} %></li>
+      <li><%= link_to t("menu.graphic_title"), {controller: :reports, action: :index} %></li>
+      <li>
+        <div class="dropdown show">
+          <span class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <%= t("menu.language") %>
+          </span>
+
+          <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+            <% I18n.available_locales.each do |locale| %>
+                <%= link_to t(locale), root_path(locale: locale), class:"dropdown-item" %>
+            <% end %>
+          </div>
+        </div>
+      </li>
     </ul>
   </div>
 

@@ -4,8 +4,8 @@
 
 <div class="buttons-categories">
     <div class="container">
-        <%= link_to "Изменить", edit_category_path(@category), class:"btn btn-info" %> 
-        <%= link_to "Все категории", categories_path, class:"btn btn-success" %>
+        <%= link_to t("buttons.change"), edit_category_path(@category), class:"btn btn-info" %> 
+        <%= link_to t("buttons.categories_all"), categories_path, class:"btn btn-success" %>
 
         <!--<%= button_to "Удалить", @category, method: :delete, class:"btn btn-danger" %>--> 
     </div>

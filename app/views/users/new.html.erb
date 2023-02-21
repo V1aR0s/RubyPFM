@@ -1,34 +1,8 @@
 
 <div class="container_login_reg">
- 
-    <!--
-        <div class = "mt">
-
-            <%= form_with model: @user, data: {turbo: false} do |form| %>
-                <p><%= form.label :name, 'Имя' %></p>
-                <p><%= form.text_field :name, class: 'form-text-field'%></p>
-
-                <p class = "mt"><%= form.label :surname, 'Фамилию' %></p>
-                <p><%= form.text_field :surname, class: 'form-text-field'%></p>
-
-                <p><%= form.label :email %></p>
-                <p><%= form.text_field :email, class: 'form-text-field'%></p>
-
-                <p><%= form.label :password %></p>
-                <p><%= form.password_field :password, class: 'form-text-field'%></p>
-
-                <p><%= form.label :password_confirmation %></p>
-                <p><%= form.password_field :password_confirmation, class: 'form-text-field'%></p>
-
-
-                <p class = "mt-lg"><%= form.submit 'Зарегестрироваться', class: 'button button-main' %></p>
-
-            <% end %>
-        </div>
-    -->
      <div class="logreg">
 
-        <h2> Регистрация</h2>  
+        <h2> <%= t("forms.register") %></h2>  
 
         <% if @user.errors.any? %>
             <% @user.errors.full_messages.each do | message | %>
@@ -39,48 +13,48 @@
         <div class = "mt">
             <%= form_with scope: :session, url: session_path, data: {turbo: false} do | form | %>
 
-                <p class="placehold"><%= form.label :name, 'Имя' %></p>
+                <p class="placehold"><%= form.label :name, t("user.name") %></p>
                 <div class="input-block"> 
                     <div class="input_icon">
                         <i class="fa fa-street-view" aria-hidden="true"></i>
                     </div> 
-                    <%= form.text_field :name, class: 'form-text-field',  placeholder:"Имя"%>
+                    <%= form.text_field :name, class: 'form-text-field',  placeholder:t("user.name")%>
                 </div>
 
-                <p class="placehold"><%= form.label :surname, 'Фамилия' %></p>
+                <p class="placehold"><%= form.label :surname, t("user.surname") %></p>
                 <div class="input-block"> 
                     <div class="input_icon">
                         <i class="fa fa-street-view" aria-hidden="true"></i>
                     </div> 
-                    <%= form.text_field :surname, class: 'form-text-field',  placeholder:"Фамилия"%>
+                    <%= form.text_field :surname, class: 'form-text-field',  placeholder:t("user.surname")%>
                 </div>
                 
-                <p class="placehold"><%= form.label :email, 'Email'%></p>
+                <p class="placehold"><%= form.label :email, t("user.email")%></p>
                 <div class="input-block"> 
                     <div class="input_icon">
                         <i class="fa fa-street-view" aria-hidden="true"></i>
                     </div> 
-                    <%= form.text_field :email, class:'form-text-field',  placeholder:"Email"%>
+                    <%= form.text_field :email, class:'form-text-field',  placeholder:t("user.email")%>
                 </div>
 
-                <p class="placehold"><%= form.label :password, 'Пароль' %></p>
+                <p class="placehold"><%= form.label :password, t("user.password") %></p>
                 <div class="input-block"> 
                     <div class="input_icon">
                         <i class="fa fa-user-secret" aria-hidden="true"></i>
 
                     </div> 
-                    <%= form.password_field :password, class:'form-text-field', placeholder:"Пароль"%>
+                    <%= form.password_field :password, class:'form-text-field', placeholder:t("user.password")%>
                 </div>
 
-                <p class="placehold"><%= form.label :password_confirmation, 'Повтор пароля' %></p>
+                <p class="placehold"><%= form.label :password_confirmation, t("user.repassword") %></p>
                 <div class="input-block"> 
                     <div class="input_icon">
                         <i class="fa fa-user-secret" aria-hidden="true"></i>
 
                     </div> 
-                    <%= form.password_field :password_confirmation, class:'form-text-field', placeholder:"Повтор пароля"%>
+                    <%= form.password_field :password_confirmation, class:'form-text-field', placeholder:t("user.repassword")%>
                 </div>
-                <p class = "mt-lg"> <%= form.submit "Регистрация", class: 'button-loginreg'%></p>
+                <p class = "mt-lg"> <%= form.submit t("buttons.register"), class: 'button-loginreg'%></p>
             <%end%>
         </div>
 

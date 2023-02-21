@@ -1,7 +1,7 @@
 <div class="form-create-block">
   <div class="card">
       <div class="card-header">
-        <h1>Изменить операцию</h1>
+        <h1><%= t("operations_view.edit") %></h1>
       </div>
     <%= render "form", operation: @operation, class:"d-flex justify-content-center", style:"width:100%" %>
 
@@ -9,6 +9,6 @@
 
   </div>
     <div>
-      <%= link_to "<- Все операции", operations_path, class:"btn btn-info" %>
+      <%= link_to t("buttons.operations_all"), operations_path, class:"btn btn-info" %>
     </div>
 </div>
