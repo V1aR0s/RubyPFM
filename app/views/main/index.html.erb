@@ -1,2 +1,8 @@
 <h1>Main#index</h1>
 <p>Find me in app/views/main/index.html.erb</p>
+
+<h1><%= t 'menu.main_title' %></h1>
+
+<% I18n.available_locales.each do |locale| %>
+    <%= link_to t(locale), root_path(locale: locale) %>
+<% end %>

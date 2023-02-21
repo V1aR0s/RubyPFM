@@ -11,12 +11,10 @@ class ReportsController < ApplicationController
 
       @first_date = params[:first_date]# Date.today.beginning_of_month
       @last_date = params[:last_date]
-      if params[:first_date] == nil or params[:first_date] == nil
+      if params[:first_date] == "" or params[:first_date] == ""
           @first_date = Date.today.beginning_of_month
-          @last_date = Date.today.end_of_month
+          @last_date = Date.today.end_of_month 
       end
-
-
       @category_id = params[:category_id]
 
 
@@ -58,7 +56,7 @@ class ReportsController < ApplicationController
 
 
     
-    @op_full_info = @user.operations.order("odate").where("income == ? AND odate BETWEEN ? AND ?", @income , @first_date, @last_date)
+    @op_full_info = @user.operations.order("odate").where("category_id == ? AND income == ? AND odate >= ? AND odate <= ?", @cat_id, @income , @first_date, @last_date)
     
   end
 end

@@ -42,7 +42,7 @@ class OperationsController < ApplicationController
           us.current_amount -= @operation.amount
         end
         if us.save
-          format.html { redirect_to operation_url(@operation), notice: "Операция была создана." }
+          format.html { redirect_to operations_url, notice: "Операция была создана." }
           format.json { render :show, status: :created, location: @operation }
         end
       end
@@ -69,7 +69,7 @@ class OperationsController < ApplicationController
           us.current_amount -= @operation.amount
         end
         if us.save
-          format.html { redirect_to operation_url(@operation), notice: "Операция была обновлена." }
+          format.html { redirect_to operations_url, notice: "Операция была обновлена." }
           format.json { render :show, status: :created, location: @operation }
         end
       end
