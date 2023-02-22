@@ -9,7 +9,8 @@ Rails.application.routes.draw do
     get 'main/index'
     get 'operations/graphic'
     #post  'locales/:locale', to: 'locales#set_locale', as: :set_locale
-  
+    get '/users', to: 'users#index'
+
     resources :operations
     #resources :locale
     resources :categories

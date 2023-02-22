@@ -28,6 +28,8 @@ ua:
     email: "Email"
   main_page:
     operation: "+ операція"
+    name_pfm: "персональний фінансовий менеджер"
+    creator: "Курсовий проект Рощупкіна Владислава"
   categories_view:
     title: "Категорії"
     search: "пошук"

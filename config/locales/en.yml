@@ -28,6 +28,8 @@ en:
       email: "Email"
   main_page:
       operation: "+ operation"
+      name_pfm: "personal financial manager"
+      creator: "Course project of Vladislav Roshchupkin"
   categories_view:
       title: "Categories"
       search: "search"

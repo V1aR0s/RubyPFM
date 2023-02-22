@@ -421,7 +421,7 @@ input[type=checkbox]:checked ~ .sidebarIconToggle > .diagonal.part-2 {
 }
 
 .search-cat-input{
-    max-width: 300px;
+    max-width: 200px;
     width: 100%;
     height: 50px;
     font-size: 22px;
@@ -745,7 +745,7 @@ input[type=checkbox]:checked ~ .sidebarIconToggle > .diagonal.part-2 {
     padding: 0 10px;
 
 
-    margin-top:100px ;
+    margin-top:50px ;
 }
 .logreg{
     width: 100%;
@@ -792,7 +792,9 @@ input[type=checkbox]:checked ~ .sidebarIconToggle > .diagonal.part-2 {
     font-size: 24px;
     color: #4f4f4f;
 }
-
+.field_with_errors{
+    width: 100%;
+}
 .form-text-field{
     border: none;
     height: 40px;
@@ -921,3 +923,68 @@ input[type=checkbox]:checked ~ .sidebarIconToggle > .diagonal.part-2 {
 
 
 
+
+
+.main_friendly_page{
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100vw;
+    height: 100vh;
+    position:absolute;
+    margin-top: -70px;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+.main_page_container{
+    max-width: 800px;
+    width: 100%;
+    display: flex;
+    border: 3px solid snow;
+    background-color: rgba(249, 249, 249, 0.595);
+    padding: 40px;
+    border-radius: 30px;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.animation-image{
+    transform: translateY(-3%);
+    animation: floater_anim 1.5s infinite;
+    transition: ease 0.5s;
+}
+.animation-image img{
+    width: 200px;
+    
+}
+.buttons-login-reg-main{
+    display: flex;
+    width: 100%;
+    margin-top: 10px;
+}
+.buttons-login-reg-main a{
+    margin-top: 40px;
+    margin-right: 20px;
+}
+.button_mainpage{
+    border: 3px solid snow;
+    border-radius: 5px;
+    color: rgb(80, 73, 105);
+    background-color: rgba(141, 141, 141, 0.278);
+    padding: 5px 20px;
+    text-decoration: none;
+    transition: .4s;
+}
+.button_mainpage:hover{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    background-color: rgba(255, 255, 255, 0.716);
+}
+@keyframes floater_anim{
+    0%{transform: translateY(-3%); transition: ease 0.5s;}
+    50%{transform: translateY(2%); transition: ease 0.5s;}
+}

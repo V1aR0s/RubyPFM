@@ -1,8 +1,20 @@
-<h1>Main#index</h1>
-<p>Find me in app/views/main/index.html.erb</p>
+<div class="main_friendly_page" style="background-image: url(<%= asset_url 'background.jpg' %>);">
 
-<h1><%= t 'menu.main_title' %></h1>
+    <div class = "main_page_container">
 
-<% I18n.available_locales.each do |locale| %>
-    <%= link_to t(locale), root_path(locale: locale) %>
-<% end %>
+        <div class = "left-main">
+            <h2>PFM - <%= t("main_page.name_pfm") %></h2>
+            <p><%= t("main_page.creator") %></p>
+        </div>
+        <div class = "right-main">
+            <div class="animation-image">
+                <img src="<%= asset_url 'money.png' %>" alt="">
+            </div> 
+            <div class = "buttons-login-reg-main">
+                    <%= link_to t("buttons.register"), new_user_path, class: 'button_mainpage' %>
+                    <%= link_to t("buttons.login"), new_session_path, class: 'button_mainpage' %>
+            </div>
+        </div>
+        
+    </div>
+</div>

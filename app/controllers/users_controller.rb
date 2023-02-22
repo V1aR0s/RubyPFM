@@ -1,5 +1,10 @@
 class UsersController < ApplicationController
   #controller for register user
+  def index
+    redirect_to new_user_path
+  end
+
+
   def new
     @user = User.new
   end
@@ -13,11 +18,7 @@ class UsersController < ApplicationController
     @user.current_amount = 0.0
 
     if @user.save
-
-
       redirect_to root_path, notice: t("notions.user_register")
-
-
     else
       flash.now[:alert] = t("notions.incorrect_reg")
 

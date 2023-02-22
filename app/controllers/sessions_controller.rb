@@ -10,7 +10,6 @@ class SessionsController < ApplicationController
     
     #метод, &. выполняеться если предидущее не равно nil 
     user = User.find_by(email: user_params[:email])&.authenticate(user_params[:password])
-    p = BCrypt::Password.new(user.password_digest)
 
     
     #debugger

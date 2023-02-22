@@ -28,6 +28,8 @@ ru:
     email: "E-mail"
   main_page:
     operation: "+ операция"
+    name_pfm: "персональный финансовый менеджер"
+    creator: "Курсовой проект Рощупкина Владислава"
   categories_view:
     title: "Категории"
     search: "поиск"
