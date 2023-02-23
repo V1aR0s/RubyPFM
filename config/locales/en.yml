@@ -30,6 +30,7 @@ en:
       operation: "+ operation"
       name_pfm: "personal financial manager"
       creator: "Course project of Vladislav Roshchupkin"
+      last_op: "All operations"
   categories_view:
       title: "Categories"
       search: "search"

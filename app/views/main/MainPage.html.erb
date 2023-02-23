@@ -23,24 +23,14 @@
          </div>
 
          <div class = "last_five_operation">
-            <div class="table-responsive-sm">
-               <table class="table table-sm">
-                  <tbody>
-                     <% @last_op.each do |op| %>
-                        <tr class="table-info">
-                           <td> <%=  op.description %> </td>
-                           <td>
-                              <% if op.income %> + <%else%> - <% end %> <%= op.amount %> ₴
-                           </td>
-
-                           <td> <%= op.odate.to_date.strftime("%Y.%m.%d") %> </td>
-
-                        </tr>
-                     <% end  %>
-                  </tbody>
-               </table>
-            </div>
-
+            <% @last_op.each do |op| %>
+               <div class = "block-operation">
+                  <span><%=  op.description %></span>
+                  <span><% if op.income %> + <%else%> - <% end %> <%= op.amount %> ₴</span>
+                  <span><%= op.odate.to_date.strftime("%Y.%m.%d") %></span>
+               </div>
+            <% end %>
+            <%= link_to t("main_page.last_op"), {controller: :operations, action: :index}, class:"last_op_link" %> 
          </div>
 
       </div>

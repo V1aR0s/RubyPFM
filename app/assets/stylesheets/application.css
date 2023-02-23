@@ -211,6 +211,7 @@ input[type=checkbox]:checked ~ .sidebarIconToggle > .diagonal.part-2 {
 
     padding: 20px;
 }
+
 .maininformation{
     width: 100%;
     display: flex;
@@ -218,6 +219,34 @@ input[type=checkbox]:checked ~ .sidebarIconToggle > .diagonal.part-2 {
     justify-content: space-between;
 }
 
+/*Last three operation*/
+.last_five_operation{
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+    color: snow;
+    background-color: rebeccapurple;
+}
+.last_five_operation div{
+    margin-bottom: 20px;
+    border-bottom: 1px solid snow;
+    padding-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+.last_five_operation div span{
+    max-width: 150px;
+    width: 100%;
+}
+.last_op_link{
+    color: rgb(253, 216, 216);
+    transition: .4s;
+    border: none;
+}
+.last_op_link:hover{
+    color:ghostwhite;
+    text-decoration: none;
+}
 
 .MainPageLeft{
     width: 50%;
@@ -359,6 +388,7 @@ input[type=checkbox]:checked ~ .sidebarIconToggle > .diagonal.part-2 {
     align-items: center;
     justify-content: start;
 }
+
 .category-img{
     width: 50px ;
 }
