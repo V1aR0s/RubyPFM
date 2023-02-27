@@ -5,50 +5,55 @@
 
 
 
-  <table class="table table-bordered table-striped" style="background-color:white; border-radius:0px;">
-    <thead class="thead-dark">
-      <tr>
-        <th scope="col"><%= t("tables.category") %></th>
-        <th scope="col"><%= t("tables.date") %></th>
-        <th scope="col"><%= t("tables.description") %></th>
-        <th scope="col"><%= t("tables.amount") %></th>
-        <th scope="col"><%= t("tables.action") %></th>
-      </tr>
-    </thead>
-    <tbody>
-      <% @operations.each do |operation| %>
-        <tr >
-          <th ><%= operation.category.name %></th>
-          <th><%= operation.odate.to_date.strftime("%Y.%m.%d") %></th>
-          <th><%= operation.description %></th>
-          <th>
-            <% if operation.income == true %>
-              <p style="color:rgb(93, 166, 108);">
-            <% else %>
-              <p style="color:rgb(170, 79, 79);">
-            <% end %>
+    <div class = "operation_index_container"> 
+      <div class = "op_index">
+        <div class = "operation_block_index">
+            <div><%= t("tables.category") %></div>
+            
+            <div><%= t("tables.date") %></div>
+            <div><%= t("tables.description") %></div>
+            <div><%= t("tables.amount") %></div>
+            
+            <div><%= t("tables.action") %> </div>
+          </div>
+      
+        <% @operations.each do |operation| %>
 
-            <%= operation.amount %>
-
-            </p>
-          <th>
-            <div class="button-table">
-              <a href="<%= edit_operation_path(operation) %>" class="btn btn-primary">
-                <i class="fa fa-cog" style="font-size:14px"></i>
-              </a>
-
-              <%= button_to "X",operation, method: :delete, class:"btn btn-danger", style:"font-weight: bold;" %>
+          <div class = "operation_block_index">
+            <div>
+              <%= operation.description %>
             </div>
+            
+            <div>
+              <%= operation.category.name %>
+            </div>
+            <div>
+              <%= operation.odate.to_date.strftime("%Y.%m.%d") %>
+            </div>
+            <div>
+                <% if operation.income == true %>
+                    <p style="color:rgb(93, 166, 108);">
+                <% else %>
+                    <p style="color:rgb(170, 79, 79);">
+                <% end %>
+                <%= operation.amount %>
+              </p>
+            </div>
+            
+            <div>
+              <div class="button-table">
+                  <a href="<%= edit_operation_path(operation) %>" class="btn btn-primary">
+                    <i class="fa fa-cog" style="font-size:14px"></i>
+                  </a>
 
-          </th>
-        </tr>
-      <% end %>
-
-    </tbody>
-
-    
-
-  </table>
+                  <%= button_to "X",operation, method: :delete, class:"btn btn-danger", style:"font-weight: bold;" %>
+              </div>
+            </div>
+          </div>
+        <% end %>
+      </div>
+  </div>
   <%== pagy_nav(@pagy) %>
+
 
 </div>
