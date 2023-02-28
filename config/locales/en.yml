@@ -51,6 +51,11 @@ en:
       create_amount: "Amount"
       create_date: "Date"
       craete_income: "Income?"
+      sort_name: "Sort by"
+      
+      sort-ascending: "ascending"
+      sort-descending: "descending"
+      sort-button: "Sort"
   graph_view:
       title: "Report Generator"
       date_first: "date first"

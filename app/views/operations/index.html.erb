@@ -1,16 +1,16 @@
 
 <div class="operation-index-container">
-  <h1><%= t("operations_view.title") %></h1>
 
-
-
+  
   <div class = "operation_index_container"> 
       <div class = "op_index">
         <div class = "operation_block_index">
+            <div><%= t("tables.description") %></div>
+            
             <div><%= t("tables.category") %></div>
             
             <div><%= t("tables.date") %></div>
-            <div><%= t("tables.description") %></div>
+            
             <div><%= t("tables.amount") %></div>
             
             <div><%= t("tables.action") %> </div>
@@ -31,7 +31,7 @@
             </div>
             <div>
                 <% if operation.income == true %>
-                    <p style="color:rgb(93, 166, 108);">
+                    <p style="color:rgb(0, 93, 66);">
                 <% else %>
                     <p style="color:rgb(170, 79, 79);">
                 <% end %>
@@ -55,4 +55,4 @@
   <%== pagy_nav(@pagy) %>
 
 </div>
-  <%= link_to "+", new_operation_path, class:"fixed-btn btn-add" %>
+<%= link_to "+", new_operation_path, class:"fixed-btn btn-add" %>

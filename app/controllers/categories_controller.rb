@@ -16,7 +16,41 @@ class CategoriesController < ApplicationController
 
   # GET /categories/1 or /categories/1.json
   def show
-    @pagy, @operations = pagy(User.find_by(id:session[:user_id]).operations.where("category_id Like ?",  params[:id]), items: 10)
+    # --- sort params ---
+    #0 - category
+    #1 - dates
+    #2 - amount
+    #t("tables.category"), t("tables.date"), t("tables.amount")
+    @array_sort = { 0 => t("tables.category"), 1 =>  t("tables.date"), 2 => t("tables.amount") }
+        # --- sort params ---
+    #0 - category
+    #1 - dates
+    #2 - amount
+    #t("tables.category"), t("tables.date"), t("tables.amount")
+    @array_sort = { 0 => t("tables.category"), 1 =>  t("tables.date"), 2 => t("tables.amount") }
+    
+
+    if params[:sort_id].present?
+      #vozrast
+      s = params[:sort_id].to_i
+      case s
+      when 0      
+        operations_sort = User.find_by(id:session[:user_id]).operations.where("category_id Like ?",  params[:id]).joins(:category)
+        .order(name: params[:type_sort].to_i == 1 ? :desc : :asc )
+        #@s = s
+      when 1
+        operations_sort = User.find_by(id:session[:user_id]).operations.where("category_id Like ?",  params[:id]).order(odate: params[:type_sort].to_i == 1 ? :desc : :asc)
+        #@s = s
+      when 2
+        operations_sort = User.find_by(id:session[:user_id]).operations.where("category_id Like ?",  params[:id]).order(amount:params[:type_sort].to_i == 1 ? :desc : :asc)
+       # @s = s
+      else
+        operations_sort = User.find_by(id:session[:user_id]).operations.where("category_id Like ?",  params[:id]).order(odate: :desc)
+      end
+    else
+      operations_sort = User.find_by(id:session[:user_id]).operations.where("category_id Like ?",  params[:id]).order(odate: :desc) 
+    end
+    @pagy, @operations = pagy(operations_sort, items: 10)
   end
 
   # GET /categories/new

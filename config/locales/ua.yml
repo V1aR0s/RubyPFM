@@ -49,6 +49,10 @@ ua:
     create_amount: "Сума"
     create_date: "Дата"
     craete_income: "Дохід?"
+    sort_name: "Сортувати по"
+    sort-ascending: "зростання"
+    sort-descending: "спадання"
+    sort-button: "Сортувати"
   graph_view:
     title: "Генератор звітів"
     date_first: "початкова"

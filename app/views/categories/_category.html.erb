@@ -1,7 +1,36 @@
 <div class="operation-index-container">
 
-  <h1><%= t("slogans.op_in_cat") %> <%= category.name %></h1>
-  <h5 style="margin-bottom:30px"><%= t("slogans.description") %> <%= category.description %></h5>
+
+  <div class = "form_sort">
+    <h1><%= t("slogans.op_in_cat") %> <%= category.name %></h1>
+    <h5 style="margin-bottom:30px"><%= t("slogans.description") %> <%= category.description %></h5>
+    <div class = "searchform">
+        <%= form_with(method: :get) do |form| %>
+          <div class = "search-first-line">
+            <div class="input-group mb-3" style="margin-top:30px;">
+              <div class="input-group-prepend">
+                <label class="input-group-text" for="Category_selector"><%= t("operations_view.sort_name") %></label>
+              </div>
+              <%= form.select :sort_id, options_for_select(@array_sort.invert), {}, class:"custom-select" %>
+            </div>
+
+            <div class="checkbox-result">
+              <span><%= t("operations_view.sort-ascending") %></span>
+                <div class="checkbox-wrapper-3">
+                  <%= form.check_box :type_sort,  {id:"cbx-3", type: "checkbox"}, 1, 0 %>
+                <label for="cbx-3" class="toggle"><span></span></label>
+              </div>
+              <span style = "margin-left: 30px;"><%= t("operations_view.sort-descending") %></span>
+            </div>
+          </div>
+          <div class = "search-second-line">
+            <%= form.submit t("operations_view.sort-button"), class:"btn btn-success"%>
+          </div>
+         
+        <% end %>
+    </div>
+  </div>
+  
 
 
 

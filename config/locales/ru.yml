@@ -49,6 +49,12 @@ ru:
     create_amount: "Сумма"
     create_date: "Дата"
     craete_income: "Доход?"
+    sort_name: "Сортировать по"
+    
+    sort-ascending: "возрастание"
+    sort-descending: "убывание"
+    sort-button: "Сортировать"
+
   graph_view:
     title: "Отчеты"
     date_first: "начальная"

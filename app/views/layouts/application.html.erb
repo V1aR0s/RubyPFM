@@ -55,51 +55,6 @@
 
 
 
-  <!--
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <%= link_to "PFM", root_path, class: "navbar-brand" %>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav mr-auto">
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-expanded="false">
-              Categories
-            </a>
-            <div class="dropdown-menu">
-              <%= link_to "Категории", {controller: :categories, action: :index}, class: "dropdown-item" %>
-              <%= link_to "Создать", {controller: :categories, action: :new}, class: "dropdown-item" %>
-            </div>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-expanded="false">
-              Activities
-            </a>
-            <div class="dropdown-menu">
-              <%= link_to "Операции", {controller: :operations, action: :index}, class: "dropdown-item" %>
-              <%= link_to "Создать", {controller: :operations, action: :new}, class: "dropdown-item" %>
-            </div>
-          </li>
-
-        </ul>
-        <form class="form-inline my-2 my-lg-0">
-              <% if current_user.present? %>
-                <%= content_tag 'span', "#{current_user.name} #{current_user.surname}", class: "btn" %>
-                <%= button_to "Выход", session_path, method: :delete, class: 'btn btn-danger'%>
-              <% else %>
-                <%= link_to "Регистрация", new_user_path, class: 'btn btn-primary' %>
-
-                <%= link_to "Вход", new_session_path, class: 'btn btn-success' %>
-              <% end %>
-        </form>
-
-      </div>
-    </nav>
-  -->
-
-
   <div class = "wrapper">
 
 
@@ -123,6 +78,18 @@
       <% end %>
   </div>
 
+
+
+
+
+
+
+  
+  <footer id="sticky-footer" class="flex-shrink-0 py-3 bg-secondary text-white-50">
+    <div class="container text-center">
+      <small><%= t("main_page.creator") %></small>
+    </div>
+  </footer>
 
   </body>
 
