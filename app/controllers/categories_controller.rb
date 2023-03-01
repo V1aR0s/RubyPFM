@@ -51,6 +51,8 @@ class CategoriesController < ApplicationController
       operations_sort = User.find_by(id:session[:user_id]).operations.where("category_id Like ?",  params[:id]).order(odate: :desc) 
     end
     @pagy, @operations = pagy(operations_sort, items: 10)
+    
+
   end
 
   # GET /categories/new

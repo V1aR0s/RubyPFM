@@ -30,7 +30,7 @@
                 <div class="input-group-prepend">
                     <label class="input-group-text" for="Category_selector"><%= t("graph_view.category") %></label>
                 </div>
-                <%= form.select :category_id, options_for_select(User.find_by(id:session[:user_id]).categories.collect{ |u| [u.name, u.id] }), {}, class:"custom-select" %>
+                <%= form.select :category_id, options_for_select(User.find_by(id:session[:user_id]).categories.collect{ |u| [u.name, u.id] }), {}, class:"custom-select", id:"checkbox_select" %>
             </div>
 
 

@@ -7,3 +7,4 @@ import Chart from 'chart.js'
 
 //= require chartkick
 //= require Chart.bundle
+

@@ -35,7 +35,6 @@ class OperationsController < ApplicationController
       operations_sort = User.find_by(id:session[:user_id]).operations.order(odate: :desc) 
     end
     @pagy, @operations = pagy(operations_sort, items: 10)
-    
 
   end
 
