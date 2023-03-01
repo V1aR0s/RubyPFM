@@ -1128,8 +1128,6 @@ input[type=checkbox]:checked ~ .sidebarIconToggle > .diagonal.part-2 {
 }
 
 footer{
-
-    bottom: 0;
     position: relative;
     width: 100%;
 }
