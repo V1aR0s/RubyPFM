@@ -4,6 +4,7 @@
 Course project made after the course "Розробка вебдодатків на Ruby від SoftServe" on the platform "PROMETHEUS"
 </p>
 
+### link: https://vlaros-pfm.fly.dev/
 
 ### The functional that is in the project:
 * Simple User Registration/Authorization mechanism
